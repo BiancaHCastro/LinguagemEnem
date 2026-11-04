@@ -1,0 +1,13 @@
+modelo,avaliacao,metrica,valor
+DecisionTreeRegressor,CV oficial 3 dobras,MAE,71.27
+DecisionTreeRegressor,CV oficial 3 dobras,RMSE,92.48
+DecisionTreeRegressor,CV oficial 3 dobras,R2,-0.5012
+StackingRegressor,CV oficial 3 dobras,MAE,50.75
+StackingRegressor,CV oficial 3 dobras,RMSE,65.81
+StackingRegressor,CV oficial 3 dobras,R2,0.2399
+DecisionTreeRegressor,Teste reservado,MAE,70.3
+DecisionTreeRegressor,Teste reservado,RMSE,91.34
+DecisionTreeRegressor,Teste reservado,R2,-0.4702
+StackingRegressor,Teste reservado,MAE,50.67
+StackingRegressor,Teste reservado,RMSE,65.73
+StackingRegressor,Teste reservado,R2,0.2387
