@@ -1,0 +1,741 @@
+﻿modelo,linha,secao,tipo_registro,texto_original
+knn,4,,texto,Execucao completa iniciada. O KNN sem PCA e as buscas podem exigir muitas horas e bastante memoria.
+knn,5,,linha_vazia,
+knn,31,2/19 Modelos de referencia,texto,knn_base                     dobra 1: RMSE 73.31 | MAE 56.32 | R2 0.0543 | treino 16.3s | predicao 46.5s
+knn,32,2/19 Modelos de referencia,texto,knn_base                     dobra 2: RMSE 73.35 | MAE 56.38 | R2 0.0567 | treino 16.2s | predicao 69.1s
+knn,33,2/19 Modelos de referencia,texto,knn_base                     dobra 3: RMSE 73.41 | MAE 56.34 | R2 0.0557 | treino 37.6s | predicao 113.9s
+knn,34,2/19 Modelos de referencia,texto,Modelo: knn
+knn,35,2/19 Modelos de referencia,linha_vazia,
+knn,36,2/19 Modelos de referencia,texto,Resumo de knn_base:
+knn,37,2/19 Modelos de referencia,texto,                    rmse        mae        r2  tempo_treino_s  tempo_predicao_s
+knn,38,2/19 Modelos de referencia,texto,media          73.356219  56.348487  0.055555       23.373980         76.514103
+knn,39,2/19 Modelos de referencia,texto,desvio_padrao   0.038928   0.025435  0.000996       10.070865         28.019095
+knn,40,2/19 Modelos de referencia,texto,Hipotese: Referencia inicial com hiperparametros padrao e as 15 features do grupo.
+knn,41,2/19 Modelos de referencia,texto,Conclusao: (preencher)
+knn,147,6/19 Balanceamento: knn (under),etapa,[6/19] Balanceamento: knn (under)
+knn,148,6/19 Balanceamento: knn (under),texto,knn_under                    dobra 1: RMSE 83.86 | MAE 65.26 | R2 -0.2375 | treino 3.2s | predicao 64.4s
+knn,149,6/19 Balanceamento: knn (under),texto,knn_under                    dobra 2: RMSE 84.24 | MAE 65.56 | R2 -0.2443 | treino 2.9s | predicao 43.3s
+knn,150,6/19 Balanceamento: knn (under),texto,knn_under                    dobra 3: RMSE 84.05 | MAE 65.37 | R2 -0.2381 | treino 3.0s | predicao 53.6s
+knn,151,6/19 Balanceamento: knn (under),texto,Modelo: knn
+knn,152,6/19 Balanceamento: knn (under),linha_vazia,
+knn,153,6/19 Balanceamento: knn (under),texto,Resumo de knn_under:
+knn,154,6/19 Balanceamento: knn (under),texto,                    rmse        mae        r2  tempo_treino_s  tempo_predicao_s
+knn,155,6/19 Balanceamento: knn (under),texto,media          84.053758  65.394762 -0.239985        3.030174         53.792183
+knn,156,6/19 Balanceamento: knn (under),texto,desvio_padrao   0.154859   0.122198  0.003080        0.113952          8.611421
+knn,157,6/19 Balanceamento: knn (under),texto,"Hipotese: Notas extremas (faixas raras) concentram erro; dar mais peso a elas reduz o erro ali, a custa do centro."
+knn,158,6/19 Balanceamento: knn (under),texto,Conclusao: (preencher)
+knn,159,6/19 Balanceamento: knn (under),linha_vazia,
+knn,160,7/19 Balanceamento: knn (over),etapa,[7/19] Balanceamento: knn (over)
+knn,161,7/19 Balanceamento: knn (over),texto,knn_over                     dobra 1: RMSE 75.62 | MAE 58.05 | R2 -0.0061 | treino 16.4s | predicao 40.2s
+knn,162,7/19 Balanceamento: knn (over),texto,knn_over                     dobra 2: RMSE 75.75 | MAE 58.14 | R2 -0.0060 | treino 16.4s | predicao 46.4s
+knn,163,7/19 Balanceamento: knn (over),texto,knn_over                     dobra 3: RMSE 75.76 | MAE 58.06 | R2 -0.0058 | treino 16.2s | predicao 46.0s
+knn,164,7/19 Balanceamento: knn (over),texto,Modelo: knn
+knn,165,7/19 Balanceamento: knn (over),linha_vazia,
+knn,166,7/19 Balanceamento: knn (over),texto,Resumo de knn_over:
+knn,167,7/19 Balanceamento: knn (over),texto,                    rmse        mae        r2  tempo_treino_s  tempo_predicao_s
+knn,168,7/19 Balanceamento: knn (over),texto,media          75.708324  58.083593 -0.005980       16.351607         44.208131
+knn,169,7/19 Balanceamento: knn (over),texto,desvio_padrao   0.064427   0.041337  0.000124        0.089515          2.815173
+knn,170,7/19 Balanceamento: knn (over),texto,"Hipotese: Notas extremas (faixas raras) concentram erro; dar mais peso a elas reduz o erro ali, a custa do centro."
+knn,171,7/19 Balanceamento: knn (over),texto,Conclusao: (preencher)
+knn,172,7/19 Balanceamento: knn (over),linha_vazia,
+knn,212,11/19 Ablacao: knn,etapa,[11/19] Ablacao: knn
+knn,213,11/19 Ablacao: knn,texto,knn_sem_renda                dobra 1: RMSE 69.57 | MAE 53.50 | R2 0.1483 | treino 12.6s | predicao 11.0s
+knn,214,11/19 Ablacao: knn,texto,knn_sem_renda                dobra 2: RMSE 69.68 | MAE 53.62 | R2 0.1488 | treino 12.6s | predicao 10.8s
+knn,215,11/19 Ablacao: knn,texto,knn_sem_renda                dobra 3: RMSE 69.77 | MAE 53.60 | R2 0.1469 | treino 12.7s | predicao 11.1s
+knn,216,11/19 Ablacao: knn,texto,Modelo: knn
+knn,217,11/19 Ablacao: knn,texto,"Features: Q001, Q002, TP_ESCOLA, TP_ST_CONCLUSAO, TP_FAIXA_ETARIA, Q024, Q025, IN_TREINEIRO, SG_UF_PROVA, TP_LINGUA, ESCOLARIDADE_MAX_RESP, PERFIL_ACESSO_DIGITAL"
+knn,218,11/19 Ablacao: knn,linha_vazia,
+knn,219,11/19 Ablacao: knn,texto,Resumo de knn_sem_renda:
+knn,220,11/19 Ablacao: knn,texto,                    rmse        mae        r2  tempo_treino_s  tempo_predicao_s
+knn,221,11/19 Ablacao: knn,texto,media          69.674446  53.573799  0.147981       12.651819         10.993313
+knn,222,11/19 Ablacao: knn,texto,desvio_padrao   0.082817   0.053225  0.000819        0.055675          0.138702
+knn,223,11/19 Ablacao: knn,texto,Hipotese: Retirar um bloco de informacao aumenta o RMSE em proporcao a sua contribuicao para a previsao.
+knn,224,11/19 Ablacao: knn,texto,Conclusao: (preencher)
+knn,225,11/19 Ablacao: knn,texto,knn_sem_escolaridade_responsaveis dobra 1: RMSE 69.76 | MAE 53.66 | R2 0.1436 | treino 12.7s | predicao 13.3s
+knn,226,11/19 Ablacao: knn,texto,knn_sem_escolaridade_responsaveis dobra 2: RMSE 69.86 | MAE 53.73 | R2 0.1444 | treino 12.5s | predicao 12.5s
+knn,227,11/19 Ablacao: knn,texto,knn_sem_escolaridade_responsaveis dobra 3: RMSE 69.94 | MAE 53.72 | R2 0.1427 | treino 12.4s | predicao 13.4s
+knn,228,11/19 Ablacao: knn,texto,Modelo: knn
+knn,229,11/19 Ablacao: knn,texto,"Features: Q006, TP_ESCOLA, TP_ST_CONCLUSAO, TP_FAIXA_ETARIA, Q005, Q024, Q025, IN_TREINEIRO, SG_UF_PROVA, TP_LINGUA, RENDA_PER_CAPITA_APROX, PERFIL_ACESSO_DIGITAL"
+knn,230,11/19 Ablacao: knn,linha_vazia,
+knn,231,11/19 Ablacao: knn,texto,Resumo de knn_sem_escolaridade_responsaveis:
+knn,232,11/19 Ablacao: knn,texto,                    rmse        mae        r2  tempo_treino_s  tempo_predicao_s
+knn,233,11/19 Ablacao: knn,texto,media          69.854963  53.702619  0.143561       12.544057         13.075149
+knn,234,11/19 Ablacao: knn,texto,desvio_padrao   0.073436   0.029354  0.000696        0.128515          0.384099
+knn,235,11/19 Ablacao: knn,texto,Hipotese: Retirar um bloco de informacao aumenta o RMSE em proporcao a sua contribuicao para a previsao.
+knn,236,11/19 Ablacao: knn,texto,Conclusao: (preencher)
+knn,237,11/19 Ablacao: knn,texto,knn_sem_acesso_digital       dobra 1: RMSE 73.27 | MAE 56.32 | R2 0.0553 | treino 13.4s | predicao 26.9s
+knn,238,11/19 Ablacao: knn,texto,knn_sem_acesso_digital       dobra 2: RMSE 73.42 | MAE 56.41 | R2 0.0550 | treino 13.6s | predicao 28.1s
+knn,239,11/19 Ablacao: knn,texto,knn_sem_acesso_digital       dobra 3: RMSE 73.47 | MAE 56.36 | R2 0.0542 | treino 13.4s | predicao 28.8s
+knn,240,11/19 Ablacao: knn,texto,Modelo: knn
+knn,241,11/19 Ablacao: knn,texto,"Features: Q006, Q001, Q002, TP_ESCOLA, TP_ST_CONCLUSAO, TP_FAIXA_ETARIA, Q005, IN_TREINEIRO, SG_UF_PROVA, TP_LINGUA, RENDA_PER_CAPITA_APROX, ESCOLARIDADE_MAX_RESP"
+knn,242,11/19 Ablacao: knn,linha_vazia,
+knn,243,11/19 Ablacao: knn,texto,Resumo de knn_sem_acesso_digital:
+knn,244,11/19 Ablacao: knn,texto,                    rmse        mae        r2  tempo_treino_s  tempo_predicao_s
+knn,245,11/19 Ablacao: knn,texto,media          73.385391  56.362859  0.054805       13.471247         27.957160
+knn,246,11/19 Ablacao: knn,texto,desvio_padrao   0.081326   0.036699  0.000462        0.098128          0.784327
+knn,247,11/19 Ablacao: knn,texto,Hipotese: Retirar um bloco de informacao aumenta o RMSE em proporcao a sua contribuicao para a previsao.
+knn,248,11/19 Ablacao: knn,texto,Conclusao: (preencher)
+knn,249,11/19 Ablacao: knn,texto,knn_sem_localizacao          dobra 1: RMSE 70.26 | MAE 54.04 | R2 0.1314 | treino 12.8s | predicao 38.0s
+knn,250,11/19 Ablacao: knn,texto,knn_sem_localizacao          dobra 2: RMSE 70.34 | MAE 54.07 | R2 0.1326 | treino 12.8s | predicao 35.9s
+knn,251,11/19 Ablacao: knn,texto,knn_sem_localizacao          dobra 3: RMSE 70.49 | MAE 54.11 | R2 0.1293 | treino 12.9s | predicao 36.9s
+knn,252,11/19 Ablacao: knn,texto,Modelo: knn
+knn,253,11/19 Ablacao: knn,texto,"Features: Q006, Q001, Q002, TP_ESCOLA, TP_ST_CONCLUSAO, TP_FAIXA_ETARIA, Q005, Q024, Q025, IN_TREINEIRO, TP_LINGUA, RENDA_PER_CAPITA_APROX, ESCOLARIDADE_MAX_RESP, PERFIL_ACESSO_DIGITAL"
+knn,254,11/19 Ablacao: knn,linha_vazia,
+knn,255,11/19 Ablacao: knn,texto,Resumo de knn_sem_localizacao:
+knn,256,11/19 Ablacao: knn,texto,                    rmse        mae        r2  tempo_treino_s  tempo_predicao_s
+knn,257,11/19 Ablacao: knn,texto,media          70.361619  54.076383  0.131092       12.840345         36.939157
+knn,258,11/19 Ablacao: knn,texto,desvio_padrao   0.096103   0.029560  0.001371        0.046160          0.869846
+knn,259,11/19 Ablacao: knn,texto,Hipotese: Retirar um bloco de informacao aumenta o RMSE em proporcao a sua contribuicao para a previsao.
+knn,260,11/19 Ablacao: knn,texto,Conclusao: (preencher)
+knn,261,11/19 Ablacao: knn,texto,knn_sem_perfil_escolar       dobra 1: RMSE 71.68 | MAE 55.18 | R2 0.0960 | treino 12.4s | predicao 14.3s
+knn,262,11/19 Ablacao: knn,texto,knn_sem_perfil_escolar       dobra 2: RMSE 71.77 | MAE 55.27 | R2 0.0967 | treino 12.5s | predicao 14.8s
+knn,263,11/19 Ablacao: knn,texto,knn_sem_perfil_escolar       dobra 3: RMSE 71.74 | MAE 55.17 | R2 0.0982 | treino 12.5s | predicao 13.6s
+knn,264,11/19 Ablacao: knn,texto,Modelo: knn
+knn,265,11/19 Ablacao: knn,texto,"Features: Q006, Q001, Q002, Q005, Q024, Q025, SG_UF_PROVA, TP_LINGUA, RENDA_PER_CAPITA_APROX, ESCOLARIDADE_MAX_RESP, PERFIL_ACESSO_DIGITAL"
+knn,266,11/19 Ablacao: knn,linha_vazia,
+knn,267,11/19 Ablacao: knn,texto,Resumo de knn_sem_perfil_escolar:
+knn,268,11/19 Ablacao: knn,texto,                    rmse        mae        r2  tempo_treino_s  tempo_predicao_s
+knn,269,11/19 Ablacao: knn,texto,media          71.730014  55.208096  0.096965       12.481294         14.253714
+knn,270,11/19 Ablacao: knn,texto,desvio_padrao   0.040283   0.043102  0.000893        0.031205          0.491054
+knn,271,11/19 Ablacao: knn,texto,Hipotese: Retirar um bloco de informacao aumenta o RMSE em proporcao a sua contribuicao para a previsao.
+knn,272,11/19 Ablacao: knn,texto,Conclusao: (preencher)
+knn,273,11/19 Ablacao: knn,texto,knn_sem_lingua               dobra 1: RMSE 73.89 | MAE 56.82 | R2 0.0394 | treino 14.6s | predicao 31.3s
+knn,274,11/19 Ablacao: knn,texto,knn_sem_lingua               dobra 2: RMSE 73.91 | MAE 56.87 | R2 0.0422 | treino 14.5s | predicao 31.4s
+knn,275,11/19 Ablacao: knn,texto,knn_sem_lingua               dobra 3: RMSE 73.95 | MAE 56.81 | R2 0.0417 | treino 14.6s | predicao 36.8s
+knn,276,11/19 Ablacao: knn,texto,Modelo: knn
+knn,277,11/19 Ablacao: knn,texto,"Features: Q006, Q001, Q002, TP_ESCOLA, TP_ST_CONCLUSAO, TP_FAIXA_ETARIA, Q005, Q024, Q025, IN_TREINEIRO, SG_UF_PROVA, RENDA_PER_CAPITA_APROX, ESCOLARIDADE_MAX_RESP, PERFIL_ACESSO_DIGITAL"
+knn,278,11/19 Ablacao: knn,linha_vazia,
+knn,279,11/19 Ablacao: knn,texto,Resumo de knn_sem_lingua:
+knn,280,11/19 Ablacao: knn,texto,                    rmse        mae        r2  tempo_treino_s  tempo_predicao_s
+knn,281,11/19 Ablacao: knn,texto,media          73.915562  56.831944  0.041097       14.582058         33.190604
+knn,282,11/19 Ablacao: knn,texto,desvio_padrao   0.024466   0.028490  0.001242        0.047330          2.585913
+knn,283,11/19 Ablacao: knn,texto,Hipotese: Retirar um bloco de informacao aumenta o RMSE em proporcao a sua contribuicao para a previsao.
+knn,284,11/19 Ablacao: knn,texto,Conclusao: (preencher)
+knn,285,11/19 Ablacao: knn,texto,Resultados da ablacao:
+knn,286,11/19 Ablacao: knn,texto,           bloco_removido                                                   colunas  rmse_media  rmse_dp  r2_media  delta_rmse
+knn,287,11/19 Ablacao: knn,texto,                 (nenhum)                                                     todas   73.356219 0.038928  0.055555    0.000000
+knn,288,11/19 Ablacao: knn,texto,"                    renda                        Q006, Q005, RENDA_PER_CAPITA_APROX   69.674446 0.082817  0.147981   -3.681773"
+knn,289,11/19 Ablacao: knn,texto,"escolaridade_responsaveis                         Q001, Q002, ESCOLARIDADE_MAX_RESP   69.854963 0.073436  0.143561   -3.501256"
+knn,290,11/19 Ablacao: knn,texto,"           acesso_digital                         Q024, Q025, PERFIL_ACESSO_DIGITAL   73.385391 0.081326  0.054805    0.029172"
+knn,291,11/19 Ablacao: knn,texto,              localizacao                                               SG_UF_PROVA   70.361619 0.096103  0.131092   -2.994600
+knn,292,11/19 Ablacao: knn,texto,"           perfil_escolar TP_ESCOLA, TP_ST_CONCLUSAO, IN_TREINEIRO, TP_FAIXA_ETARIA   71.730014 0.040283  0.096965   -1.626205"
+knn,293,11/19 Ablacao: knn,texto,                   lingua                                                 TP_LINGUA   73.915562 0.024466  0.041097    0.559343
+knn,294,11/19 Ablacao: knn,linha_vazia,
+knn,378,13/19 Busca de hiperparametros: knn,etapa,[13/19] Busca de hiperparametros: knn
+knn,379,13/19 Busca de hiperparametros: knn,texto,"Fitting 3 folds for each of 12 candidates, totalling 36 fits"
+knn,380,13/19 Busca de hiperparametros: knn,texto,"[CV] END model__leaf_size=30, model__n_neighbors=100, model__p=1, model__weights=uniform, pca__n_components=16; total time= 5.3min"
+knn,381,13/19 Busca de hiperparametros: knn,texto,"[CV] END model__leaf_size=30, model__n_neighbors=100, model__p=1, model__weights=uniform, pca__n_components=16; total time= 3.3min"
+knn,382,13/19 Busca de hiperparametros: knn,texto,"[CV] END model__leaf_size=30, model__n_neighbors=100, model__p=1, model__weights=uniform, pca__n_components=16; total time= 3.6min"
+knn,383,13/19 Busca de hiperparametros: knn,texto,"[CV] END model__leaf_size=30, model__n_neighbors=50, model__p=1, model__weights=distance, pca__n_components=8; total time=  42.9s"
+knn,384,13/19 Busca de hiperparametros: knn,texto,"[CV] END model__leaf_size=30, model__n_neighbors=50, model__p=1, model__weights=distance, pca__n_components=8; total time=  41.7s"
+knn,385,13/19 Busca de hiperparametros: knn,texto,"[CV] END model__leaf_size=30, model__n_neighbors=50, model__p=1, model__weights=distance, pca__n_components=8; total time=  41.7s"
+knn,386,13/19 Busca de hiperparametros: knn,texto,"[CV] END model__leaf_size=60, model__n_neighbors=50, model__p=2, model__weights=uniform, pca__n_components=12; total time=  55.4s"
+knn,387,13/19 Busca de hiperparametros: knn,texto,"[CV] END model__leaf_size=60, model__n_neighbors=50, model__p=2, model__weights=uniform, pca__n_components=12; total time=  56.2s"
+knn,388,13/19 Busca de hiperparametros: knn,texto,"[CV] END model__leaf_size=60, model__n_neighbors=50, model__p=2, model__weights=uniform, pca__n_components=12; total time=  55.5s"
+knn,389,13/19 Busca de hiperparametros: knn,texto,"[CV] END model__leaf_size=60, model__n_neighbors=100, model__p=1, model__weights=distance, pca__n_components=16; total time= 6.1min"
+knn,390,13/19 Busca de hiperparametros: knn,texto,"[CV] END model__leaf_size=60, model__n_neighbors=100, model__p=1, model__weights=distance, pca__n_components=16; total time=302.5min"
+knn,391,13/19 Busca de hiperparametros: knn,texto,"[CV] END model__leaf_size=60, model__n_neighbors=100, model__p=1, model__weights=distance, pca__n_components=16; total time= 6.4min"
+knn,392,13/19 Busca de hiperparametros: knn,texto,"[CV] END model__leaf_size=60, model__n_neighbors=100, model__p=1, model__weights=uniform, pca__n_components=16; total time=111.3min"
+knn,393,13/19 Busca de hiperparametros: knn,texto,"[CV] END model__leaf_size=60, model__n_neighbors=100, model__p=1, model__weights=uniform, pca__n_components=16; total time= 8.0min"
+knn,394,13/19 Busca de hiperparametros: knn,texto,"[CV] END model__leaf_size=60, model__n_neighbors=100, model__p=1, model__weights=uniform, pca__n_components=16; total time= 7.6min"
+knn,395,13/19 Busca de hiperparametros: knn,texto,"[CV] END model__leaf_size=100, model__n_neighbors=50, model__p=2, model__weights=uniform, pca__n_components=10; total time= 1.2min"
+knn,396,13/19 Busca de hiperparametros: knn,texto,"[CV] END model__leaf_size=100, model__n_neighbors=50, model__p=2, model__weights=uniform, pca__n_components=10; total time=  58.1s"
+knn,397,13/19 Busca de hiperparametros: knn,texto,"[CV] END model__leaf_size=100, model__n_neighbors=50, model__p=2, model__weights=uniform, pca__n_components=10; total time= 1.1min"
+knn,398,13/19 Busca de hiperparametros: knn,texto,"[CV] END model__leaf_size=100, model__n_neighbors=300, model__p=2, model__weights=uniform, pca__n_components=12; total time= 3.4min"
+knn,399,13/19 Busca de hiperparametros: knn,texto,"[CV] END model__leaf_size=100, model__n_neighbors=300, model__p=2, model__weights=uniform, pca__n_components=12; total time= 3.4min"
+knn,400,13/19 Busca de hiperparametros: knn,texto,"[CV] END model__leaf_size=100, model__n_neighbors=300, model__p=2, model__weights=uniform, pca__n_components=12; total time= 3.9min"
+knn,401,13/19 Busca de hiperparametros: knn,texto,"[CV] END model__leaf_size=60, model__n_neighbors=50, model__p=1, model__weights=distance, pca__n_components=8; total time=  53.6s"
+knn,402,13/19 Busca de hiperparametros: knn,texto,"[CV] END model__leaf_size=60, model__n_neighbors=50, model__p=1, model__weights=distance, pca__n_components=8; total time=  58.1s"
+knn,403,13/19 Busca de hiperparametros: knn,texto,"[CV] END model__leaf_size=60, model__n_neighbors=50, model__p=1, model__weights=distance, pca__n_components=8; total time=  58.4s"
+knn,404,13/19 Busca de hiperparametros: knn,texto,"[CV] END model__leaf_size=30, model__n_neighbors=50, model__p=1, model__weights=distance, pca__n_components=16; total time= 2.3min"
+knn,405,13/19 Busca de hiperparametros: knn,texto,"[CV] END model__leaf_size=30, model__n_neighbors=50, model__p=1, model__weights=distance, pca__n_components=16; total time= 2.4min"
+knn,406,13/19 Busca de hiperparametros: knn,texto,"[CV] END model__leaf_size=30, model__n_neighbors=50, model__p=1, model__weights=distance, pca__n_components=16; total time= 2.4min"
+knn,407,13/19 Busca de hiperparametros: knn,texto,"[CV] END model__leaf_size=60, model__n_neighbors=300, model__p=1, model__weights=uniform, pca__n_components=12; total time= 5.4min"
+knn,408,13/19 Busca de hiperparametros: knn,texto,"[CV] END model__leaf_size=60, model__n_neighbors=300, model__p=1, model__weights=uniform, pca__n_components=12; total time= 6.1min"
+knn,409,13/19 Busca de hiperparametros: knn,texto,"[CV] END model__leaf_size=60, model__n_neighbors=300, model__p=1, model__weights=uniform, pca__n_components=12; total time= 6.1min"
+knn,410,13/19 Busca de hiperparametros: knn,texto,"[CV] END model__leaf_size=30, model__n_neighbors=200, model__p=1, model__weights=distance, pca__n_components=6; total time= 1.1min"
+knn,411,13/19 Busca de hiperparametros: knn,texto,"[CV] END model__leaf_size=30, model__n_neighbors=200, model__p=1, model__weights=distance, pca__n_components=6; total time=  58.5s"
+knn,412,13/19 Busca de hiperparametros: knn,texto,"[CV] END model__leaf_size=30, model__n_neighbors=200, model__p=1, model__weights=distance, pca__n_components=6; total time= 1.1min"
+knn,413,13/19 Busca de hiperparametros: knn,texto,"[CV] END model__leaf_size=100, model__n_neighbors=200, model__p=1, model__weights=distance, pca__n_components=8; total time= 2.3min"
+knn,414,13/19 Busca de hiperparametros: knn,texto,"[CV] END model__leaf_size=100, model__n_neighbors=200, model__p=1, model__weights=distance, pca__n_components=8; total time= 3.0min"
+knn,415,13/19 Busca de hiperparametros: knn,texto,"[CV] END model__leaf_size=100, model__n_neighbors=200, model__p=1, model__weights=distance, pca__n_components=8; total time= 2.7min"
+knn,416,13/19 Busca de hiperparametros: knn,texto,Melhores configuracoes:
+knn,417,13/19 Busca de hiperparametros: knn,texto,                                                                                                                   params  rmse_media  rmse_dp
+knn,418,13/19 Busca de hiperparametros: knn,texto," {'pca__n_components': 12, 'model__weights': 'uniform', 'model__p': 1, 'model__n_neighbors': 300, 'model__leaf_size': 60}   66.263093 0.071606"
+knn,419,13/19 Busca de hiperparametros: knn,texto,"{'pca__n_components': 12, 'model__weights': 'uniform', 'model__p': 2, 'model__n_neighbors': 300, 'model__leaf_size': 100}   66.292915 0.073944"
+knn,420,13/19 Busca de hiperparametros: knn,texto," {'pca__n_components': 16, 'model__weights': 'uniform', 'model__p': 1, 'model__n_neighbors': 100, 'model__leaf_size': 60}   66.302767 0.064399"
+knn,421,13/19 Busca de hiperparametros: knn,texto," {'pca__n_components': 16, 'model__weights': 'uniform', 'model__p': 1, 'model__n_neighbors': 100, 'model__leaf_size': 30}   66.304198 0.064168"
+knn,422,13/19 Busca de hiperparametros: knn,texto,"  {'pca__n_components': 12, 'model__weights': 'uniform', 'model__p': 2, 'model__n_neighbors': 50, 'model__leaf_size': 60}   66.518831 0.072104"
+knn,423,13/19 Busca de hiperparametros: knn,texto," {'pca__n_components': 10, 'model__weights': 'uniform', 'model__p': 2, 'model__n_neighbors': 50, 'model__leaf_size': 100}   66.535472 0.074782"
+knn,424,13/19 Busca de hiperparametros: knn,texto,"{'pca__n_components': 8, 'model__weights': 'distance', 'model__p': 1, 'model__n_neighbors': 200, 'model__leaf_size': 100}   73.073148 0.034153"
+knn,425,13/19 Busca de hiperparametros: knn,texto," {'pca__n_components': 6, 'model__weights': 'distance', 'model__p': 1, 'model__n_neighbors': 200, 'model__leaf_size': 30}   73.142255 0.025813"
+knn,426,13/19 Busca de hiperparametros: knn,texto,"{'pca__n_components': 16, 'model__weights': 'distance', 'model__p': 1, 'model__n_neighbors': 100, 'model__leaf_size': 60}   73.177523 0.027292"
+knn,427,13/19 Busca de hiperparametros: knn,texto,"  {'pca__n_components': 8, 'model__weights': 'distance', 'model__p': 1, 'model__n_neighbors': 50, 'model__leaf_size': 30}   73.305526 0.033602"
+knn,428,13/19 Busca de hiperparametros: knn,texto,"Melhor RMSE: 66.263 | {'pca__n_components': 12, 'model__weights': 'uniform', 'model__p': 1, 'model__n_neighbors': 300, 'model__leaf_size': 60} | 12 configuracoes | 511.7 min"
+knn,429,13/19 Busca de hiperparametros: knn,texto,knn_busca_melhor             dobra 1: RMSE 66.17 | MAE 51.05 | R2 0.2296 | treino 16.6s | predicao 272.9s
+knn,430,13/19 Busca de hiperparametros: knn,texto,knn_busca_melhor             dobra 2: RMSE 66.28 | MAE 51.12 | R2 0.2299 | treino 15.9s | predicao 298.5s
+knn,431,13/19 Busca de hiperparametros: knn,texto,knn_busca_melhor             dobra 3: RMSE 66.34 | MAE 51.10 | R2 0.2287 | treino 16.1s | predicao 269.5s
+knn,432,13/19 Busca de hiperparametros: knn,texto,Modelo: knn
+knn,433,13/19 Busca de hiperparametros: knn,linha_vazia,
+knn,434,13/19 Busca de hiperparametros: knn,texto,Resumo de knn_busca_melhor:
+knn,435,13/19 Busca de hiperparametros: knn,texto,                    rmse        mae        r2  tempo_treino_s  tempo_predicao_s
+knn,436,13/19 Busca de hiperparametros: knn,texto,media          66.263093  51.091630  0.229371       16.196886        280.309792
+knn,437,13/19 Busca de hiperparametros: knn,texto,desvio_padrao   0.071606   0.030237  0.000505        0.274448         12.954999
+knn,438,13/19 Busca de hiperparametros: knn,texto,Hipotese: Ajustar hiperparametros reduz o RMSE em relacao a configuracao inicial.
+knn,439,13/19 Busca de hiperparametros: knn,texto,Conclusao: (preencher)
+knn,440,13/19 Busca de hiperparametros: knn,linha_vazia,
+knn,567,16/19 Curva de aprendizado: knn,etapa,[16/19] Curva de aprendizado: knn
+knn,568,16/19 Curva de aprendizado: knn,texto,"dobra 1 |  10% (n=150,541) | treino 66.27 | validacao 66.58"
+knn,569,16/19 Curva de aprendizado: knn,texto,"dobra 1 |  25% (n=376,352) | treino 66.32 | validacao 66.41"
+knn,570,16/19 Curva de aprendizado: knn,texto,"dobra 1 |  50% (n=752,704) | treino 66.23 | validacao 66.29"
+knn,571,16/19 Curva de aprendizado: knn,texto,"dobra 1 |  75% (n=1,129,057) | treino 66.16 | validacao 66.23"
+knn,572,16/19 Curva de aprendizado: knn,texto,"dobra 1 | 100% (n=1,505,409) | treino 66.10 | validacao 66.17"
+knn,573,16/19 Curva de aprendizado: knn,texto,"dobra 2 |  10% (n=150,541) | treino 66.95 | validacao 66.70"
+knn,574,16/19 Curva de aprendizado: knn,texto,"dobra 2 |  25% (n=376,352) | treino 66.38 | validacao 66.53"
+knn,575,16/19 Curva de aprendizado: knn,texto,"dobra 2 |  50% (n=752,704) | treino 66.17 | validacao 66.41"
+knn,576,16/19 Curva de aprendizado: knn,texto,"dobra 2 |  75% (n=1,129,057) | treino 66.10 | validacao 66.34"
+knn,577,16/19 Curva de aprendizado: knn,texto,"dobra 2 | 100% (n=1,505,409) | treino 66.05 | validacao 66.29"
+knn,578,16/19 Curva de aprendizado: knn,texto,"dobra 3 |  10% (n=150,541) | treino 66.28 | validacao 66.78"
+knn,579,16/19 Curva de aprendizado: knn,texto,"dobra 3 |  25% (n=376,352) | treino 66.14 | validacao 66.59"
+knn,580,16/19 Curva de aprendizado: knn,texto,"dobra 3 |  50% (n=752,705) | treino 66.07 | validacao 66.47"
+knn,581,16/19 Curva de aprendizado: knn,texto,"dobra 3 |  75% (n=1,129,058) | treino 66.03 | validacao 66.39"
+knn,582,16/19 Curva de aprendizado: knn,texto,"dobra 3 | 100% (n=1,505,410) | treino 66.00 | validacao 66.34"
+knn,583,16/19 Curva de aprendizado: knn,texto,Resumo da curva de aprendizado:
+knn,584,16/19 Curva de aprendizado: knn,texto,                   n       tr_m      tr_s       va_m      va_s
+knn,585,16/19 Curva de aprendizado: knn,texto,fracao                                                        
+knn,586,16/19 Curva de aprendizado: knn,texto,0.10    1.505410e+05  66.499647  0.317741  66.686536  0.080924
+knn,587,16/19 Curva de aprendizado: knn,texto,0.25    3.763520e+05  66.277800  0.101392  66.510157  0.074797
+knn,588,16/19 Curva de aprendizado: knn,texto,0.50    7.527043e+05  66.157908  0.065917  66.388091  0.072866
+knn,589,16/19 Curva de aprendizado: knn,texto,0.75    1.129057e+06  66.097737  0.051127  66.320655  0.068248
+knn,590,16/19 Curva de aprendizado: knn,texto,1.00    1.505409e+06  66.049943  0.038497  66.266331  0.073493
+knn,591,16/19 Curva de aprendizado: knn,linha_vazia,
+knn,673,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_base  faixa_nota          zero    1736 515.801357 513.145847 -513.145847
+knn,674,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_base  faixa_nota         0-400  147627 141.761515 131.909269 -131.168356
+knn,675,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_base  faixa_nota       400-500  705371  64.943411  52.003780  -40.708602
+knn,676,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_base  faixa_nota       500-600 1110460  54.748267  42.543764   23.469001
+knn,677,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_base  faixa_nota       600-700  286878  89.386150  77.108286   75.054324
+knn,678,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_base  faixa_nota          700+    6042 144.983614 137.593310  137.561863
+knn,679,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_base SG_UF_PROVA            BA  184031  75.512407  58.535148   -1.140066
+knn,680,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_base SG_UF_PROVA            SP  346110  68.349619  51.920974    0.916335
+knn,681,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_base SG_UF_PROVA            SC   53219  70.181359  53.416230    0.662832
+knn,682,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_base SG_UF_PROVA            PI   58838  77.068071  59.797182   -1.300649
+knn,683,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_base SG_UF_PROVA            MG  210170  71.938491  55.163457    1.657423
+knn,684,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_base SG_UF_PROVA            ES   41831  72.775761  55.758480    1.462366
+knn,685,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_base SG_UF_PROVA            RJ  156611  73.676664  56.360286    1.031291
+knn,686,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_base SG_UF_PROVA            PB   72611  75.038071  58.259634    0.454833
+knn,687,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_base SG_UF_PROVA            MA   94822  76.788046  59.438911   -4.288875
+knn,688,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_base SG_UF_PROVA            PA  129614  74.736608  57.983313   -3.829255
+knn,689,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_base SG_UF_PROVA            RS   94578  70.938989  54.185387    3.321038
+knn,690,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_base SG_UF_PROVA            AC   12907  73.548067  56.199175   -0.500868
+knn,691,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_base SG_UF_PROVA            GO   81923  74.280374  56.792917   -1.567301
+knn,692,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_base SG_UF_PROVA            CE  144469  76.073224  59.478403    3.074180
+knn,693,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_base SG_UF_PROVA            DF   42541  72.542375  55.270655    3.038787
+knn,694,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_base SG_UF_PROVA            RO   19650  74.032227  56.849945   -8.172522
+knn,695,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_base SG_UF_PROVA            RN   60184  75.045259  58.006678    2.291844
+knn,696,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_base SG_UF_PROVA            PR   97861  71.227491  54.303833    0.102630
+knn,697,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_base SG_UF_PROVA            AL   46161  75.445281  58.388885   -2.813951
+knn,698,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_base SG_UF_PROVA            TO   18531  74.328588  57.378616   -9.449927
+knn,699,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_base SG_UF_PROVA            PE  127460  75.223504  57.829599    0.276438
+knn,700,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_base SG_UF_PROVA            SE   39290  76.325734  59.589435    0.765599
+knn,701,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_base SG_UF_PROVA            MS   26714  74.447919  56.655279   -6.245837
+knn,702,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_base SG_UF_PROVA            RR    5245  70.544889  53.986854    0.647113
+knn,703,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_base SG_UF_PROVA            AM   41783  76.481273  58.244044   -6.482746
+knn,704,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_base SG_UF_PROVA            AP   15629  73.589835  56.538941   -5.816973
+knn,705,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_base SG_UF_PROVA            MT   35331  75.759644  57.994291   -8.143834
+knn,706,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_base   TP_ESCOLA nao respondeu 1378087  74.203094  56.781314   -0.231273
+knn,707,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_base   TP_ESCOLA       publica  700259  72.520502  56.173945   -0.421620
+knn,708,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_base   TP_ESCOLA       privada  179768  69.986260  53.710368    0.380758
+knn,709,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_base        Q006             B  662677  74.963054  58.208199   -0.037586
+knn,710,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_base        Q006             E  175920  72.606070  55.664254    0.087648
+knn,711,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_base        Q006             G  168149  71.424129  54.537983    0.110756
+knn,712,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_base        Q006             C  351498  74.152411  57.089120   -0.553792
+knn,713,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_base        Q006             A  132951  76.293133  59.179612   -2.409514
+knn,714,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_base        Q006             D  249365  73.586968  56.403735   -0.484225
+knn,715,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_base        Q006             L   27234  70.451021  53.008008   -1.279920
+knn,716,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_base        Q006             O   28759  69.554391  52.038288   -1.390091
+knn,717,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_base        Q006             F  106278  71.964208  55.104085    0.723543
+knn,718,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_base        Q006             Q   35402  71.035482  53.111654    3.352774
+knn,719,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_base        Q006             H   91898  71.437051  54.318286    0.458418
+knn,720,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_base        Q006             J   51064  70.473689  53.293133    0.163536
+knn,721,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_base        Q006             K   40854  70.512479  53.211616   -0.306624
+knn,722,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_base        Q006             P   26731  66.591748  50.287030   -1.977663
+knn,723,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_base        Q006             I   57442  70.662966  53.746082    0.133585
+knn,724,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_base        Q006             N   28742  69.708544  52.284141   -0.998919
+knn,725,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_base        Q006             M   23150  69.289927  52.147965   -0.159762
+knn,991,18/19 Relatorio de erros por faixa e grupo,texto,                             knn_under  faixa_nota          zero    1736 500.050767 494.270404 -494.270404
+knn,992,18/19 Relatorio de erros por faixa e grupo,texto,                             knn_under  faixa_nota         0-400  147627 120.179431 102.094239  -99.027238
+knn,993,18/19 Relatorio de erros por faixa e grupo,texto,                             knn_under  faixa_nota       400-500  705371  68.152268  52.297825  -11.966112
+knn,994,18/19 Relatorio de erros por faixa e grupo,texto,                             knn_under  faixa_nota       500-600 1110460  80.342012  64.393097   39.645058
+knn,995,18/19 Relatorio de erros por faixa e grupo,texto,                             knn_under  faixa_nota       600-700  286878  99.418897  78.857762   71.696524
+knn,996,18/19 Relatorio de erros por faixa e grupo,texto,                             knn_under  faixa_nota          700+    6042 133.568632 119.335098  119.227336
+knn,997,18/19 Relatorio de erros por faixa e grupo,texto,                             knn_under SG_UF_PROVA            BA  184031  88.020751  68.935028   23.415234
+knn,998,18/19 Relatorio de erros por faixa e grupo,texto,                             knn_under SG_UF_PROVA            SP  346110  80.937225  61.955526    8.215427
+knn,999,18/19 Relatorio de erros por faixa e grupo,texto,                             knn_under SG_UF_PROVA            SC   53219  77.799384  59.785662   10.167635
+knn,1000,18/19 Relatorio de erros por faixa e grupo,texto,                             knn_under SG_UF_PROVA            PI   58838  85.251659  67.370986   27.049534
+knn,1001,18/19 Relatorio de erros por faixa e grupo,texto,                             knn_under SG_UF_PROVA            MG  210170  83.686231  64.753405   14.251159
+knn,1002,18/19 Relatorio de erros por faixa e grupo,texto,                             knn_under SG_UF_PROVA            ES   41831  81.501476  63.026732   17.248304
+knn,1003,18/19 Relatorio de erros por faixa e grupo,texto,                             knn_under SG_UF_PROVA            RJ  156611  84.759879  65.349621   13.677963
+knn,1004,18/19 Relatorio de erros por faixa e grupo,texto,                             knn_under SG_UF_PROVA            PB   72611  85.663301  67.619063   25.952625
+knn,1005,18/19 Relatorio de erros por faixa e grupo,texto,                             knn_under SG_UF_PROVA            MA   94822  85.933508  67.539693   24.345889
+knn,1006,18/19 Relatorio de erros por faixa e grupo,texto,                             knn_under SG_UF_PROVA            PA  129614  84.269993  66.370243   23.588295
+knn,1007,18/19 Relatorio de erros por faixa e grupo,texto,                             knn_under SG_UF_PROVA            RS   94578  80.663257  62.537905   17.683798
+knn,1008,18/19 Relatorio de erros por faixa e grupo,texto,                             knn_under SG_UF_PROVA            AC   12907  81.974894  65.144281   26.914992
+knn,1009,18/19 Relatorio de erros por faixa e grupo,texto,                             knn_under SG_UF_PROVA            GO   81923  83.701721  64.953423   18.047579
+knn,1010,18/19 Relatorio de erros por faixa e grupo,texto,                             knn_under SG_UF_PROVA            CE  144469  90.652799  72.394272   34.103807
+knn,1011,18/19 Relatorio de erros por faixa e grupo,texto,                             knn_under SG_UF_PROVA            DF   42541  79.844387  61.616890   13.717422
+knn,1012,18/19 Relatorio de erros por faixa e grupo,texto,                             knn_under SG_UF_PROVA            RO   19650  79.278842  62.361476   13.446873
+knn,1013,18/19 Relatorio de erros por faixa e grupo,texto,                             knn_under SG_UF_PROVA            RN   60184  85.366035  66.841378   25.214848
+knn,1014,18/19 Relatorio de erros por faixa e grupo,texto,                             knn_under SG_UF_PROVA            PR   97861  81.960841  62.981988   11.484107
+knn,1015,18/19 Relatorio de erros por faixa e grupo,texto,                             knn_under SG_UF_PROVA            AL   46161  83.284758  65.462609   21.663720
+knn,1016,18/19 Relatorio de erros por faixa e grupo,texto,                             knn_under SG_UF_PROVA            TO   18531  79.021658  61.838131   10.980782
+knn,1017,18/19 Relatorio de erros por faixa e grupo,texto,                             knn_under SG_UF_PROVA            PE  127460  87.784103  68.524205   24.612534
+knn,1018,18/19 Relatorio de erros por faixa e grupo,texto,                             knn_under SG_UF_PROVA            SE   39290  84.965237  67.213705   26.337053
+knn,1019,18/19 Relatorio de erros por faixa e grupo,texto,                             knn_under SG_UF_PROVA            MS   26714  79.416954  61.287218    7.554604
+knn,1020,18/19 Relatorio de erros por faixa e grupo,texto,                             knn_under SG_UF_PROVA            RR    5245  80.042693  62.214519   20.850173
+knn,1021,18/19 Relatorio de erros por faixa e grupo,texto,                             knn_under SG_UF_PROVA            AM   41783  83.610531  64.944690   19.177150
+knn,1022,18/19 Relatorio de erros por faixa e grupo,texto,                             knn_under SG_UF_PROVA            AP   15629  80.304935  63.540218   20.777754
+knn,1023,18/19 Relatorio de erros por faixa e grupo,texto,                             knn_under SG_UF_PROVA            MT   35331  80.989222  62.706810    7.744558
+knn,1024,18/19 Relatorio de erros por faixa e grupo,texto,                             knn_under   TP_ESCOLA nao respondeu 1378087  83.763055  64.782902   16.008879
+knn,1025,18/19 Relatorio de erros por faixa e grupo,texto,                             knn_under   TP_ESCOLA       publica  700259  86.175708  68.149950   29.386501
+knn,1026,18/19 Relatorio de erros por faixa e grupo,texto,                             knn_under   TP_ESCOLA       privada  179768  77.667525  59.352812   -6.923967
+knn,1027,18/19 Relatorio de erros por faixa e grupo,texto,                             knn_under        Q006             B  662677  90.035290  71.750236   36.470094
+knn,1028,18/19 Relatorio de erros por faixa e grupo,texto,                             knn_under        Q006             E  175920  81.116312  62.700438   13.238079
+knn,1029,18/19 Relatorio de erros por faixa e grupo,texto,                             knn_under        Q006             G  168149  79.584959  60.798181    3.050745
+knn,1030,18/19 Relatorio de erros por faixa e grupo,texto,                             knn_under        Q006             C  351498  85.366054  66.953279   23.959285
+knn,1031,18/19 Relatorio de erros por faixa e grupo,texto,                             knn_under        Q006             A  132951  85.343072  67.960408   33.465022
+knn,1032,18/19 Relatorio de erros por faixa e grupo,texto,                             knn_under        Q006             D  249365  83.392084  64.793114   17.992772
+knn,1033,18/19 Relatorio de erros por faixa e grupo,texto,                             knn_under        Q006             L   27234  76.140754  56.548376  -13.948911
+knn,1034,18/19 Relatorio de erros por faixa e grupo,texto,                             knn_under        Q006             O   28759  77.045041  57.160430  -17.964279
+knn,1035,18/19 Relatorio de erros por faixa e grupo,texto,                             knn_under        Q006             F  106278  78.824567  60.811003    9.045567
+knn,1036,18/19 Relatorio de erros por faixa e grupo,texto,                             knn_under        Q006             Q   35402  78.118985  57.868681   -9.549517
+knn,1037,18/19 Relatorio de erros por faixa e grupo,texto,                             knn_under        Q006             H   91898  77.994773  59.163981   -1.045318
+knn,1038,18/19 Relatorio de erros por faixa e grupo,texto,                             knn_under        Q006             J   51064  76.954994  57.444096   -8.603668
+knn,1039,18/19 Relatorio de erros por faixa e grupo,texto,                             knn_under        Q006             K   40854  76.032215  56.798855  -10.102351
+knn,1040,18/19 Relatorio de erros por faixa e grupo,texto,                             knn_under        Q006             P   26731  74.858788  56.085719  -23.858783
+knn,1041,18/19 Relatorio de erros por faixa e grupo,texto,                             knn_under        Q006             I   57442  76.949497  57.937775   -5.714293
+knn,1042,18/19 Relatorio de erros por faixa e grupo,texto,                             knn_under        Q006             N   28742  77.322454  57.114497  -15.693583
+knn,1043,18/19 Relatorio de erros por faixa e grupo,texto,                             knn_under        Q006             M   23150  75.206041  55.573783  -14.419255
+knn,1044,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_over  faixa_nota          zero    1736 513.296552 509.811101 -509.811101
+knn,1045,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_over  faixa_nota         0-400  147627 139.001434 127.272391 -125.900168
+knn,1046,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_over  faixa_nota       400-500  705371  66.451530  52.839850  -36.560854
+knn,1047,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_over  faixa_nota       500-600 1110460  60.004175  46.247023   25.462335
+knn,1048,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_over  faixa_nota       600-700  286878  91.390364  76.868849   73.790637
+knn,1049,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_over  faixa_nota          700+    6042 143.344836 133.457782  133.416699
+knn,1050,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_over SG_UF_PROVA            BA  184031  77.917613  60.330360    2.202825
+knn,1051,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_over SG_UF_PROVA            SP  346110  70.670610  53.525505    1.651408
+knn,1052,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_over SG_UF_PROVA            SC   53219  72.237265  54.842379    1.575546
+knn,1053,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_over SG_UF_PROVA            PI   58838  79.181660  61.463047    2.788975
+knn,1054,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_over SG_UF_PROVA            MG  210170  74.248330  56.796447    2.840510
+knn,1055,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_over SG_UF_PROVA            ES   41831  75.245057  57.468629    3.337675
+knn,1056,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_over SG_UF_PROVA            RJ  156611  76.176210  58.136491    2.439140
+knn,1057,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_over SG_UF_PROVA            PB   72611  77.414345  60.100801    3.614025
+knn,1058,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_over SG_UF_PROVA            MA   94822  79.105417  61.228844    0.227483
+knn,1059,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_over SG_UF_PROVA            PA  129614  76.910908  59.736459    0.455231
+knn,1060,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_over SG_UF_PROVA            RS   94578  73.164792  55.835322    4.564373
+knn,1061,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_over SG_UF_PROVA            AC   12907  76.198347  58.437356    3.684315
+knn,1062,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_over SG_UF_PROVA            GO   81923  76.548777  58.410701    0.882473
+knn,1063,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_over SG_UF_PROVA            CE  144469  78.715342  61.633747    8.023398
+knn,1064,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_over SG_UF_PROVA            DF   42541  74.874992  56.907937    4.062361
+knn,1065,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_over SG_UF_PROVA            RO   19650  75.968874  58.461959   -4.937800
+knn,1066,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_over SG_UF_PROVA            RN   60184  77.722403  59.910151    4.840589
+knn,1067,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_over SG_UF_PROVA            PR   97861  73.642630  56.037631    1.475449
+knn,1068,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_over SG_UF_PROVA            AL   46161  77.755394  60.123817    0.618502
+knn,1069,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_over SG_UF_PROVA            TO   18531  76.134380  58.752114   -6.103713
+knn,1070,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_over SG_UF_PROVA            PE  127460  77.882367  59.789362    3.307747
+knn,1071,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_over SG_UF_PROVA            SE   39290  78.366397  61.104357    4.020000
+knn,1072,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_over SG_UF_PROVA            MS   26714  76.266766  58.026354   -4.240508
+knn,1073,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_over SG_UF_PROVA            RR    5245  73.347431  56.035840    3.884406
+knn,1074,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_over SG_UF_PROVA            AM   41783  79.076476  60.140425   -2.156341
+knn,1075,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_over SG_UF_PROVA            AP   15629  75.718203  58.341563   -1.326563
+knn,1076,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_over SG_UF_PROVA            MT   35331  77.645210  59.432979   -5.951521
+knn,1077,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_over   TP_ESCOLA nao respondeu 1378087  76.550102  58.482886    1.676590
+knn,1078,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_over   TP_ESCOLA       publica  700259  75.042446  58.136519    4.202211
+knn,1079,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_over   TP_ESCOLA       privada  179768  71.695891  54.816475   -1.465594
+knn,1080,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_over        Q006             B  662677  77.817017  60.419850    5.191886
+knn,1081,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_over        Q006             E  175920  74.677409  57.136598    1.682455
+knn,1082,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_over        Q006             G  168149  73.346894  55.861492    0.156099
+knn,1083,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_over        Q006             C  351498  76.409102  58.833328    2.597850
+knn,1084,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_over        Q006             A  132951  78.883545  61.348412    3.917117
+knn,1085,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_over        Q006             D  249365  75.724932  57.998499    1.764887
+knn,1086,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_over        Q006             L   27234  72.537203  54.320880   -3.338629
+knn,1087,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_over        Q006             O   28759  71.851002  53.529762   -4.311280
+knn,1088,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_over        Q006             F  106278  73.874086  56.471141    1.559805
+knn,1089,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_over        Q006             Q   35402  73.122704  54.178041    0.072269
+knn,1090,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_over        Q006             H   91898  73.518334  55.622212   -0.195439
+knn,1091,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_over        Q006             J   51064  72.661154  54.681394   -1.401018
+knn,1092,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_over        Q006             K   40854  72.288481  54.336408   -2.222644
+knn,1093,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_over        Q006             P   26731  68.483915  51.558652   -6.182818
+knn,1094,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_over        Q006             I   57442  72.497181  54.958120   -1.369371
+knn,1095,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_over        Q006             N   28742  72.204611  53.802301   -3.762158
+knn,1096,18/19 Relatorio de erros por faixa e grupo,texto,                              knn_over        Q006             M   23150  71.120923  53.278906   -2.945385
+knn,1256,18/19 Relatorio de erros por faixa e grupo,texto,                         knn_sem_renda  faixa_nota          zero    1736 515.397549 513.002071 -513.002071
+knn,1257,18/19 Relatorio de erros por faixa e grupo,texto,                         knn_sem_renda  faixa_nota         0-400  147627 140.394168 132.140318 -131.797359
+knn,1258,18/19 Relatorio de erros por faixa e grupo,texto,                         knn_sem_renda  faixa_nota       400-500  705371  60.544943  48.781065  -41.268054
+knn,1259,18/19 Relatorio de erros por faixa e grupo,texto,                         knn_sem_renda  faixa_nota       500-600 1110460  48.936680  38.685756   23.750922
+knn,1260,18/19 Relatorio de erros por faixa e grupo,texto,                         knn_sem_renda  faixa_nota       600-700  286878  87.904738  77.949119   77.013463
+knn,1261,18/19 Relatorio de erros por faixa e grupo,texto,                         knn_sem_renda  faixa_nota          700+    6042 146.328454 140.363333  140.332979
+knn,1262,18/19 Relatorio de erros por faixa e grupo,texto,                         knn_sem_renda SG_UF_PROVA            BA  184031  71.207008  55.306784   -0.294158
+knn,1263,18/19 Relatorio de erros por faixa e grupo,texto,                         knn_sem_renda SG_UF_PROVA            SP  346110  63.895828  48.513726    0.569071
+knn,1264,18/19 Relatorio de erros por faixa e grupo,texto,                         knn_sem_renda SG_UF_PROVA            SC   53219  66.272594  50.446061    0.429226
+knn,1265,18/19 Relatorio de erros por faixa e grupo,texto,                         knn_sem_renda SG_UF_PROVA            PI   58838  74.481995  57.961309   -0.634655
+knn,1266,18/19 Relatorio de erros por faixa e grupo,texto,                         knn_sem_renda SG_UF_PROVA            MG  210170  66.940443  51.373118    0.294976
+knn,1267,18/19 Relatorio de erros por faixa e grupo,texto,                         knn_sem_renda SG_UF_PROVA            ES   41831  70.244297  53.755612    0.635948
+knn,1268,18/19 Relatorio de erros por faixa e grupo,texto,                         knn_sem_renda SG_UF_PROVA            RJ  156611  69.195817  52.856724   -0.095141
+knn,1269,18/19 Relatorio de erros por faixa e grupo,texto,                         knn_sem_renda SG_UF_PROVA            PB   72611  71.506986  55.563732   -0.366325
+knn,1270,18/19 Relatorio de erros por faixa e grupo,texto,                         knn_sem_renda SG_UF_PROVA            MA   94822  72.666254  56.647725   -0.883956
+knn,1271,18/19 Relatorio de erros por faixa e grupo,texto,                         knn_sem_renda SG_UF_PROVA            PA  129614  70.532218  54.987288   -0.430166
+knn,1272,18/19 Relatorio de erros por faixa e grupo,texto,                         knn_sem_renda SG_UF_PROVA            RS   94578  66.846480  50.862756    0.948394
+knn,1273,18/19 Relatorio de erros por faixa e grupo,texto,                         knn_sem_renda SG_UF_PROVA            AC   12907  76.622111  58.410697   -0.152883
+knn,1274,18/19 Relatorio de erros por faixa e grupo,texto,                         knn_sem_renda SG_UF_PROVA            GO   81923  70.322577  53.951892   -0.313485
+knn,1275,18/19 Relatorio de erros por faixa e grupo,texto,                         knn_sem_renda SG_UF_PROVA            CE  144469  72.040577  56.314375   -0.006847
+knn,1276,18/19 Relatorio de erros por faixa e grupo,texto,                         knn_sem_renda SG_UF_PROVA            DF   42541  71.676939  54.341486    0.662243
+knn,1277,18/19 Relatorio de erros por faixa e grupo,texto,                         knn_sem_renda SG_UF_PROVA            RO   19650  73.184615  56.733360   -2.145712
+knn,1278,18/19 Relatorio de erros por faixa e grupo,texto,                         knn_sem_renda SG_UF_PROVA            RN   60184  71.919743  55.524693    0.280156
+knn,1279,18/19 Relatorio de erros por faixa e grupo,texto,                         knn_sem_renda SG_UF_PROVA            PR   97861  66.847138  50.956495    0.007267
+knn,1280,18/19 Relatorio de erros por faixa e grupo,texto,                         knn_sem_renda SG_UF_PROVA            AL   46161  73.353564  57.193043   -0.396780
+knn,1281,18/19 Relatorio de erros por faixa e grupo,texto,                         knn_sem_renda SG_UF_PROVA            TO   18531  74.571638  58.018386   -2.023419
+knn,1282,18/19 Relatorio de erros por faixa e grupo,texto,                         knn_sem_renda SG_UF_PROVA            PE  127460  71.089915  54.821681   -0.190843
+knn,1283,18/19 Relatorio de erros por faixa e grupo,texto,                         knn_sem_renda SG_UF_PROVA            SE   39290  75.033411  58.701131   -0.213414
+knn,1284,18/19 Relatorio de erros por faixa e grupo,texto,                         knn_sem_renda SG_UF_PROVA            MS   26714  73.202054  55.955324   -1.252289
+knn,1285,18/19 Relatorio de erros por faixa e grupo,texto,                         knn_sem_renda SG_UF_PROVA            RR    5245  76.323628  59.049698    0.780836
+knn,1286,18/19 Relatorio de erros por faixa e grupo,texto,                         knn_sem_renda SG_UF_PROVA            AM   41783  75.706910  58.028817   -1.377069
+knn,1287,18/19 Relatorio de erros por faixa e grupo,texto,                         knn_sem_renda SG_UF_PROVA            AP   15629  77.618935  59.764075   -2.814645
+knn,1288,18/19 Relatorio de erros por faixa e grupo,texto,                         knn_sem_renda SG_UF_PROVA            MT   35331  73.549879  56.818483   -0.622067
+knn,1289,18/19 Relatorio de erros por faixa e grupo,texto,                         knn_sem_renda   TP_ESCOLA nao respondeu 1378087  70.890140  54.304913   -0.113517
+knn,1290,18/19 Relatorio de erros por faixa e grupo,texto,                         knn_sem_renda   TP_ESCOLA       publica  700259  68.231081  52.952424    0.064380
+knn,1291,18/19 Relatorio de erros por faixa e grupo,texto,                         knn_sem_renda   TP_ESCOLA       privada  179768  65.726684  50.389614   -0.164358
+knn,1292,18/19 Relatorio de erros por faixa e grupo,texto,                         knn_sem_renda        Q006             B  662677  71.145294  54.990607   -5.234110
+knn,1293,18/19 Relatorio de erros por faixa e grupo,texto,                         knn_sem_renda        Q006             E  175920  68.946124  53.004272    2.709164
+knn,1294,18/19 Relatorio de erros por faixa e grupo,texto,                         knn_sem_renda        Q006             G  168149  68.277394  52.441917    5.308353
+knn,1295,18/19 Relatorio de erros por faixa e grupo,texto,                         knn_sem_renda        Q006             C  351498  69.840264  53.814305   -0.266805
+knn,1296,18/19 Relatorio de erros por faixa e grupo,texto,                         knn_sem_renda        Q006             A  132951  72.587932  55.943773  -11.747250
+knn,1297,18/19 Relatorio de erros por faixa e grupo,texto,                         knn_sem_renda        Q006             D  249365  69.624351  53.536327    1.693788
+knn,1298,18/19 Relatorio de erros por faixa e grupo,texto,                         knn_sem_renda        Q006             L   27234  67.350434  50.952115    5.226939
+knn,1299,18/19 Relatorio de erros por faixa e grupo,texto,                         knn_sem_renda        Q006             O   28759  65.927550  50.147328    6.885371
+knn,1300,18/19 Relatorio de erros por faixa e grupo,texto,                         knn_sem_renda        Q006             F  106278  68.859949  52.887679    4.801104
+knn,1301,18/19 Relatorio de erros por faixa e grupo,texto,                         knn_sem_renda        Q006             Q   35402  66.625738  50.218973    6.916944
+knn,1302,18/19 Relatorio de erros por faixa e grupo,texto,                         knn_sem_renda        Q006             H   91898  68.229984  52.254042    5.676309
+knn,1303,18/19 Relatorio de erros por faixa e grupo,texto,                         knn_sem_renda        Q006             J   51064  68.018908  51.877289    6.813939
+knn,1304,18/19 Relatorio de erros por faixa e grupo,texto,                         knn_sem_renda        Q006             K   40854  67.601403  51.220829    6.110351
+knn,1305,18/19 Relatorio de erros por faixa e grupo,texto,                         knn_sem_renda        Q006             P   26731  64.443516  49.232656    9.589976
+knn,1306,18/19 Relatorio de erros por faixa e grupo,texto,                         knn_sem_renda        Q006             I   57442  67.512526  51.747817    6.136767
+knn,1307,18/19 Relatorio de erros por faixa e grupo,texto,                         knn_sem_renda        Q006             N   28742  66.730261  50.491153    6.101941
+knn,1308,18/19 Relatorio de erros por faixa e grupo,texto,                         knn_sem_renda        Q006             M   23150  66.606957  50.832948    8.323996
+knn,1309,18/19 Relatorio de erros por faixa e grupo,texto,     knn_sem_escolaridade_responsaveis  faixa_nota          zero    1736 517.008226 514.725906 -514.725906
+knn,1310,18/19 Relatorio de erros por faixa e grupo,texto,     knn_sem_escolaridade_responsaveis  faixa_nota         0-400  147627 140.155122 131.966751 -131.635165
+knn,1311,18/19 Relatorio de erros por faixa e grupo,texto,     knn_sem_escolaridade_responsaveis  faixa_nota       400-500  705371  60.345105  48.404891  -41.037182
+knn,1312,18/19 Relatorio de erros por faixa e grupo,texto,     knn_sem_escolaridade_responsaveis  faixa_nota       500-600 1110460  49.566377  39.291353   23.664088
+knn,1313,18/19 Relatorio de erros por faixa e grupo,texto,     knn_sem_escolaridade_responsaveis  faixa_nota       600-700  286878  88.166091  77.671471   76.086993
+knn,1314,18/19 Relatorio de erros por faixa e grupo,texto,     knn_sem_escolaridade_responsaveis  faixa_nota          700+    6042 145.675257 138.049844  138.022056
+knn,1315,18/19 Relatorio de erros por faixa e grupo,texto,     knn_sem_escolaridade_responsaveis SG_UF_PROVA            BA  184031  70.866031  55.035370   -0.354218
+knn,1316,18/19 Relatorio de erros por faixa e grupo,texto,     knn_sem_escolaridade_responsaveis SG_UF_PROVA            SP  346110  64.198098  48.713772    0.186035
+knn,1317,18/19 Relatorio de erros por faixa e grupo,texto,     knn_sem_escolaridade_responsaveis SG_UF_PROVA            SC   53219  67.997898  51.548576   -0.079729
+knn,1318,18/19 Relatorio de erros por faixa e grupo,texto,     knn_sem_escolaridade_responsaveis SG_UF_PROVA            PI   58838  74.086938  57.577772    0.265294
+knn,1319,18/19 Relatorio de erros por faixa e grupo,texto,     knn_sem_escolaridade_responsaveis SG_UF_PROVA            MG  210170  67.176310  51.483685   -0.083892
+knn,1320,18/19 Relatorio de erros por faixa e grupo,texto,     knn_sem_escolaridade_responsaveis SG_UF_PROVA            ES   41831  70.784844  54.060111    0.242948
+knn,1321,18/19 Relatorio de erros por faixa e grupo,texto,     knn_sem_escolaridade_responsaveis SG_UF_PROVA            RJ  156611  69.589719  53.137114    0.002972
+knn,1322,18/19 Relatorio de erros por faixa e grupo,texto,     knn_sem_escolaridade_responsaveis SG_UF_PROVA            PB   72611  71.640895  55.632500    0.105513
+knn,1323,18/19 Relatorio de erros por faixa e grupo,texto,     knn_sem_escolaridade_responsaveis SG_UF_PROVA            MA   94822  72.666821  56.668116   -0.519534
+knn,1324,18/19 Relatorio de erros por faixa e grupo,texto,     knn_sem_escolaridade_responsaveis SG_UF_PROVA            PA  129614  70.558548  54.993196   -0.658836
+knn,1325,18/19 Relatorio de erros por faixa e grupo,texto,     knn_sem_escolaridade_responsaveis SG_UF_PROVA            RS   94578  67.358733  51.369428    0.681178
+knn,1326,18/19 Relatorio de erros por faixa e grupo,texto,     knn_sem_escolaridade_responsaveis SG_UF_PROVA            AC   12907  75.826011  57.892040    0.094469
+knn,1327,18/19 Relatorio de erros por faixa e grupo,texto,     knn_sem_escolaridade_responsaveis SG_UF_PROVA            GO   81923  70.874653  54.460945   -0.306075
+knn,1328,18/19 Relatorio de erros por faixa e grupo,texto,     knn_sem_escolaridade_responsaveis SG_UF_PROVA            CE  144469  72.416210  56.537861   -0.094359
+knn,1329,18/19 Relatorio de erros por faixa e grupo,texto,     knn_sem_escolaridade_responsaveis SG_UF_PROVA            DF   42541  71.763301  54.785529    0.897846
+knn,1330,18/19 Relatorio de erros por faixa e grupo,texto,     knn_sem_escolaridade_responsaveis SG_UF_PROVA            RO   19650  74.385284  57.781686   -2.617549
+knn,1331,18/19 Relatorio de erros por faixa e grupo,texto,     knn_sem_escolaridade_responsaveis SG_UF_PROVA            RN   60184  71.859678  55.683136    0.298749
+knn,1332,18/19 Relatorio de erros por faixa e grupo,texto,     knn_sem_escolaridade_responsaveis SG_UF_PROVA            PR   97861  67.697670  51.497188   -0.249190
+knn,1333,18/19 Relatorio de erros por faixa e grupo,texto,     knn_sem_escolaridade_responsaveis SG_UF_PROVA            AL   46161  72.856935  56.652959   -0.687851
+knn,1334,18/19 Relatorio de erros por faixa e grupo,texto,     knn_sem_escolaridade_responsaveis SG_UF_PROVA            TO   18531  75.010531  58.374488   -2.184521
+knn,1335,18/19 Relatorio de erros por faixa e grupo,texto,     knn_sem_escolaridade_responsaveis SG_UF_PROVA            PE  127460  70.919908  54.710090    0.018461
+knn,1336,18/19 Relatorio de erros por faixa e grupo,texto,     knn_sem_escolaridade_responsaveis SG_UF_PROVA            SE   39290  74.022067  57.821309    0.471601
+knn,1337,18/19 Relatorio de erros por faixa e grupo,texto,     knn_sem_escolaridade_responsaveis SG_UF_PROVA            MS   26714  73.781669  56.491142   -1.586650
+knn,1338,18/19 Relatorio de erros por faixa e grupo,texto,     knn_sem_escolaridade_responsaveis SG_UF_PROVA            RR    5245  74.995408  56.878349    1.307383
+knn,1339,18/19 Relatorio de erros por faixa e grupo,texto,     knn_sem_escolaridade_responsaveis SG_UF_PROVA            AM   41783  75.235972  57.668944   -1.172596
+knn,1340,18/19 Relatorio de erros por faixa e grupo,texto,     knn_sem_escolaridade_responsaveis SG_UF_PROVA            AP   15629  76.751024  59.284401   -1.495965
+knn,1341,18/19 Relatorio de erros por faixa e grupo,texto,     knn_sem_escolaridade_responsaveis SG_UF_PROVA            MT   35331  74.384243  57.313486   -1.638073
+knn,1342,18/19 Relatorio de erros por faixa e grupo,texto,     knn_sem_escolaridade_responsaveis   TP_ESCOLA nao respondeu 1378087  70.886029  54.279660   -0.140601
+knn,1343,18/19 Relatorio de erros por faixa e grupo,texto,     knn_sem_escolaridade_responsaveis   TP_ESCOLA       publica  700259  68.413523  53.091570   -0.192247
+knn,1344,18/19 Relatorio de erros por faixa e grupo,texto,     knn_sem_escolaridade_responsaveis   TP_ESCOLA       privada  179768  67.407143  51.659310   -0.027178
+knn,1345,18/19 Relatorio de erros por faixa e grupo,texto,     knn_sem_escolaridade_responsaveis        Q006             B  662677  69.914216  54.407167   -0.211428
+knn,1346,18/19 Relatorio de erros por faixa e grupo,texto,     knn_sem_escolaridade_responsaveis        Q006             E  175920  69.729617  53.363274   -0.244597
+knn,1347,18/19 Relatorio de erros por faixa e grupo,texto,     knn_sem_escolaridade_responsaveis        Q006             G  168149  68.626672  52.340435    0.049882
+knn,1348,18/19 Relatorio de erros por faixa e grupo,texto,     knn_sem_escolaridade_responsaveis        Q006             C  351498  69.550514  53.672270   -0.172825
+knn,1349,18/19 Relatorio de erros por faixa e grupo,texto,     knn_sem_escolaridade_responsaveis        Q006             A  132951  73.128796  56.826619   -0.495656
+knn,1350,18/19 Relatorio de erros por faixa e grupo,texto,     knn_sem_escolaridade_responsaveis        Q006             D  249365  69.688828  53.552215   -0.147910
+knn,1351,18/19 Relatorio de erros por faixa e grupo,texto,     knn_sem_escolaridade_responsaveis        Q006             L   27234  70.997580  53.167322   -0.161789
+knn,1352,18/19 Relatorio de erros por faixa e grupo,texto,     knn_sem_escolaridade_responsaveis        Q006             O   28759  69.196064  51.649706   -0.608391
+knn,1353,18/19 Relatorio de erros por faixa e grupo,texto,     knn_sem_escolaridade_responsaveis        Q006             F  106278  70.023593  53.518844    0.093102
+knn,1354,18/19 Relatorio de erros por faixa e grupo,texto,     knn_sem_escolaridade_responsaveis        Q006             Q   35402  69.662903  51.712227    1.263190
+knn,1355,18/19 Relatorio de erros por faixa e grupo,texto,     knn_sem_escolaridade_responsaveis        Q006             H   91898  69.875278  53.011872   -0.005307
+knn,1356,18/19 Relatorio de erros por faixa e grupo,texto,     knn_sem_escolaridade_responsaveis        Q006             J   51064  69.756781  52.757649   -0.290800
+knn,1357,18/19 Relatorio de erros por faixa e grupo,texto,     knn_sem_escolaridade_responsaveis        Q006             K   40854  69.847240  52.739371    0.056421
+knn,1358,18/19 Relatorio de erros por faixa e grupo,texto,     knn_sem_escolaridade_responsaveis        Q006             P   26731  66.420312  49.949472   -0.207491
+knn,1359,18/19 Relatorio de erros por faixa e grupo,texto,     knn_sem_escolaridade_responsaveis        Q006             I   57442  69.707896  52.971412   -0.045640
+knn,1360,18/19 Relatorio de erros por faixa e grupo,texto,     knn_sem_escolaridade_responsaveis        Q006             N   28742  69.352199  51.930257   -0.284056
+knn,1361,18/19 Relatorio de erros por faixa e grupo,texto,     knn_sem_escolaridade_responsaveis        Q006             M   23150  69.092295  52.089644    0.071867
+knn,1362,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_acesso_digital  faixa_nota          zero    1736 516.844333 514.338626 -514.338626
+knn,1363,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_acesso_digital  faixa_nota         0-400  147627 142.065844 132.306022 -131.597525
+knn,1364,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_acesso_digital  faixa_nota       400-500  705371  64.826236  52.015326  -41.206146
+knn,1365,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_acesso_digital  faixa_nota       500-600 1110460  54.236375  42.163737   23.590563
+knn,1366,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_acesso_digital  faixa_nota       600-700  286878  90.602530  78.405678   76.454513
+knn,1367,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_acesso_digital  faixa_nota          700+    6042 147.768286 139.824106  139.802259
+knn,1368,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_acesso_digital SG_UF_PROVA            BA  184031  75.033968  58.195017   -0.990794
+knn,1369,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_acesso_digital SG_UF_PROVA            SP  346110  67.219678  50.994305    0.672830
+knn,1370,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_acesso_digital SG_UF_PROVA            SC   53219  70.514979  53.866740    0.716553
+knn,1371,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_acesso_digital SG_UF_PROVA            PI   58838  78.002511  60.595975   -0.914594
+knn,1372,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_acesso_digital SG_UF_PROVA            MG  210170  71.365895  54.618303    1.086326
+knn,1373,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_acesso_digital SG_UF_PROVA            ES   41831  73.662002  56.381997    1.928338
+knn,1374,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_acesso_digital SG_UF_PROVA            RJ  156611  73.247288  56.036590    0.799401
+knn,1375,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_acesso_digital SG_UF_PROVA            PB   72611  75.896195  58.883470    0.358724
+knn,1376,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_acesso_digital SG_UF_PROVA            MA   94822  76.674709  59.491581   -3.364733
+knn,1377,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_acesso_digital SG_UF_PROVA            PA  129614  74.757009  58.118999   -3.096398
+knn,1378,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_acesso_digital SG_UF_PROVA            RS   94578  71.163471  54.297696    2.457354
+knn,1379,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_acesso_digital SG_UF_PROVA            AC   12907  75.488294  57.573662   -0.349969
+knn,1380,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_acesso_digital SG_UF_PROVA            GO   81923  74.431669  57.022949   -0.614280
+knn,1381,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_acesso_digital SG_UF_PROVA            CE  144469  75.587280  59.085252    1.803488
+knn,1382,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_acesso_digital SG_UF_PROVA            DF   42541  74.036772  56.435888    3.520852
+knn,1383,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_acesso_digital SG_UF_PROVA            RO   19650  75.739972  58.492735   -5.878193
+knn,1384,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_acesso_digital SG_UF_PROVA            RN   60184  76.345568  58.907929    1.953876
+knn,1385,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_acesso_digital SG_UF_PROVA            PR   97861  71.144758  54.207672    0.447067
+knn,1386,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_acesso_digital SG_UF_PROVA            AL   46161  77.021126  59.637125   -2.137588
+knn,1387,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_acesso_digital SG_UF_PROVA            TO   18531  76.626635  59.118687   -7.909665
+knn,1388,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_acesso_digital SG_UF_PROVA            PE  127460  74.981468  57.726410    0.120782
+knn,1389,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_acesso_digital SG_UF_PROVA            SE   39290  77.985194  60.683399    0.586347
+knn,1390,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_acesso_digital SG_UF_PROVA            MS   26714  76.171401  57.961296   -4.518720
+knn,1391,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_acesso_digital SG_UF_PROVA            RR    5245  72.809361  55.670112    1.624514
+knn,1392,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_acesso_digital SG_UF_PROVA            AM   41783  78.020612  59.612296   -4.838566
+knn,1393,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_acesso_digital SG_UF_PROVA            AP   15629  76.215960  58.700380   -5.946552
+knn,1394,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_acesso_digital SG_UF_PROVA            MT   35331  77.206599  59.258270   -5.830294
+knn,1395,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_acesso_digital   TP_ESCOLA nao respondeu 1378087  74.688653  57.164924   -0.207507
+knn,1396,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_acesso_digital   TP_ESCOLA       publica  700259  71.764656  55.586057   -0.214120
+knn,1397,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_acesso_digital   TP_ESCOLA       privada  179768  69.444336  53.240205    0.134740
+knn,1398,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_acesso_digital        Q006             B  662677  74.338011  57.738232    0.019949
+knn,1399,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_acesso_digital        Q006             E  175920  72.916536  55.921746   -0.103016
+knn,1400,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_acesso_digital        Q006             G  168149  71.260805  54.349463   -0.103004
+knn,1401,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_acesso_digital        Q006             C  351498  74.301351  57.245284   -0.341167
+knn,1402,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_acesso_digital        Q006             A  132951  77.234966  59.951021   -1.659002
+knn,1403,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_acesso_digital        Q006             D  249365  74.189759  56.843301   -0.697305
+knn,1404,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_acesso_digital        Q006             L   27234  71.028424  53.550918   -0.796970
+knn,1405,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_acesso_digital        Q006             O   28759  68.793268  51.316542   -0.988507
+knn,1406,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_acesso_digital        Q006             F  106278  72.843509  55.626696    0.377465
+knn,1407,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_acesso_digital        Q006             Q   35402  70.304393  52.351378    3.914522
+knn,1408,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_acesso_digital        Q006             H   91898  72.060827  54.630987    0.356784
+knn,1409,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_acesso_digital        Q006             J   51064  70.946478  53.697845    0.053241
+knn,1410,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_acesso_digital        Q006             K   40854  70.264370  53.005139    0.010293
+knn,1411,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_acesso_digital        Q006             P   26731  66.263186  49.776760   -1.383204
+knn,1412,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_acesso_digital        Q006             I   57442  70.879124  54.023727    0.301145
+knn,1413,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_acesso_digital        Q006             N   28742  69.231034  51.912329   -0.594534
+knn,1414,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_acesso_digital        Q006             M   23150  69.387227  52.492838   -0.121628
+knn,1415,18/19 Relatorio de erros por faixa e grupo,texto,                   knn_sem_localizacao  faixa_nota          zero    1736 515.654164 513.369739 -513.369739
+knn,1416,18/19 Relatorio de erros por faixa e grupo,texto,                   knn_sem_localizacao  faixa_nota         0-400  147627 140.946070 132.657950 -132.269534
+knn,1417,18/19 Relatorio de erros por faixa e grupo,texto,                   knn_sem_localizacao  faixa_nota       400-500  705371  60.993080  48.831637  -41.085708
+knn,1418,18/19 Relatorio de erros por faixa e grupo,texto,                   knn_sem_localizacao  faixa_nota       500-600 1110460  50.396850  39.859357   23.863191
+knn,1419,18/19 Relatorio de erros por faixa e grupo,texto,                   knn_sem_localizacao  faixa_nota       600-700  286878  87.840232  77.024942   75.456147
+knn,1420,18/19 Relatorio de erros por faixa e grupo,texto,                   knn_sem_localizacao  faixa_nota          700+    6042 145.015132 137.723922  137.647623
+knn,1421,18/19 Relatorio de erros por faixa e grupo,texto,                   knn_sem_localizacao SG_UF_PROVA            BA  184031  71.932341  55.597036   -3.586865
+knn,1422,18/19 Relatorio de erros por faixa e grupo,texto,                   knn_sem_localizacao SG_UF_PROVA            SP  346110  66.472354  50.728144    4.234097
+knn,1423,18/19 Relatorio de erros por faixa e grupo,texto,                   knn_sem_localizacao SG_UF_PROVA            SC   53219  67.052102  50.900707    0.498757
+knn,1424,18/19 Relatorio de erros por faixa e grupo,texto,                   knn_sem_localizacao SG_UF_PROVA            PI   58838  73.260396  56.823495   -3.920880
+knn,1425,18/19 Relatorio de erros por faixa e grupo,texto,                   knn_sem_localizacao SG_UF_PROVA            MG  210170  68.966393  52.995230    4.596232
+knn,1426,18/19 Relatorio de erros por faixa e grupo,texto,                   knn_sem_localizacao SG_UF_PROVA            ES   41831  69.206235  52.934807    2.126546
+knn,1427,18/19 Relatorio de erros por faixa e grupo,texto,                   knn_sem_localizacao SG_UF_PROVA            RJ  156611  70.363004  53.776220    2.558507
+knn,1428,18/19 Relatorio de erros por faixa e grupo,texto,                   knn_sem_localizacao SG_UF_PROVA            PB   72611  71.046445  55.193316    1.195380
+knn,1429,18/19 Relatorio de erros por faixa e grupo,texto,                   knn_sem_localizacao SG_UF_PROVA            MA   94822  73.654191  56.761198  -11.840498
+knn,1430,18/19 Relatorio de erros por faixa e grupo,texto,                   knn_sem_localizacao SG_UF_PROVA            PA  129614  72.070769  55.719811   -9.923187
+knn,1431,18/19 Relatorio de erros por faixa e grupo,texto,                   knn_sem_localizacao SG_UF_PROVA            RS   94578  68.162640  52.264698    6.750800
+knn,1432,18/19 Relatorio de erros por faixa e grupo,texto,                   knn_sem_localizacao SG_UF_PROVA            AC   12907  71.924761  54.586829   -1.273880
+knn,1433,18/19 Relatorio de erros por faixa e grupo,texto,                   knn_sem_localizacao SG_UF_PROVA            GO   81923  70.427370  53.752449   -3.486775
+knn,1434,18/19 Relatorio de erros por faixa e grupo,texto,                   knn_sem_localizacao SG_UF_PROVA            CE  144469  73.179858  57.703604    7.536396
+knn,1435,18/19 Relatorio de erros por faixa e grupo,texto,                   knn_sem_localizacao SG_UF_PROVA            DF   42541  70.175782  53.515951    3.662536
+knn,1436,18/19 Relatorio de erros por faixa e grupo,texto,                   knn_sem_localizacao SG_UF_PROVA            RO   19650  71.557347  54.910687  -11.910550
+knn,1437,18/19 Relatorio de erros por faixa e grupo,texto,                   knn_sem_localizacao SG_UF_PROVA            RN   60184  71.661991  55.470361    4.111569
+knn,1438,18/19 Relatorio de erros por faixa e grupo,texto,                   knn_sem_localizacao SG_UF_PROVA            PR   97861  67.959495  51.699199   -0.206569
+knn,1439,18/19 Relatorio de erros por faixa e grupo,texto,                   knn_sem_localizacao SG_UF_PROVA            AL   46161  71.728950  55.579441   -5.743722
+knn,1440,18/19 Relatorio de erros por faixa e grupo,texto,                   knn_sem_localizacao SG_UF_PROVA            TO   18531  72.655009  55.845462  -14.979011
+knn,1441,18/19 Relatorio de erros por faixa e grupo,texto,                   knn_sem_localizacao SG_UF_PROVA            PE  127460  71.423379  54.941514    1.216830
+knn,1442,18/19 Relatorio de erros por faixa e grupo,texto,                   knn_sem_localizacao SG_UF_PROVA            SE   39290  72.202199  56.342930   -0.220511
+knn,1443,18/19 Relatorio de erros por faixa e grupo,texto,                   knn_sem_localizacao SG_UF_PROVA            MS   26714  71.256923  53.997096   -9.954715
+knn,1444,18/19 Relatorio de erros por faixa e grupo,texto,                   knn_sem_localizacao SG_UF_PROVA            RR    5245  71.227540  54.499200   -0.996373
+knn,1445,18/19 Relatorio de erros por faixa e grupo,texto,                   knn_sem_localizacao SG_UF_PROVA            AM   41783  74.386004  56.313856  -11.523752
+knn,1446,18/19 Relatorio de erros por faixa e grupo,texto,                   knn_sem_localizacao SG_UF_PROVA            AP   15629  73.029721  56.070136   -7.409665
+knn,1447,18/19 Relatorio de erros por faixa e grupo,texto,                   knn_sem_localizacao SG_UF_PROVA            MT   35331  73.091305  55.686914  -13.163795
+knn,1448,18/19 Relatorio de erros por faixa e grupo,texto,                   knn_sem_localizacao   TP_ESCOLA nao respondeu 1378087  71.413809  54.658654   -0.139003
+knn,1449,18/19 Relatorio de erros por faixa e grupo,texto,                   knn_sem_localizacao   TP_ESCOLA       publica  700259  69.033361  53.561413   -0.365828
+knn,1450,18/19 Relatorio de erros por faixa e grupo,texto,                   knn_sem_localizacao   TP_ESCOLA       privada  179768  67.294475  51.618719    0.149052
+knn,1451,18/19 Relatorio de erros por faixa e grupo,texto,                   knn_sem_localizacao        Q006             B  662677  70.784353  55.067230   -0.185595
+knn,1452,18/19 Relatorio de erros por faixa e grupo,texto,                   knn_sem_localizacao        Q006             E  175920  70.094414  53.694559   -0.001737
+knn,1453,18/19 Relatorio de erros por faixa e grupo,texto,                   knn_sem_localizacao        Q006             G  168149  68.934940  52.553889    0.213027
+knn,1454,18/19 Relatorio de erros por faixa e grupo,texto,                   knn_sem_localizacao        Q006             C  351498  70.404194  54.328356   -0.375958
+knn,1455,18/19 Relatorio de erros por faixa e grupo,texto,                   knn_sem_localizacao        Q006             A  132951  74.330859  57.683291   -1.681399
+knn,1456,18/19 Relatorio de erros por faixa e grupo,texto,                   knn_sem_localizacao        Q006             D  249365  70.481626  54.093118   -0.058341
+knn,1457,18/19 Relatorio de erros por faixa e grupo,texto,                   knn_sem_localizacao        Q006             L   27234  69.559247  52.202003   -1.100053
+knn,1458,18/19 Relatorio de erros por faixa e grupo,texto,                   knn_sem_localizacao        Q006             O   28759  67.700744  50.432389   -1.452456
+knn,1459,18/19 Relatorio de erros por faixa e grupo,texto,                   knn_sem_localizacao        Q006             F  106278  70.870978  54.198990    0.556070
+knn,1460,18/19 Relatorio de erros por faixa e grupo,texto,                   knn_sem_localizacao        Q006             Q   35402  68.018949  50.731960    2.436606
+knn,1461,18/19 Relatorio de erros por faixa e grupo,texto,                   knn_sem_localizacao        Q006             H   91898  69.714115  52.857353    0.290903
+knn,1462,18/19 Relatorio de erros por faixa e grupo,texto,                   knn_sem_localizacao        Q006             J   51064  69.233936  52.495171    0.307066
+knn,1463,18/19 Relatorio de erros por faixa e grupo,texto,                   knn_sem_localizacao        Q006             K   40854  69.499435  52.228195   -0.247026
+knn,1464,18/19 Relatorio de erros por faixa e grupo,texto,                   knn_sem_localizacao        Q006             P   26731  64.791635  48.582774   -1.316152
+knn,1465,18/19 Relatorio de erros por faixa e grupo,texto,                   knn_sem_localizacao        Q006             I   57442  69.210538  52.618943   -0.073833
+knn,1466,18/19 Relatorio de erros por faixa e grupo,texto,                   knn_sem_localizacao        Q006             N   28742  68.564420  51.105348   -0.717294
+knn,1467,18/19 Relatorio de erros por faixa e grupo,texto,                   knn_sem_localizacao        Q006             M   23150  68.211880  51.472946   -0.394513
+knn,1468,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_perfil_escolar  faixa_nota          zero    1736 514.072543 511.894504 -511.894504
+knn,1469,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_perfil_escolar  faixa_nota         0-400  147627 142.160377 133.705456 -133.408086
+knn,1470,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_perfil_escolar  faixa_nota       400-500  705371  62.229338  49.871408  -41.703612
+knn,1471,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_perfil_escolar  faixa_nota       500-600 1110460  50.934615  40.113525   23.403436
+knn,1472,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_perfil_escolar  faixa_nota       600-700  286878  91.724441  81.554439   80.594289
+knn,1473,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_perfil_escolar  faixa_nota          700+    6042 157.630964 152.351305  152.330550
+knn,1474,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_perfil_escolar SG_UF_PROVA            BA  184031  72.104353  56.049600   -0.299161
+knn,1475,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_perfil_escolar SG_UF_PROVA            SP  346110  65.977777  50.140529    0.328074
+knn,1476,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_perfil_escolar SG_UF_PROVA            SC   53219  69.931569  53.336031   -0.113030
+knn,1477,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_perfil_escolar SG_UF_PROVA            PI   58838  76.158805  59.232797    0.300762
+knn,1478,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_perfil_escolar SG_UF_PROVA            MG  210170  69.003967  52.941480    0.455719
+knn,1479,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_perfil_escolar SG_UF_PROVA            ES   41831  72.411337  55.242669    0.409179
+knn,1480,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_perfil_escolar SG_UF_PROVA            RJ  156611  71.069986  54.445667    0.187697
+knn,1481,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_perfil_escolar SG_UF_PROVA            PB   72611  73.493435  57.111108    0.428330
+knn,1482,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_perfil_escolar SG_UF_PROVA            MA   94822  74.463346  57.892214   -0.706746
+knn,1483,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_perfil_escolar SG_UF_PROVA            PA  129614  72.095891  56.208615   -0.736095
+knn,1484,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_perfil_escolar SG_UF_PROVA            RS   94578  69.001611  52.597191    0.893926
+knn,1485,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_perfil_escolar SG_UF_PROVA            AC   12907  76.466656  58.316422    0.490833
+knn,1486,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_perfil_escolar SG_UF_PROVA            GO   81923  73.647409  56.709535   -0.794937
+knn,1487,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_perfil_escolar SG_UF_PROVA            CE  144469  74.731843  58.547921    0.514555
+knn,1488,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_perfil_escolar SG_UF_PROVA            DF   42541  74.607943  57.162885    2.049035
+knn,1489,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_perfil_escolar SG_UF_PROVA            RO   19650  76.524435  59.333610   -3.690674
+knn,1490,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_perfil_escolar SG_UF_PROVA            RN   60184  73.211028  56.716105    1.036608
+knn,1491,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_perfil_escolar SG_UF_PROVA            PR   97861  69.917616  53.294041    0.161704
+knn,1492,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_perfil_escolar SG_UF_PROVA            AL   46161  74.941261  58.301176   -0.166699
+knn,1493,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_perfil_escolar SG_UF_PROVA            TO   18531  77.404405  60.184511   -3.339625
+knn,1494,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_perfil_escolar SG_UF_PROVA            PE  127460  72.801714  56.206398    0.190156
+knn,1495,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_perfil_escolar SG_UF_PROVA            SE   39290  76.756599  60.079362    0.796644
+knn,1496,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_perfil_escolar SG_UF_PROVA            MS   26714  76.930603  59.006953   -2.289487
+knn,1497,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_perfil_escolar SG_UF_PROVA            RR    5245  74.915808  58.040007    1.586243
+knn,1498,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_perfil_escolar SG_UF_PROVA            AM   41783  77.499038  59.262014   -1.495752
+knn,1499,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_perfil_escolar SG_UF_PROVA            AP   15629  77.987850  59.949393   -0.877318
+knn,1500,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_perfil_escolar SG_UF_PROVA            MT   35331  77.106501  59.568005   -2.861979
+knn,1501,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_perfil_escolar   TP_ESCOLA nao respondeu 1378087  72.635815  55.897958    2.923823
+knn,1502,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_perfil_escolar   TP_ESCOLA       publica  700259  70.627695  54.355589   -7.347843
+knn,1503,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_perfil_escolar   TP_ESCOLA       privada  179768  68.949549  53.240479    6.374864
+knn,1504,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_perfil_escolar        Q006             B  662677  71.180056  55.371634    0.018396
+knn,1505,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_perfil_escolar        Q006             E  175920  71.658024  55.013105    0.113892
+knn,1506,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_perfil_escolar        Q006             G  168149  71.082075  54.293947    0.164800
+knn,1507,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_perfil_escolar        Q006             C  351498  71.149244  54.872892   -0.239564
+knn,1508,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_perfil_escolar        Q006             A  132951  74.542114  57.824671   -0.422648
+knn,1509,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_perfil_escolar        Q006             D  249365  71.604661  55.013998   -0.003112
+knn,1510,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_perfil_escolar        Q006             L   27234  73.559757  55.729879   -0.529956
+knn,1511,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_perfil_escolar        Q006             O   28759  71.989776  54.346637   -0.444962
+knn,1512,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_perfil_escolar        Q006             F  106278  72.253510  55.409770    0.433692
+knn,1513,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_perfil_escolar        Q006             Q   35402  71.526829  53.395674    1.151196
+knn,1514,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_perfil_escolar        Q006             H   91898  72.463219  55.226809    0.276252
+knn,1515,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_perfil_escolar        Q006             J   51064  72.822117  55.382215   -0.071363
+knn,1516,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_perfil_escolar        Q006             K   40854  73.072018  55.377919    0.151701
+knn,1517,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_perfil_escolar        Q006             P   26731  69.573609  52.722802   -0.314268
+knn,1518,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_perfil_escolar        Q006             I   57442  72.809747  55.483521    0.254027
+knn,1519,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_perfil_escolar        Q006             N   28742  72.811122  54.892137    0.201074
+knn,1520,18/19 Relatorio de erros por faixa e grupo,texto,                knn_sem_perfil_escolar        Q006             M   23150  72.360181  54.924390    0.500844
+knn,1521,18/19 Relatorio de erros por faixa e grupo,texto,                        knn_sem_lingua  faixa_nota          zero    1736 515.836172 512.981799 -512.981799
+knn,1522,18/19 Relatorio de erros por faixa e grupo,texto,                        knn_sem_lingua  faixa_nota         0-400  147627 142.837393 133.104822 -132.410145
+knn,1523,18/19 Relatorio de erros por faixa e grupo,texto,                        knn_sem_lingua  faixa_nota       400-500  705371  65.407152  52.504788  -41.909825
+knn,1524,18/19 Relatorio de erros por faixa e grupo,texto,                        knn_sem_lingua  faixa_nota       500-600 1110460  54.618136  42.469469   23.684903
+knn,1525,18/19 Relatorio de erros por faixa e grupo,texto,                        knn_sem_lingua  faixa_nota       600-700  286878  91.473303  79.286868   77.297347
+knn,1526,18/19 Relatorio de erros por faixa e grupo,texto,                        knn_sem_lingua  faixa_nota          700+    6042 148.156783 140.838758  140.809264
+knn,1527,18/19 Relatorio de erros por faixa e grupo,texto,                        knn_sem_lingua SG_UF_PROVA            BA  184031  75.209523  58.285276   -0.845221
+knn,1528,18/19 Relatorio de erros por faixa e grupo,texto,                        knn_sem_lingua SG_UF_PROVA            SP  346110  68.619184  52.222139    1.030379
+knn,1529,18/19 Relatorio de erros por faixa e grupo,texto,                        knn_sem_lingua SG_UF_PROVA            SC   53219  71.080829  54.328928    0.872853
+knn,1530,18/19 Relatorio de erros por faixa e grupo,texto,                        knn_sem_lingua SG_UF_PROVA            PI   58838  77.955573  60.652359   -2.042597
+knn,1531,18/19 Relatorio de erros por faixa e grupo,texto,                        knn_sem_lingua SG_UF_PROVA            MG  210170  72.064224  55.313223    1.571135
+knn,1532,18/19 Relatorio de erros por faixa e grupo,texto,                        knn_sem_lingua SG_UF_PROVA            ES   41831  74.207139  56.893672    1.890824
+knn,1533,18/19 Relatorio de erros por faixa e grupo,texto,                        knn_sem_lingua SG_UF_PROVA            RJ  156611  74.236111  56.851591    1.330401
+knn,1534,18/19 Relatorio de erros por faixa e grupo,texto,                        knn_sem_lingua SG_UF_PROVA            PB   72611  75.814461  58.765394    0.225358
+knn,1535,18/19 Relatorio de erros por faixa e grupo,texto,                        knn_sem_lingua SG_UF_PROVA            MA   94822  76.747456  59.594354   -3.735596
+knn,1536,18/19 Relatorio de erros por faixa e grupo,texto,                        knn_sem_lingua SG_UF_PROVA            PA  129614  74.765347  57.989679   -3.198614
+knn,1537,18/19 Relatorio de erros por faixa e grupo,texto,                        knn_sem_lingua SG_UF_PROVA            RS   94578  72.420377  55.284132    1.838067
+knn,1538,18/19 Relatorio de erros por faixa e grupo,texto,                        knn_sem_lingua SG_UF_PROVA            AC   12907  75.863379  57.863740   -3.049707
+knn,1539,18/19 Relatorio de erros por faixa e grupo,texto,                        knn_sem_lingua SG_UF_PROVA            GO   81923  75.453230  57.861476   -1.808982
+knn,1540,18/19 Relatorio de erros por faixa e grupo,texto,                        knn_sem_lingua SG_UF_PROVA            CE  144469  76.490474  59.816504    2.116225
+knn,1541,18/19 Relatorio de erros por faixa e grupo,texto,                        knn_sem_lingua SG_UF_PROVA            DF   42541  73.974541  56.346996    1.768367
+knn,1542,18/19 Relatorio de erros por faixa e grupo,texto,                        knn_sem_lingua SG_UF_PROVA            RO   19650  76.185747  58.613849   -9.565509
+knn,1543,18/19 Relatorio de erros por faixa e grupo,texto,                        knn_sem_lingua SG_UF_PROVA            RN   60184  76.034595  58.885820    1.556474
+knn,1544,18/19 Relatorio de erros por faixa e grupo,texto,                        knn_sem_lingua SG_UF_PROVA            PR   97861  72.052840  54.953777    0.241755
+knn,1545,18/19 Relatorio de erros por faixa e grupo,texto,                        knn_sem_lingua SG_UF_PROVA            AL   46161  76.302441  59.081866   -2.215074
+knn,1546,18/19 Relatorio de erros por faixa e grupo,texto,                        knn_sem_lingua SG_UF_PROVA            TO   18531  75.441357  58.376809   -9.034435
+knn,1547,18/19 Relatorio de erros por faixa e grupo,texto,                        knn_sem_lingua SG_UF_PROVA            PE  127460  75.341343  57.969557    0.284174
+knn,1548,18/19 Relatorio de erros por faixa e grupo,texto,                        knn_sem_lingua SG_UF_PROVA            SE   39290  77.608944  60.656343    0.228581
+knn,1549,18/19 Relatorio de erros por faixa e grupo,texto,                        knn_sem_lingua SG_UF_PROVA            MS   26714  76.207342  58.198846   -4.813012
+knn,1550,18/19 Relatorio de erros por faixa e grupo,texto,                        knn_sem_lingua SG_UF_PROVA            RR    5245  72.533287  55.257664   -3.582459
+knn,1551,18/19 Relatorio de erros por faixa e grupo,texto,                        knn_sem_lingua SG_UF_PROVA            AM   41783  77.502931  59.066696   -4.871509
+knn,1552,18/19 Relatorio de erros por faixa e grupo,texto,                        knn_sem_lingua SG_UF_PROVA            AP   15629  74.893957  57.646791   -6.507708
+knn,1553,18/19 Relatorio de erros por faixa e grupo,texto,                        knn_sem_lingua SG_UF_PROVA            MT   35331  77.872156  59.629827   -8.069331
+knn,1554,18/19 Relatorio de erros por faixa e grupo,texto,                        knn_sem_lingua   TP_ESCOLA nao respondeu 1378087  74.904091  57.361134   -0.277945
+knn,1555,18/19 Relatorio de erros por faixa e grupo,texto,                        knn_sem_lingua   TP_ESCOLA       publica  700259  72.609604  56.314689   -0.410061
+knn,1556,18/19 Relatorio de erros por faixa e grupo,texto,                        knn_sem_lingua   TP_ESCOLA       privada  179768  71.282269  54.790108   -0.015731
+knn,1557,18/19 Relatorio de erros por faixa e grupo,texto,                        knn_sem_lingua        Q006             B  662677  74.609255  57.953653    0.033271
+knn,1558,18/19 Relatorio de erros por faixa e grupo,texto,                        knn_sem_lingua        Q006             E  175920  73.691406  56.548464   -0.279316
+knn,1559,18/19 Relatorio de erros por faixa e grupo,texto,                        knn_sem_lingua        Q006             G  168149  72.445803  55.391885   -0.144904
+knn,1560,18/19 Relatorio de erros por faixa e grupo,texto,                        knn_sem_lingua        Q006             C  351498  74.444827  57.383745   -0.552611
+knn,1561,18/19 Relatorio de erros por faixa e grupo,texto,                        knn_sem_lingua        Q006             A  132951  76.807836  59.640813   -1.583699
+knn,1562,18/19 Relatorio de erros por faixa e grupo,texto,                        knn_sem_lingua        Q006             D  249365  74.503229  57.174585   -0.737474
+knn,1563,18/19 Relatorio de erros por faixa e grupo,texto,                        knn_sem_lingua        Q006             L   27234  72.556630  54.573895   -1.094688
+knn,1564,18/19 Relatorio de erros por faixa e grupo,texto,                        knn_sem_lingua        Q006             O   28759  70.745613  53.048635   -1.461457
+knn,1565,18/19 Relatorio de erros por faixa e grupo,texto,                        knn_sem_lingua        Q006             F  106278  73.270144  56.119849    0.309595
+knn,1566,18/19 Relatorio de erros por faixa e grupo,texto,                        knn_sem_lingua        Q006             Q   35402  72.163544  54.108351    3.418274
+knn,1567,18/19 Relatorio de erros por faixa e grupo,texto,                        knn_sem_lingua        Q006             H   91898  72.968755  55.495325    0.041182
+knn,1568,18/19 Relatorio de erros por faixa e grupo,texto,                        knn_sem_lingua        Q006             J   51064  72.035083  54.640764   -0.116929
+knn,1569,18/19 Relatorio de erros por faixa e grupo,texto,                        knn_sem_lingua        Q006             K   40854  72.266257  54.475522   -0.457427
+knn,1570,18/19 Relatorio de erros por faixa e grupo,texto,                        knn_sem_lingua        Q006             P   26731  67.684338  51.160006   -1.947268
+knn,1571,18/19 Relatorio de erros por faixa e grupo,texto,                        knn_sem_lingua        Q006             I   57442  71.970593  54.876269   -0.126880
+knn,1572,18/19 Relatorio de erros por faixa e grupo,texto,                        knn_sem_lingua        Q006             N   28742  71.207499  53.489102   -1.006599
+knn,1573,18/19 Relatorio de erros por faixa e grupo,texto,                        knn_sem_lingua        Q006             M   23150  71.539862  53.776656   -0.249918
+knn,1892,18/19 Relatorio de erros por faixa e grupo,texto,                      knn_busca_melhor  faixa_nota          zero    1736 516.132124 514.694397 -514.694397
+knn,1893,18/19 Relatorio de erros por faixa e grupo,texto,                      knn_busca_melhor  faixa_nota         0-400  147627 139.992614 133.965465 -133.965465
+knn,1894,18/19 Relatorio de erros por faixa e grupo,texto,                      knn_busca_melhor  faixa_nota       400-500  705371  56.009187  45.367994  -41.760713
+knn,1895,18/19 Relatorio de erros por faixa e grupo,texto,                      knn_busca_melhor  faixa_nota       500-600 1110460  44.071819  35.832380   24.124650
+knn,1896,18/19 Relatorio de erros por faixa e grupo,texto,                      knn_busca_melhor  faixa_nota       600-700  286878  84.824958  76.900171   76.785415
+knn,1897,18/19 Relatorio de erros por faixa e grupo,texto,                      knn_busca_melhor  faixa_nota          700+    6042 144.112232 140.290910  140.290910
+knn,1898,18/19 Relatorio de erros por faixa e grupo,texto,                      knn_busca_melhor SG_UF_PROVA            BA  184031  68.143455  52.807541   -4.062829
+knn,1899,18/19 Relatorio de erros por faixa e grupo,texto,                      knn_busca_melhor SG_UF_PROVA            SP  346110  62.372897  47.743219    4.398681
+knn,1900,18/19 Relatorio de erros por faixa e grupo,texto,                      knn_busca_melhor SG_UF_PROVA            SC   53219  62.416647  47.713707    1.067714
+knn,1901,18/19 Relatorio de erros por faixa e grupo,texto,                      knn_busca_melhor SG_UF_PROVA            PI   58838  69.435968  54.092798   -4.791940
+knn,1902,18/19 Relatorio de erros por faixa e grupo,texto,                      knn_busca_melhor SG_UF_PROVA            MG  210170  64.586513  49.895322    4.912416
+knn,1903,18/19 Relatorio de erros por faixa e grupo,texto,                      knn_busca_melhor SG_UF_PROVA            ES   41831  64.777241  49.645827    2.372812
+knn,1904,18/19 Relatorio de erros por faixa e grupo,texto,                      knn_busca_melhor SG_UF_PROVA            RJ  156611  66.071989  50.712792    2.888709
+knn,1905,18/19 Relatorio de erros por faixa e grupo,texto,                      knn_busca_melhor SG_UF_PROVA            PB   72611  66.970726  52.200581    0.439864
+knn,1906,18/19 Relatorio de erros por faixa e grupo,texto,                      knn_busca_melhor SG_UF_PROVA            MA   94822  69.859998  54.000349  -12.215302
+knn,1907,18/19 Relatorio de erros por faixa e grupo,texto,                      knn_busca_melhor SG_UF_PROVA            PA  129614  67.779069  52.434805   -9.997993
+knn,1908,18/19 Relatorio de erros por faixa e grupo,texto,                      knn_busca_melhor SG_UF_PROVA            RS   94578  63.376779  48.835470    7.482791
+knn,1909,18/19 Relatorio de erros por faixa e grupo,texto,                      knn_busca_melhor SG_UF_PROVA            AC   12907  67.744380  51.456434   -1.245343
+knn,1910,18/19 Relatorio de erros por faixa e grupo,texto,                      knn_busca_melhor SG_UF_PROVA            GO   81923  66.492778  50.848661   -3.292333
+knn,1911,18/19 Relatorio de erros por faixa e grupo,texto,                      knn_busca_melhor SG_UF_PROVA            CE  144469  70.134767  55.547264    7.433585
+knn,1912,18/19 Relatorio de erros por faixa e grupo,texto,                      knn_busca_melhor SG_UF_PROVA            DF   42541  65.431463  50.194998    4.017901
+knn,1913,18/19 Relatorio de erros por faixa e grupo,texto,                      knn_busca_melhor SG_UF_PROVA            RO   19650  67.134703  51.686204  -11.779087
+knn,1914,18/19 Relatorio de erros por faixa e grupo,texto,                      knn_busca_melhor SG_UF_PROVA            RN   60184  66.828063  52.041902    3.479351
+knn,1915,18/19 Relatorio de erros por faixa e grupo,texto,                      knn_busca_melhor SG_UF_PROVA            PR   97861  63.795253  48.613034    0.093087
+knn,1916,18/19 Relatorio de erros por faixa e grupo,texto,                      knn_busca_melhor SG_UF_PROVA            AL   46161  67.571350  52.463655   -6.182129
+knn,1917,18/19 Relatorio de erros por faixa e grupo,texto,                      knn_busca_melhor SG_UF_PROVA            TO   18531  68.721131  52.817849  -15.229449
+knn,1918,18/19 Relatorio de erros por faixa e grupo,texto,                      knn_busca_melhor SG_UF_PROVA            PE  127460  67.664115  52.263170    0.845689
+knn,1919,18/19 Relatorio de erros por faixa e grupo,texto,                      knn_busca_melhor SG_UF_PROVA            SE   39290  68.464938  53.787193   -0.894748
+knn,1920,18/19 Relatorio de erros por faixa e grupo,texto,                      knn_busca_melhor SG_UF_PROVA            MS   26714  67.078046  50.826222   -9.871846
+knn,1921,18/19 Relatorio de erros por faixa e grupo,texto,                      knn_busca_melhor SG_UF_PROVA            RR    5245  66.160762  50.757333   -0.737066
+knn,1922,18/19 Relatorio de erros por faixa e grupo,texto,                      knn_busca_melhor SG_UF_PROVA            AM   41783  70.066522  52.994825  -11.494454
+knn,1923,18/19 Relatorio de erros por faixa e grupo,texto,                      knn_busca_melhor SG_UF_PROVA            AP   15629  68.282203  52.469981   -7.838964
+knn,1924,18/19 Relatorio de erros por faixa e grupo,texto,                      knn_busca_melhor SG_UF_PROVA            MT   35331  68.584768  52.253937  -13.078409
+knn,1925,18/19 Relatorio de erros por faixa e grupo,texto,                      knn_busca_melhor   TP_ESCOLA nao respondeu 1378087  66.784206  51.272583   -0.204045
+knn,1926,18/19 Relatorio de erros por faixa e grupo,texto,                      knn_busca_melhor   TP_ESCOLA       publica  700259  65.994234  51.313992   -1.078833
+knn,1927,18/19 Relatorio de erros por faixa e grupo,texto,                      knn_busca_melhor   TP_ESCOLA       privada  179768  63.228755  48.838284    3.196183
+knn,1928,18/19 Relatorio de erros por faixa e grupo,texto,                      knn_busca_melhor        Q006             B  662677  67.851943  52.949001   -0.141850
+knn,1929,18/19 Relatorio de erros por faixa e grupo,texto,                      knn_busca_melhor        Q006             E  175920  65.537779  50.471751    1.467356
+knn,1930,18/19 Relatorio de erros por faixa e grupo,texto,                      knn_busca_melhor        Q006             G  168149  64.492042  49.486114    2.037873
+knn,1931,18/19 Relatorio de erros por faixa e grupo,texto,                      knn_busca_melhor        Q006             C  351498  66.587739  51.423077   -1.151207
+knn,1932,18/19 Relatorio de erros por faixa e grupo,texto,                      knn_busca_melhor        Q006             A  132951  68.866990  53.394417   -8.250939
+knn,1933,18/19 Relatorio de erros por faixa e grupo,texto,                      knn_busca_melhor        Q006             D  249365  66.160113  50.996601    0.583794
+knn,1934,18/19 Relatorio de erros por faixa e grupo,texto,                      knn_busca_melhor        Q006             L   27234  64.063705  48.080153   -2.293482
+knn,1935,18/19 Relatorio de erros por faixa e grupo,texto,                      knn_busca_melhor        Q006             O   28759  63.215099  47.073260   -3.276199
+knn,1936,18/19 Relatorio de erros por faixa e grupo,texto,                      knn_busca_melhor        Q006             F  106278  65.153242  50.127350    2.632263
+knn,1937,18/19 Relatorio de erros por faixa e grupo,texto,                      knn_busca_melhor        Q006             Q   35402  65.803763  49.815074    8.279727
+knn,1938,18/19 Relatorio de erros por faixa e grupo,texto,                      knn_busca_melhor        Q006             H   91898  64.593129  49.340635    1.611114
+knn,1939,18/19 Relatorio de erros por faixa e grupo,texto,                      knn_busca_melhor        Q006             J   51064  63.850753  48.383519    0.103416
+knn,1940,18/19 Relatorio de erros por faixa e grupo,texto,                      knn_busca_melhor        Q006             K   40854  63.551885  47.976318   -0.791321
+knn,1941,18/19 Relatorio de erros por faixa e grupo,texto,                      knn_busca_melhor        Q006             P   26731  61.554406  46.045176   -4.046638
+knn,1942,18/19 Relatorio de erros por faixa e grupo,texto,                      knn_busca_melhor        Q006             I   57442  63.686606  48.590680    0.775154
+knn,1943,18/19 Relatorio de erros por faixa e grupo,texto,                      knn_busca_melhor        Q006             N   28742  63.331330  47.195685   -2.710290
+knn,1944,18/19 Relatorio de erros por faixa e grupo,texto,                      knn_busca_melhor        Q006             M   23150  62.765500  47.267636   -0.367256

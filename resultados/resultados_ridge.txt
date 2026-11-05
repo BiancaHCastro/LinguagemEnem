@@ -1,0 +1,185 @@
+RESULTADOS DA EXECUCAO - 2026-11-04 15:20:18
+Comando: c:/Users/joaog/Downloads/Ciencia de dados/projeto 2/modelagem_enem.py
+
+ridge_base                   dobra 1: RMSE 66.04 | MAE 50.97 | R2 0.2326 | treino 11.8s | predicao 2.9s
+ridge_base                   dobra 2: RMSE 66.17 | MAE 51.06 | R2 0.2324 | treino 13.4s | predicao 2.9s
+ridge_base                   dobra 3: RMSE 66.25 | MAE 51.06 | R2 0.2309 | treino 12.9s | predicao 2.6s
+Modelo: ridge
+
+Resumo de ridge_base:
+                   rmse        mae        r2  tempo_treino_s  tempo_predicao_s
+media          66.15247  51.028394  0.231942       12.689883          2.807291
+desvio_padrao   0.08541   0.044233  0.000761        0.670312          0.137553
+Hipotese: Referencia inicial com hiperparametros padrao e as 15 features do grupo.
+Conclusao: (preencher)
+
+[15/19] Busca de hiperparametros: ridge
+Fitting 3 folds for each of 12 candidates, totalling 36 fits
+[CV] END model__alpha=0.1767016940294795, model__fit_intercept=True, model__solver=auto; total time=   8.7s
+[CV] END model__alpha=0.1767016940294795, model__fit_intercept=True, model__solver=auto; total time=   8.8s
+[CV] END model__alpha=0.1767016940294795, model__fit_intercept=True, model__solver=auto; total time=   8.6s
+[CV] END model__alpha=0.012606912518374074, model__fit_intercept=True, model__solver=sparse_cg; total time=   8.8s
+[CV] END model__alpha=0.012606912518374074, model__fit_intercept=True, model__solver=sparse_cg; total time=   8.6s
+[CV] END model__alpha=0.012606912518374074, model__fit_intercept=True, model__solver=sparse_cg; total time=   8.5s
+[CV] END model__alpha=3.907967156822881, model__fit_intercept=True, model__solver=auto; total time=   9.0s
+[CV] END model__alpha=3.907967156822881, model__fit_intercept=True, model__solver=auto; total time=   8.6s
+[CV] END model__alpha=3.907967156822881, model__fit_intercept=True, model__solver=auto; total time=   8.8s
+[CV] END model__alpha=0.4731474644815003, model__fit_intercept=True, model__solver=auto; total time=   8.7s
+[CV] END model__alpha=0.4731474644815003, model__fit_intercept=True, model__solver=auto; total time=   8.7s
+[CV] END model__alpha=0.4731474644815003, model__fit_intercept=True, model__solver=auto; total time=   8.7s
+[CV] END model__alpha=0.002231010801867922, model__fit_intercept=True, model__solver=sparse_cg; total time=   8.6s
+[CV] END model__alpha=0.002231010801867922, model__fit_intercept=True, model__solver=sparse_cg; total time=   8.6s
+[CV] END model__alpha=0.002231010801867922, model__fit_intercept=True, model__solver=sparse_cg; total time=   8.6s
+[CV] END model__alpha=0.10051981180656774, model__fit_intercept=True, model__solver=sparse_cg; total time=   8.7s
+[CV] END model__alpha=0.10051981180656774, model__fit_intercept=True, model__solver=sparse_cg; total time=   8.7s
+[CV] END model__alpha=0.10051981180656774, model__fit_intercept=True, model__solver=sparse_cg; total time=   8.8s
+[CV] END model__alpha=17.71884735480682, model__fit_intercept=True, model__solver=sparse_cg; total time=   8.7s
+[CV] END model__alpha=17.71884735480682, model__fit_intercept=True, model__solver=sparse_cg; total time=   8.7s
+[CV] END model__alpha=17.71884735480682, model__fit_intercept=True, model__solver=sparse_cg; total time=   8.6s
+[CV] END model__alpha=0.0021800651586435186, model__fit_intercept=True, model__solver=sparse_cg; total time=   8.7s
+[CV] END model__alpha=0.0021800651586435186, model__fit_intercept=True, model__solver=sparse_cg; total time=   8.7s
+[CV] END model__alpha=0.0021800651586435186, model__fit_intercept=True, model__solver=sparse_cg; total time=   8.8s
+[CV] END model__alpha=98.77700294007911, model__fit_intercept=True, model__solver=sparse_cg; total time=   8.7s
+[CV] END model__alpha=98.77700294007911, model__fit_intercept=True, model__solver=sparse_cg; total time=   8.5s
+[CV] END model__alpha=98.77700294007911, model__fit_intercept=True, model__solver=sparse_cg; total time=   8.6s
+[CV] END model__alpha=0.0010108171343846386, model__fit_intercept=True, model__solver=sparse_cg; total time=   8.6s
+[CV] END model__alpha=0.0010108171343846386, model__fit_intercept=True, model__solver=sparse_cg; total time=   8.6s
+[CV] END model__alpha=0.0010108171343846386, model__fit_intercept=True, model__solver=sparse_cg; total time=   8.6s
+[CV] END model__alpha=0.012601639723276799, model__fit_intercept=True, model__solver=sparse_cg; total time=   8.6s
+[CV] END model__alpha=0.012601639723276799, model__fit_intercept=True, model__solver=sparse_cg; total time=   8.6s
+[CV] END model__alpha=0.012601639723276799, model__fit_intercept=True, model__solver=sparse_cg; total time=   8.6s
+[CV] END model__alpha=4.676478725076045, model__fit_intercept=True, model__solver=auto; total time=   8.5s
+[CV] END model__alpha=4.676478725076045, model__fit_intercept=True, model__solver=auto; total time=   8.5s
+[CV] END model__alpha=4.676478725076045, model__fit_intercept=True, model__solver=auto; total time=   8.6s
+Melhores configuracoes:
+                                                                                             params  rmse_media  rmse_dp
+        {'model__alpha': 0.4731474644815003, 'model__fit_intercept': True, 'model__solver': 'auto'}   66.152433 0.085430
+    {'model__alpha': 17.71884735480682, 'model__fit_intercept': True, 'model__solver': 'sparse_cg'}   66.152446 0.085428
+ {'model__alpha': 0.012606912518374074, 'model__fit_intercept': True, 'model__solver': 'sparse_cg'}   66.152449 0.085440
+{'model__alpha': 0.0021800651586435186, 'model__fit_intercept': True, 'model__solver': 'sparse_cg'}   66.152449 0.085441
+         {'model__alpha': 3.907967156822881, 'model__fit_intercept': True, 'model__solver': 'auto'}   66.152450 0.085438
+         {'model__alpha': 4.676478725076045, 'model__fit_intercept': True, 'model__solver': 'auto'}   66.152450 0.085435
+{'model__alpha': 0.0010108171343846386, 'model__fit_intercept': True, 'model__solver': 'sparse_cg'}   66.152451 0.085436
+ {'model__alpha': 0.012601639723276799, 'model__fit_intercept': True, 'model__solver': 'sparse_cg'}   66.152453 0.085441
+    {'model__alpha': 98.77700294007911, 'model__fit_intercept': True, 'model__solver': 'sparse_cg'}   66.152457 0.085379
+  {'model__alpha': 0.10051981180656774, 'model__fit_intercept': True, 'model__solver': 'sparse_cg'}   66.152459 0.085438
+Melhor RMSE: 66.152 | {'model__alpha': 0.4731474644815003, 'model__fit_intercept': True, 'model__solver': 'auto'} | 12 configuracoes | 5.3 min
+ridge_busca_melhor           dobra 1: RMSE 66.04 | MAE 50.97 | R2 0.2326 | treino 7.0s | predicao 1.6s
+ridge_busca_melhor           dobra 2: RMSE 66.17 | MAE 51.06 | R2 0.2324 | treino 7.1s | predicao 1.6s
+ridge_busca_melhor           dobra 3: RMSE 66.25 | MAE 51.06 | R2 0.2309 | treino 7.1s | predicao 1.6s
+Modelo: ridge
+
+Resumo de ridge_busca_melhor:
+                    rmse        mae        r2  tempo_treino_s  tempo_predicao_s
+media          66.152433  51.028362  0.231943        7.065181          1.618163
+desvio_padrao   0.085430   0.044251  0.000762        0.032211          0.009428
+Hipotese: Ajustar hiperparametros reduz o RMSE em relacao a configuracao inicial.
+Conclusao: (preencher)
+
+                            ridge_base  faixa_nota          zero    1736 515.425039 514.138066 -514.138066
+                            ridge_base  faixa_nota         0-400  147627 138.708063 132.190607 -132.190607
+                            ridge_base  faixa_nota       400-500  705371  56.324247  45.843191  -41.144314
+                            ridge_base  faixa_nota       500-600 1110460  43.749530  35.286359   23.536842
+                            ridge_base  faixa_nota       600-700  286878  85.196693  78.131560   78.110806
+                            ridge_base  faixa_nota          700+    6042 149.401167 146.592096  146.592096
+                            ridge_base SG_UF_PROVA            BA  184031  68.333764  53.283418   -0.005920
+                            ridge_base SG_UF_PROVA            SP  346110  62.469134  47.478257    0.001079
+                            ridge_base SG_UF_PROVA            SC   53219  62.348011  47.564798    0.001024
+                            ridge_base SG_UF_PROVA            PI   58838  69.396535  54.419312    0.002123
+                            ridge_base SG_UF_PROVA            MG  210170  64.515095  49.494180   -0.006138
+                            ridge_base SG_UF_PROVA            ES   41831  64.951511  49.668853    0.011530
+                            ridge_base SG_UF_PROVA            RJ  156611  66.172976  50.599954    0.002519
+                            ridge_base SG_UF_PROVA            PB   72611  67.325836  52.532701    0.013151
+                            ridge_base SG_UF_PROVA            MA   94822  68.806793  53.888815    0.006856
+                            ridge_base SG_UF_PROVA            PA  129614  67.077975  52.549875   -0.005929
+                            ridge_base SG_UF_PROVA            RS   94578  63.025388  47.986758   -0.002747
+                            ridge_base SG_UF_PROVA            AC   12907  67.860749  51.610488   -0.015254
+                            ridge_base SG_UF_PROVA            GO   81923  66.510722  51.173480   -0.004424
+                            ridge_base SG_UF_PROVA            CE  144469  69.830881  54.800127    0.002193
+                            ridge_base SG_UF_PROVA            DF   42541  65.600387  50.015675    0.015436
+                            ridge_base SG_UF_PROVA            RO   19650  66.030730  51.644040   -0.006619
+                            ridge_base SG_UF_PROVA            RN   60184  66.960113  51.982835    0.003796
+                            ridge_base SG_UF_PROVA            PR   97861  64.048974  48.837830   -0.002497
+                            ridge_base SG_UF_PROVA            AL   46161  67.585989  52.889198    0.005866
+                            ridge_base SG_UF_PROVA            TO   18531  66.993108  52.413698   -0.025929
+                            ridge_base SG_UF_PROVA            PE  127460  67.863419  52.416108    0.012445
+                            ridge_base SG_UF_PROVA            SE   39290  68.821484  54.181856    0.003661
+                            ridge_base SG_UF_PROVA            MS   26714  66.681881  51.287498    0.027270
+                            ridge_base SG_UF_PROVA            RR    5245  66.283567  50.810554    0.096419
+                            ridge_base SG_UF_PROVA            AM   41783  69.211083  53.224143   -0.015693
+                            ridge_base SG_UF_PROVA            AP   15629  67.934559  52.823133   -0.018840
+                            ridge_base SG_UF_PROVA            MT   35331  67.314541  52.179664   -0.012725
+                            ridge_base   TP_ESCOLA nao respondeu 1378087  66.704549  51.267270    0.000543
+                            ridge_base   TP_ESCOLA       publica  700259  65.807365  51.193006   -0.000349
+                            ridge_base   TP_ESCOLA       privada  179768  63.177200  48.555963    0.004149
+                            ridge_base        Q006             B  662677  67.759262  52.901023   -0.000238
+                            ridge_base        Q006             E  175920  65.316871  50.204284   -0.000095
+                            ridge_base        Q006             G  168149  64.479657  49.334909   -0.002207
+                            ridge_base        Q006             C  351498  66.325039  51.296459    0.002494
+                            ridge_base        Q006             A  132951  68.164231  53.258571    0.005925
+                            ridge_base        Q006             D  249365  65.890965  50.737396   -0.001930
+                            ridge_base        Q006             L   27234  64.572548  48.752740   -0.000201
+                            ridge_base        Q006             O   28759  63.794884  47.888481    0.003674
+                            ridge_base        Q006             F  106278  65.032399  49.858143   -0.007151
+                            ridge_base        Q006             Q   35402  65.047128  48.470358   -0.030031
+                            ridge_base        Q006             H   91898  64.828254  49.416761    0.012014
+                            ridge_base        Q006             J   51064  64.310109  48.848330    0.001199
+                            ridge_base        Q006             K   40854  64.210391  48.593154    0.020202
+                            ridge_base        Q006             P   26731  61.742867  46.678430    0.020631
+                            ridge_base        Q006             I   57442  64.001550  48.826725   -0.004080
+                            ridge_base        Q006             N   28742  63.972965  48.069485    0.000207
+                            ridge_base        Q006             M   23150  63.213753  47.768777    0.000945
+                    ridge_busca_melhor  faixa_nota          zero    1736 515.424381 514.137397 -514.137397
+                    ridge_busca_melhor  faixa_nota         0-400  147627 138.708026 132.190564 -132.190564
+                    ridge_busca_melhor  faixa_nota       400-500  705371  56.324211  45.843153  -41.144251
+                    ridge_busca_melhor  faixa_nota       500-600 1110460  43.749533  35.286364   23.536828
+                    ridge_busca_melhor  faixa_nota       600-700  286878  85.196584  78.131414   78.110655
+                    ridge_busca_melhor  faixa_nota          700+    6042 149.400992 146.591896  146.591896
+                    ridge_busca_melhor SG_UF_PROVA            BA  184031  68.333761  53.283421   -0.005599
+                    ridge_busca_melhor SG_UF_PROVA            SP  346110  62.469118  47.478218    0.000733
+                    ridge_busca_melhor SG_UF_PROVA            SC   53219  62.347961  47.564758    0.000955
+                    ridge_busca_melhor SG_UF_PROVA            PI   58838  69.396503  54.419368    0.003299
+                    ridge_busca_melhor SG_UF_PROVA            MG  210170  64.515131  49.494301   -0.004955
+                    ridge_busca_melhor SG_UF_PROVA            ES   41831  64.951535  49.668868    0.011098
+                    ridge_busca_melhor SG_UF_PROVA            RJ  156611  66.172893  50.599859    0.002135
+                    ridge_busca_melhor SG_UF_PROVA            PB   72611  67.325739  52.532572    0.012484
+                    ridge_busca_melhor SG_UF_PROVA            MA   94822  68.806850  53.888851    0.006610
+                    ridge_busca_melhor SG_UF_PROVA            PA  129614  67.077947  52.549791   -0.006587
+                    ridge_busca_melhor SG_UF_PROVA            RS   94578  63.025321  47.986744   -0.002404
+                    ridge_busca_melhor SG_UF_PROVA            AC   12907  67.860435  51.610158   -0.016172
+                    ridge_busca_melhor SG_UF_PROVA            GO   81923  66.510753  51.173491   -0.003944
+                    ridge_busca_melhor SG_UF_PROVA            CE  144469  69.830832  54.800055    0.001930
+                    ridge_busca_melhor SG_UF_PROVA            DF   42541  65.600406  50.015673    0.015235
+                    ridge_busca_melhor SG_UF_PROVA            RO   19650  66.030585  51.643721   -0.008516
+                    ridge_busca_melhor SG_UF_PROVA            RN   60184  66.960097  51.982804    0.003338
+                    ridge_busca_melhor SG_UF_PROVA            PR   97861  64.048914  48.837796   -0.002465
+                    ridge_busca_melhor SG_UF_PROVA            AL   46161  67.585947  52.889143    0.005333
+                    ridge_busca_melhor SG_UF_PROVA            TO   18531  66.992433  52.412968   -0.029121
+                    ridge_busca_melhor SG_UF_PROVA            PE  127460  67.863327  52.416041    0.012682
+                    ridge_busca_melhor SG_UF_PROVA            SE   39290  68.821430  54.181836    0.003314
+                    ridge_busca_melhor SG_UF_PROVA            MS   26714  66.681975  51.287623    0.027865
+                    ridge_busca_melhor SG_UF_PROVA            RR    5245  66.283435  50.810400    0.098240
+                    ridge_busca_melhor SG_UF_PROVA            AM   41783  69.211032  53.224030   -0.016143
+                    ridge_busca_melhor SG_UF_PROVA            AP   15629  67.934575  52.823168   -0.018860
+                    ridge_busca_melhor SG_UF_PROVA            MT   35331  67.314271  52.179634   -0.010389
+                    ridge_busca_melhor   TP_ESCOLA nao respondeu 1378087  66.704509  51.267237    0.000550
+                    ridge_busca_melhor   TP_ESCOLA       publica  700259  65.807333  51.192989   -0.000284
+                    ridge_busca_melhor   TP_ESCOLA       privada  179768  63.177163  48.555882    0.003796
+                    ridge_busca_melhor        Q006             B  662677  67.759210  52.900977   -0.000488
+                    ridge_busca_melhor        Q006             E  175920  65.316860  50.204274   -0.000093
+                    ridge_busca_melhor        Q006             G  168149  64.479639  49.334919   -0.001757
+                    ridge_busca_melhor        Q006             C  351498  66.325004  51.296376    0.001700
+                    ridge_busca_melhor        Q006             A  132951  68.164237  53.258578    0.006448
+                    ridge_busca_melhor        Q006             D  249365  65.890981  50.737496   -0.000811
+                    ridge_busca_melhor        Q006             L   27234  64.572392  48.752499   -0.000618
+                    ridge_busca_melhor        Q006             O   28759  63.794739  47.888421    0.004039
+                    ridge_busca_melhor        Q006             F  106278  65.032377  49.858088   -0.007103
+                    ridge_busca_melhor        Q006             Q   35402  65.047088  48.470008   -0.032247
+                    ridge_busca_melhor        Q006             H   91898  64.828141  49.416707    0.012448
+                    ridge_busca_melhor        Q006             J   51064  64.309983  48.848302    0.002188
+                    ridge_busca_melhor        Q006             K   40854  64.210332  48.593102    0.019683
+                    ridge_busca_melhor        Q006             P   26731  61.742794  46.678455    0.021805
+                    ridge_busca_melhor        Q006             I   57442  64.001547  48.826715   -0.004159
+                    ridge_busca_melhor        Q006             N   28742  63.972871  48.069396   -0.000129
+                    ridge_busca_melhor        Q006             M   23150  63.213753  47.768745    0.000919
+

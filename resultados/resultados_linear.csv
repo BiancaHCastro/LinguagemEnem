@@ -1,0 +1,132 @@
+﻿modelo,linha,secao,tipo_registro,texto_original
+linear,53,2/19 Modelos de referencia,texto,linear_base                  dobra 1: RMSE 66.04 | MAE 50.97 | R2 0.2325 | treino 17.2s | predicao 3.1s
+linear,54,2/19 Modelos de referencia,texto,linear_base                  dobra 2: RMSE 66.17 | MAE 51.06 | R2 0.2324 | treino 12.6s | predicao 2.6s
+linear,55,2/19 Modelos de referencia,texto,linear_base                  dobra 3: RMSE 66.25 | MAE 51.06 | R2 0.2309 | treino 13.0s | predicao 3.0s
+linear,56,2/19 Modelos de referencia,texto,Modelo: linear
+linear,57,2/19 Modelos de referencia,linha_vazia,
+linear,58,2/19 Modelos de referencia,texto,Resumo de linear_base:
+linear,59,2/19 Modelos de referencia,texto,                    rmse        mae       r2  tempo_treino_s  tempo_predicao_s
+linear,60,2/19 Modelos de referencia,texto,media          66.152544  51.028488  0.23194       14.271812          2.888076
+linear,61,2/19 Modelos de referencia,texto,desvio_padrao   0.085285   0.044104  0.00076        2.062826          0.214201
+linear,62,2/19 Modelos de referencia,texto,Hipotese: Referencia inicial com hiperparametros padrao e as 15 features do grupo.
+linear,63,2/19 Modelos de referencia,texto,Conclusao: (preencher)
+linear,134,5/19 Regressao linear com PCA,etapa,[5/19] Regressao linear com PCA
+linear,135,5/19 Regressao linear com PCA,texto,linear_pca                   dobra 1: RMSE 66.91 | MAE 51.74 | R2 0.2123 | treino 29.0s | predicao 3.4s
+linear,136,5/19 Regressao linear com PCA,texto,linear_pca                   dobra 2: RMSE 67.03 | MAE 51.84 | R2 0.2122 | treino 28.3s | predicao 2.1s
+linear,137,5/19 Regressao linear com PCA,texto,linear_pca                   dobra 3: RMSE 67.10 | MAE 51.81 | R2 0.2110 | treino 11.9s | predicao 2.0s
+linear,138,5/19 Regressao linear com PCA,texto,Modelo: Regressao linear + PCA(80%)
+linear,139,5/19 Regressao linear com PCA,linha_vazia,
+linear,140,5/19 Regressao linear com PCA,texto,Resumo de linear_pca:
+linear,141,5/19 Regressao linear com PCA,texto,                    rmse        mae        r2  tempo_treino_s  tempo_predicao_s
+linear,142,5/19 Regressao linear com PCA,texto,media          67.012842  51.794779  0.211833       23.090718          2.511121
+linear,143,5/19 Regressao linear com PCA,texto,desvio_padrao   0.079674   0.040988  0.000598        7.885269          0.654686
+linear,144,5/19 Regressao linear com PCA,texto,"Hipotese: Para a regressao linear, trocar o one-hot por componentes do PCA descarta variancia e piora o erro em relacao a versao sem reducao."
+linear,145,5/19 Regressao linear com PCA,texto,Conclusao: (preencher)
+linear,146,5/19 Regressao linear com PCA,linha_vazia,
+linear,832,18/19 Relatorio de erros por faixa e grupo,texto,                           linear_base  faixa_nota          zero    1736 515.424606 514.137673 -514.137673
+linear,833,18/19 Relatorio de erros por faixa e grupo,texto,                           linear_base  faixa_nota         0-400  147627 138.707681 132.189978 -132.189978
+linear,834,18/19 Relatorio de erros por faixa e grupo,texto,                           linear_base  faixa_nota       400-500  705371  56.324464  45.843440  -41.144174
+linear,835,18/19 Relatorio de erros por faixa e grupo,texto,                           linear_base  faixa_nota       500-600 1110460  43.749788  35.286428   23.536536
+linear,836,18/19 Relatorio de erros por faixa e grupo,texto,                           linear_base  faixa_nota       600-700  286878  85.196529  78.131683   78.111104
+linear,837,18/19 Relatorio de erros por faixa e grupo,texto,                           linear_base  faixa_nota          700+    6042 149.403487 146.595289  146.595289
+linear,838,18/19 Relatorio de erros por faixa e grupo,texto,                           linear_base SG_UF_PROVA            BA  184031  68.333783  53.283879   -0.000304
+linear,839,18/19 Relatorio de erros por faixa e grupo,texto,                           linear_base SG_UF_PROVA            SP  346110  62.469405  47.478505    0.000424
+linear,840,18/19 Relatorio de erros por faixa e grupo,texto,                           linear_base SG_UF_PROVA            SC   53219  62.347886  47.564537   -0.000494
+linear,841,18/19 Relatorio de erros por faixa e grupo,texto,                           linear_base SG_UF_PROVA            PI   58838  69.396565  54.419236   -0.000065
+linear,842,18/19 Relatorio de erros por faixa e grupo,texto,                           linear_base SG_UF_PROVA            MG  210170  64.515702  49.495024   -0.001498
+linear,843,18/19 Relatorio de erros por faixa e grupo,texto,                           linear_base SG_UF_PROVA            ES   41831  64.951480  49.667872   -0.000672
+linear,844,18/19 Relatorio de erros por faixa e grupo,texto,                           linear_base SG_UF_PROVA            RJ  156611  66.173010  50.599928    0.001303
+linear,845,18/19 Relatorio de erros por faixa e grupo,texto,                           linear_base SG_UF_PROVA            PB   72611  67.325863  52.531957    0.001987
+linear,846,18/19 Relatorio de erros por faixa e grupo,texto,                           linear_base SG_UF_PROVA            MA   94822  68.806858  53.888618    0.000678
+linear,847,18/19 Relatorio de erros por faixa e grupo,texto,                           linear_base SG_UF_PROVA            PA  129614  67.078033  52.550353    0.000966
+linear,848,18/19 Relatorio de erros por faixa e grupo,texto,                           linear_base SG_UF_PROVA            RS   94578  63.025404  47.986791   -0.002831
+linear,849,18/19 Relatorio de erros por faixa e grupo,texto,                           linear_base SG_UF_PROVA            AC   12907  67.860308  51.610928   -0.005566
+linear,850,18/19 Relatorio de erros por faixa e grupo,texto,                           linear_base SG_UF_PROVA            GO   81923  66.510606  51.173764    0.000067
+linear,851,18/19 Relatorio de erros por faixa e grupo,texto,                           linear_base SG_UF_PROVA            CE  144469  69.830758  54.799932    0.001820
+linear,852,18/19 Relatorio de erros por faixa e grupo,texto,                           linear_base SG_UF_PROVA            DF   42541  65.600577  50.014729    0.001143
+linear,853,18/19 Relatorio de erros por faixa e grupo,texto,                           linear_base SG_UF_PROVA            RO   19650  66.030742  51.644590    0.001555
+linear,854,18/19 Relatorio de erros por faixa e grupo,texto,                           linear_base SG_UF_PROVA            RN   60184  66.960114  51.982667    0.001677
+linear,855,18/19 Relatorio de erros por faixa e grupo,texto,                           linear_base SG_UF_PROVA            PR   97861  64.048842  48.837910   -0.000704
+linear,856,18/19 Relatorio de erros por faixa e grupo,texto,                           linear_base SG_UF_PROVA            AL   46161  67.586070  52.889012    0.001006
+linear,857,18/19 Relatorio de erros por faixa e grupo,texto,                           linear_base SG_UF_PROVA            TO   18531  66.992715  52.415817    0.011541
+linear,858,18/19 Relatorio de erros por faixa e grupo,texto,                           linear_base SG_UF_PROVA            PE  127460  67.863224  52.415373    0.003558
+linear,859,18/19 Relatorio de erros por faixa e grupo,texto,                           linear_base SG_UF_PROVA            SE   39290  68.821596  54.181828    0.000416
+linear,860,18/19 Relatorio de erros por faixa e grupo,texto,                           linear_base SG_UF_PROVA            MS   26714  66.681680  51.285116    0.000389
+linear,861,18/19 Relatorio de erros por faixa e grupo,texto,                           linear_base SG_UF_PROVA            RR    5245  66.283567  50.806482    0.025514
+linear,862,18/19 Relatorio de erros por faixa e grupo,texto,                           linear_base SG_UF_PROVA            AM   41783  69.211081  53.225364   -0.000754
+linear,863,18/19 Relatorio de erros por faixa e grupo,texto,                           linear_base SG_UF_PROVA            AP   15629  67.934663  52.824527   -0.002187
+linear,864,18/19 Relatorio de erros por faixa e grupo,texto,                           linear_base SG_UF_PROVA            MT   35331  67.314518  52.180875    0.002937
+linear,865,18/19 Relatorio de erros por faixa e grupo,texto,                           linear_base   TP_ESCOLA nao respondeu 1378087  66.704709  51.267461    0.000594
+linear,866,18/19 Relatorio de erros por faixa e grupo,texto,                           linear_base   TP_ESCOLA       publica  700259  65.807284  51.193020    0.000554
+linear,867,18/19 Relatorio de erros por faixa e grupo,texto,                           linear_base   TP_ESCOLA       privada  179768  63.177199  48.555633    0.000009
+linear,868,18/19 Relatorio de erros por faixa e grupo,texto,                           linear_base        Q006             B  662677  67.759245  52.901091    0.000715
+linear,869,18/19 Relatorio de erros por faixa e grupo,texto,                           linear_base        Q006             E  175920  65.316951  50.204363    0.000398
+linear,870,18/19 Relatorio de erros por faixa e grupo,texto,                           linear_base        Q006             G  168149  64.479769  49.335329    0.001202
+linear,871,18/19 Relatorio de erros por faixa e grupo,texto,                           linear_base        Q006             C  351498  66.325041  51.296343    0.000476
+linear,872,18/19 Relatorio de erros por faixa e grupo,texto,                           linear_base        Q006             A  132951  68.164333  53.258392    0.001155
+linear,873,18/19 Relatorio de erros por faixa e grupo,texto,                           linear_base        Q006             D  249365  65.890971  50.737657    0.001060
+linear,874,18/19 Relatorio de erros por faixa e grupo,texto,                           linear_base        Q006             L   27234  64.572417  48.753004    0.003981
+linear,875,18/19 Relatorio de erros por faixa e grupo,texto,                           linear_base        Q006             O   28759  63.793908  47.887019   -0.003434
+linear,876,18/19 Relatorio de erros por faixa e grupo,texto,                           linear_base        Q006             F  106278  65.032405  49.858828    0.001699
+linear,877,18/19 Relatorio de erros por faixa e grupo,texto,                           linear_base        Q006             Q   35402  65.047289  48.473896    0.001566
+linear,878,18/19 Relatorio de erros por faixa e grupo,texto,                           linear_base        Q006             H   91898  64.828242  49.415628   -0.001851
+linear,879,18/19 Relatorio de erros por faixa e grupo,texto,                           linear_base        Q006             J   51064  64.311998  48.850264   -0.000103
+linear,880,18/19 Relatorio de erros por faixa e grupo,texto,                           linear_base        Q006             K   40854  64.210438  48.591293   -0.001768
+linear,881,18/19 Relatorio de erros por faixa e grupo,texto,                           linear_base        Q006             P   26731  61.741033  46.674683   -0.002649
+linear,882,18/19 Relatorio de erros por faixa e grupo,texto,                           linear_base        Q006             I   57442  64.001551  48.827242    0.001952
+linear,883,18/19 Relatorio de erros por faixa e grupo,texto,                           linear_base        Q006             N   28742  63.976742  48.072039   -0.005445
+linear,884,18/19 Relatorio de erros por faixa e grupo,texto,                           linear_base        Q006             M   23150  63.213727  47.768675   -0.000243
+linear,938,18/19 Relatorio de erros por faixa e grupo,texto,                            linear_pca  faixa_nota          zero    1736 516.207339 515.062313 -515.062313
+linear,939,18/19 Relatorio de erros por faixa e grupo,texto,                            linear_pca  faixa_nota         0-400  147627 141.073002 135.088343 -135.088343
+linear,940,18/19 Relatorio de erros por faixa e grupo,texto,                            linear_pca  faixa_nota       400-500  705371  56.797083  46.403893  -42.549666
+linear,941,18/19 Relatorio de erros por faixa e grupo,texto,                            linear_pca  faixa_nota       500-600 1110460  43.847144  35.442830   24.194774
+linear,942,18/19 Relatorio de erros por faixa e grupo,texto,                            linear_pca  faixa_nota       600-700  286878  87.328249  80.607048   80.436405
+linear,943,18/19 Relatorio de erros por faixa e grupo,texto,                            linear_pca  faixa_nota          700+    6042 153.181327 150.196271  150.195661
+linear,944,18/19 Relatorio de erros por faixa e grupo,texto,                            linear_pca SG_UF_PROVA            BA  184031  69.074956  53.632998   -4.503702
+linear,945,18/19 Relatorio de erros por faixa e grupo,texto,                            linear_pca SG_UF_PROVA            SP  346110  62.906825  47.805406   -0.891450
+linear,946,18/19 Relatorio de erros por faixa e grupo,texto,                            linear_pca SG_UF_PROVA            SC   53219  62.823315  48.280365    3.649973
+linear,947,18/19 Relatorio de erros por faixa e grupo,texto,                            linear_pca SG_UF_PROVA            PI   58838  70.205222  54.873700   -4.777115
+linear,948,18/19 Relatorio de erros por faixa e grupo,texto,                            linear_pca SG_UF_PROVA            MG  210170  65.517567  50.935214    7.797003
+linear,949,18/19 Relatorio de erros por faixa e grupo,texto,                            linear_pca SG_UF_PROVA            ES   41831  65.528443  50.469000    4.230375
+linear,950,18/19 Relatorio de erros por faixa e grupo,texto,                            linear_pca SG_UF_PROVA            RJ  156611  66.753859  51.446361    3.896365
+linear,951,18/19 Relatorio de erros por faixa e grupo,texto,                            linear_pca SG_UF_PROVA            PB   72611  67.845168  53.028943    0.658156
+linear,952,18/19 Relatorio de erros por faixa e grupo,texto,                            linear_pca SG_UF_PROVA            MA   94822  70.649317  54.739342  -12.666378
+linear,953,18/19 Relatorio de erros por faixa e grupo,texto,                            linear_pca SG_UF_PROVA            PA  129614  68.447375  53.098233  -10.189672
+linear,954,18/19 Relatorio de erros por faixa e grupo,texto,                            linear_pca SG_UF_PROVA            RS   94578  64.249715  49.801102   10.232377
+linear,955,18/19 Relatorio de erros por faixa e grupo,texto,                            linear_pca SG_UF_PROVA            AC   12907  68.391728  52.039283   -1.220291
+linear,956,18/19 Relatorio de erros por faixa e grupo,texto,                            linear_pca SG_UF_PROVA            GO   81923  67.093640  51.590845   -1.235151
+linear,957,18/19 Relatorio de erros por faixa e grupo,texto,                            linear_pca SG_UF_PROVA            CE  144469  71.083878  56.583854   10.274422
+linear,958,18/19 Relatorio de erros por faixa e grupo,texto,                            linear_pca SG_UF_PROVA            DF   42541  66.795009  51.630856    6.523896
+linear,959,18/19 Relatorio de erros por faixa e grupo,texto,                            linear_pca SG_UF_PROVA            RO   19650  67.285529  52.001131  -10.466221
+linear,960,18/19 Relatorio de erros por faixa e grupo,texto,                            linear_pca SG_UF_PROVA            RN   60184  67.643635  52.884474    4.467047
+linear,961,18/19 Relatorio de erros por faixa e grupo,texto,                            linear_pca SG_UF_PROVA            PR   97861  64.474998  49.400872    2.489725
+linear,962,18/19 Relatorio de erros por faixa e grupo,texto,                            linear_pca SG_UF_PROVA            AL   46161  68.613452  53.426806   -6.556875
+linear,963,18/19 Relatorio de erros por faixa e grupo,texto,                            linear_pca SG_UF_PROVA            TO   18531  69.218229  53.376536  -14.724036
+linear,964,18/19 Relatorio de erros por faixa e grupo,texto,                            linear_pca SG_UF_PROVA            PE  127460  68.429056  53.024346    1.369463
+linear,965,18/19 Relatorio de erros por faixa e grupo,texto,                            linear_pca SG_UF_PROVA            SE   39290  69.405048  54.682961   -0.159870
+linear,966,18/19 Relatorio de erros por faixa e grupo,texto,                            linear_pca SG_UF_PROVA            MS   26714  67.590971  51.438988   -8.412003
+linear,967,18/19 Relatorio de erros por faixa e grupo,texto,                            linear_pca SG_UF_PROVA            RR    5245  66.760994  51.254333    0.733526
+linear,968,18/19 Relatorio de erros por faixa e grupo,texto,                            linear_pca SG_UF_PROVA            AM   41783  70.692603  53.565542  -11.890336
+linear,969,18/19 Relatorio de erros por faixa e grupo,texto,                            linear_pca SG_UF_PROVA            AP   15629  68.997767  53.076028   -7.816404
+linear,970,18/19 Relatorio de erros por faixa e grupo,texto,                            linear_pca SG_UF_PROVA            MT   35331  68.758457  52.547192  -11.321646
+linear,971,18/19 Relatorio de erros por faixa e grupo,texto,                            linear_pca   TP_ESCOLA nao respondeu 1378087  67.675811  52.120395   -0.107179
+linear,972,18/19 Relatorio de erros por faixa e grupo,texto,                            linear_pca   TP_ESCOLA       publica  700259  66.465489  51.745934   -0.373566
+linear,973,18/19 Relatorio de erros por faixa e grupo,texto,                            linear_pca   TP_ESCOLA       privada  179768  63.959913  49.488896    2.277404
+linear,974,18/19 Relatorio de erros por faixa e grupo,texto,                            linear_pca        Q006             B  662677  68.413996  53.419460   -0.542531
+linear,975,18/19 Relatorio de erros por faixa e grupo,texto,                            linear_pca        Q006             E  175920  65.907931  50.797669    1.652583
+linear,976,18/19 Relatorio de erros por faixa e grupo,texto,                            linear_pca        Q006             G  168149  65.106359  50.068017    2.880304
+linear,977,18/19 Relatorio de erros por faixa e grupo,texto,                            linear_pca        Q006             C  351498  66.898210  51.712369   -0.704893
+linear,978,18/19 Relatorio de erros por faixa e grupo,texto,                            linear_pca        Q006             A  132951  70.862399  54.769798  -16.031091
+linear,979,18/19 Relatorio de erros por faixa e grupo,texto,                            linear_pca        Q006             D  249365  66.445649  51.240606    0.517490
+linear,980,18/19 Relatorio de erros por faixa e grupo,texto,                            linear_pca        Q006             L   27234  65.208535  49.408013    0.778686
+linear,981,18/19 Relatorio de erros por faixa e grupo,texto,                            linear_pca        Q006             O   28759  65.228105  48.797326   -4.437489
+linear,982,18/19 Relatorio de erros por faixa e grupo,texto,                            linear_pca        Q006             F  106278  65.675297  50.681554    4.029470
+linear,983,18/19 Relatorio de erros por faixa e grupo,texto,                            linear_pca        Q006             Q   35402  70.313407  55.803921   24.558784
+linear,984,18/19 Relatorio de erros por faixa e grupo,texto,                            linear_pca        Q006             H   91898  65.519060  50.321165    3.811253
+linear,985,18/19 Relatorio de erros por faixa e grupo,texto,                            linear_pca        Q006             J   51064  64.971152  49.732283    3.678429
+linear,986,18/19 Relatorio de erros por faixa e grupo,texto,                            linear_pca        Q006             K   40854  64.839364  49.364718    2.184958
+linear,987,18/19 Relatorio de erros por faixa e grupo,texto,                            linear_pca        Q006             P   26731  64.248194  48.073618   -8.922666
+linear,988,18/19 Relatorio de erros por faixa e grupo,texto,                            linear_pca        Q006             I   57442  64.741245  49.765712    4.042127
+linear,989,18/19 Relatorio de erros por faixa e grupo,texto,                            linear_pca        Q006             N   28742  64.866156  48.816316   -1.601497
+linear,990,18/19 Relatorio de erros por faixa e grupo,texto,                            linear_pca        Q006             M   23150  64.032152  48.770469    2.955038
+linear,2057,19/19 Avaliacao final no teste reservado,texto,linear_sem_regularizacao 66.067913 50.922557  0.230782   564529       11.520285          1.200209

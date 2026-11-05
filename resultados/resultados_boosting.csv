@@ -1,0 +1,933 @@
+﻿modelo,linha,secao,tipo_registro,texto_original
+boosting,42,2/19 Modelos de referencia,texto,boosting_base                dobra 1: RMSE 65.23 | MAE 50.24 | R2 0.2514 | treino 22.5s | predicao 5.1s
+boosting,43,2/19 Modelos de referencia,texto,boosting_base                dobra 2: RMSE 65.34 | MAE 50.33 | R2 0.2515 | treino 22.3s | predicao 5.2s
+boosting,44,2/19 Modelos de referencia,texto,boosting_base                dobra 3: RMSE 65.43 | MAE 50.33 | R2 0.2497 | treino 18.8s | predicao 4.6s
+boosting,45,2/19 Modelos de referencia,texto,Modelo: boosting
+boosting,46,2/19 Modelos de referencia,linha_vazia,
+boosting,47,2/19 Modelos de referencia,texto,Resumo de boosting_base:
+boosting,48,2/19 Modelos de referencia,texto,                    rmse        mae        r2  tempo_treino_s  tempo_predicao_s
+boosting,49,2/19 Modelos de referencia,texto,media          65.332610  50.299619  0.250862       21.232617          5.001048
+boosting,50,2/19 Modelos de referencia,texto,desvio_padrao   0.083575   0.044610  0.000797        1.689850          0.255555
+boosting,51,2/19 Modelos de referencia,texto,Hipotese: Referencia inicial com hiperparametros padrao e as 15 features do grupo.
+boosting,52,2/19 Modelos de referencia,texto,Conclusao: (preencher)
+boosting,121,4/19 Boosting com PCA,etapa,[4/19] Boosting com PCA
+boosting,122,4/19 Boosting com PCA,texto,boosting_pca                 dobra 1: RMSE 65.89 | MAE 50.81 | R2 0.2361 | treino 39.7s | predicao 6.5s
+boosting,123,4/19 Boosting com PCA,texto,boosting_pca                 dobra 2: RMSE 66.01 | MAE 50.91 | R2 0.2359 | treino 41.1s | predicao 6.2s
+boosting,124,4/19 Boosting com PCA,texto,boosting_pca                 dobra 3: RMSE 66.07 | MAE 50.88 | R2 0.2350 | treino 40.0s | predicao 6.2s
+boosting,125,4/19 Boosting com PCA,texto,Modelo: HistGradientBoosting + PCA(80%)
+boosting,126,4/19 Boosting com PCA,linha_vazia,
+boosting,127,4/19 Boosting com PCA,texto,Resumo de boosting_pca:
+boosting,128,4/19 Boosting com PCA,texto,                    rmse        mae        r2  tempo_treino_s  tempo_predicao_s
+boosting,129,4/19 Boosting com PCA,texto,media          65.991319  50.867562  0.235679       40.276517          6.292864
+boosting,130,4/19 Boosting com PCA,texto,desvio_padrao   0.075167   0.041562  0.000454        0.580841          0.125811
+boosting,131,4/19 Boosting com PCA,texto,"Hipotese: Trocar as features por componentes do PCA piora o boosting, que ja lida com categorias de forma nativa."
+boosting,132,4/19 Boosting com PCA,texto,Conclusao: (preencher)
+boosting,133,4/19 Boosting com PCA,linha_vazia,
+boosting,173,8/19 Balanceamento: boosting (peso),etapa,[8/19] Balanceamento: boosting (peso)
+boosting,174,8/19 Balanceamento: boosting (peso),texto,boosting_peso                dobra 1: RMSE 80.46 | MAE 64.54 | R2 -0.1392 | treino 8.8s | predicao 2.0s
+boosting,175,8/19 Balanceamento: boosting (peso),texto,boosting_peso                dobra 2: RMSE 80.42 | MAE 64.50 | R2 -0.1339 | treino 8.0s | predicao 1.9s
+boosting,176,8/19 Balanceamento: boosting (peso),texto,boosting_peso                dobra 3: RMSE 80.48 | MAE 64.44 | R2 -0.1350 | treino 7.3s | predicao 1.8s
+boosting,177,8/19 Balanceamento: boosting (peso),texto,Modelo: boosting
+boosting,178,8/19 Balanceamento: boosting (peso),linha_vazia,
+boosting,179,8/19 Balanceamento: boosting (peso),texto,Resumo de boosting_peso:
+boosting,180,8/19 Balanceamento: boosting (peso),texto,                    rmse        mae        r2  tempo_treino_s  tempo_predicao_s
+boosting,181,8/19 Balanceamento: boosting (peso),texto,media          80.453853  64.489766 -0.136049        8.010152          1.925169
+boosting,182,8/19 Balanceamento: boosting (peso),texto,desvio_padrao   0.025676   0.040008  0.002255        0.589369          0.084003
+boosting,183,8/19 Balanceamento: boosting (peso),texto,"Hipotese: Notas extremas (faixas raras) concentram erro; dar mais peso a elas reduz o erro ali, a custa do centro."
+boosting,184,8/19 Balanceamento: boosting (peso),texto,Conclusao: (preencher)
+boosting,185,8/19 Balanceamento: boosting (peso),linha_vazia,
+boosting,186,9/19 Balanceamento: boosting (under),etapa,[9/19] Balanceamento: boosting (under)
+boosting,187,9/19 Balanceamento: boosting (under),texto,boosting_under               dobra 1: RMSE 71.72 | MAE 56.66 | R2 0.0948 | treino 1.7s | predicao 2.0s
+boosting,188,9/19 Balanceamento: boosting (under),texto,boosting_under               dobra 2: RMSE 71.84 | MAE 56.76 | R2 0.0951 | treino 1.7s | predicao 2.0s
+boosting,189,9/19 Balanceamento: boosting (under),texto,boosting_under               dobra 3: RMSE 72.01 | MAE 56.80 | R2 0.0913 | treino 1.9s | predicao 2.2s
+boosting,190,9/19 Balanceamento: boosting (under),texto,Modelo: boosting
+boosting,191,9/19 Balanceamento: boosting (under),linha_vazia,
+boosting,192,9/19 Balanceamento: boosting (under),texto,Resumo de boosting_under:
+boosting,193,9/19 Balanceamento: boosting (under),texto,                    rmse        mae        r2  tempo_treino_s  tempo_predicao_s
+boosting,194,9/19 Balanceamento: boosting (under),texto,media          71.857427  56.739619  0.093755        1.735727          2.085072
+boosting,195,9/19 Balanceamento: boosting (under),texto,desvio_padrao   0.117850   0.061203  0.001743        0.094985          0.105180
+boosting,196,9/19 Balanceamento: boosting (under),texto,"Hipotese: Notas extremas (faixas raras) concentram erro; dar mais peso a elas reduz o erro ali, a custa do centro."
+boosting,197,9/19 Balanceamento: boosting (under),texto,Conclusao: (preencher)
+boosting,198,9/19 Balanceamento: boosting (under),linha_vazia,
+boosting,199,10/19 Balanceamento: boosting (over),etapa,[10/19] Balanceamento: boosting (over)
+boosting,200,10/19 Balanceamento: boosting (over),texto,boosting_over                dobra 1: RMSE 65.74 | MAE 50.91 | R2 0.2395 | treino 9.6s | predicao 2.4s
+boosting,201,10/19 Balanceamento: boosting (over),texto,boosting_over                dobra 2: RMSE 65.88 | MAE 51.04 | R2 0.2389 | treino 9.7s | predicao 2.3s
+boosting,202,10/19 Balanceamento: boosting (over),texto,boosting_over                dobra 3: RMSE 65.96 | MAE 51.01 | R2 0.2376 | treino 9.6s | predicao 2.3s
+boosting,203,10/19 Balanceamento: boosting (over),texto,Modelo: boosting
+boosting,204,10/19 Balanceamento: boosting (over),linha_vazia,
+boosting,205,10/19 Balanceamento: boosting (over),texto,Resumo de boosting_over:
+boosting,206,10/19 Balanceamento: boosting (over),texto,                    rmse        mae        r2  tempo_treino_s  tempo_predicao_s
+boosting,207,10/19 Balanceamento: boosting (over),texto,media          65.861204  50.985459  0.238691        9.612205          2.345138
+boosting,208,10/19 Balanceamento: boosting (over),texto,desvio_padrao   0.089396   0.052241  0.000782        0.045936          0.006568
+boosting,209,10/19 Balanceamento: boosting (over),texto,"Hipotese: Notas extremas (faixas raras) concentram erro; dar mais peso a elas reduz o erro ali, a custa do centro."
+boosting,210,10/19 Balanceamento: boosting (over),texto,Conclusao: (preencher)
+boosting,211,10/19 Balanceamento: boosting (over),linha_vazia,
+boosting,295,12/19 Ablacao: boosting,etapa,[12/19] Ablacao: boosting
+boosting,296,12/19 Ablacao: boosting,texto,boosting_sem_renda           dobra 1: RMSE 65.97 | MAE 50.88 | R2 0.2342 | treino 10.8s | predicao 2.4s
+boosting,297,12/19 Ablacao: boosting,texto,boosting_sem_renda           dobra 2: RMSE 66.08 | MAE 50.97 | R2 0.2344 | treino 8.8s | predicao 2.2s
+boosting,298,12/19 Ablacao: boosting,texto,boosting_sem_renda           dobra 3: RMSE 66.17 | MAE 50.98 | R2 0.2327 | treino 8.9s | predicao 2.2s
+boosting,299,12/19 Ablacao: boosting,texto,Modelo: boosting
+boosting,300,12/19 Ablacao: boosting,texto,"Features: Q001, Q002, TP_ESCOLA, TP_ST_CONCLUSAO, TP_FAIXA_ETARIA, Q024, Q025, IN_TREINEIRO, SG_UF_PROVA, TP_LINGUA, ESCOLARIDADE_MAX_RESP, PERFIL_ACESSO_DIGITAL"
+boosting,301,12/19 Ablacao: boosting,linha_vazia,
+boosting,302,12/19 Ablacao: boosting,texto,Resumo de boosting_sem_renda:
+boosting,303,12/19 Ablacao: boosting,texto,                    rmse        mae        r2  tempo_treino_s  tempo_predicao_s
+boosting,304,12/19 Ablacao: boosting,texto,media          66.073625  50.942052  0.233772        9.509381          2.263440
+boosting,305,12/19 Ablacao: boosting,texto,desvio_padrao   0.081503   0.047309  0.000750        0.929259          0.098267
+boosting,306,12/19 Ablacao: boosting,texto,Hipotese: Retirar um bloco de informacao aumenta o RMSE em proporcao a sua contribuicao para a previsao.
+boosting,307,12/19 Ablacao: boosting,texto,Conclusao: (preencher)
+boosting,308,12/19 Ablacao: boosting,texto,boosting_sem_escolaridade_responsaveis dobra 1: RMSE 65.72 | MAE 50.68 | R2 0.2399 | treino 8.6s | predicao 2.0s
+boosting,309,12/19 Ablacao: boosting,texto,boosting_sem_escolaridade_responsaveis dobra 2: RMSE 65.82 | MAE 50.76 | R2 0.2403 | treino 8.4s | predicao 2.0s
+boosting,310,12/19 Ablacao: boosting,texto,boosting_sem_escolaridade_responsaveis dobra 3: RMSE 65.92 | MAE 50.75 | R2 0.2384 | treino 8.3s | predicao 2.0s
+boosting,311,12/19 Ablacao: boosting,texto,Modelo: boosting
+boosting,312,12/19 Ablacao: boosting,texto,"Features: Q006, TP_ESCOLA, TP_ST_CONCLUSAO, TP_FAIXA_ETARIA, Q005, Q024, Q025, IN_TREINEIRO, SG_UF_PROVA, TP_LINGUA, RENDA_PER_CAPITA_APROX, PERFIL_ACESSO_DIGITAL"
+boosting,313,12/19 Ablacao: boosting,linha_vazia,
+boosting,314,12/19 Ablacao: boosting,texto,Resumo de boosting_sem_escolaridade_responsaveis:
+boosting,315,12/19 Ablacao: boosting,texto,                    rmse        mae        r2  tempo_treino_s  tempo_predicao_s
+boosting,316,12/19 Ablacao: boosting,texto,media          65.824711  50.733642  0.239534        8.413282          1.998683
+boosting,317,12/19 Ablacao: boosting,texto,desvio_padrao   0.081585   0.036312  0.000822        0.127468          0.023130
+boosting,318,12/19 Ablacao: boosting,texto,Hipotese: Retirar um bloco de informacao aumenta o RMSE em proporcao a sua contribuicao para a previsao.
+boosting,319,12/19 Ablacao: boosting,texto,Conclusao: (preencher)
+boosting,320,12/19 Ablacao: boosting,texto,boosting_sem_acesso_digital  dobra 1: RMSE 65.60 | MAE 50.54 | R2 0.2428 | treino 8.0s | predicao 2.1s
+boosting,321,12/19 Ablacao: boosting,texto,boosting_sem_acesso_digital  dobra 2: RMSE 65.75 | MAE 50.69 | R2 0.2421 | treino 7.6s | predicao 2.0s
+boosting,322,12/19 Ablacao: boosting,texto,boosting_sem_acesso_digital  dobra 3: RMSE 65.81 | MAE 50.65 | R2 0.2412 | treino 8.1s | predicao 2.3s
+boosting,323,12/19 Ablacao: boosting,texto,Modelo: boosting
+boosting,324,12/19 Ablacao: boosting,texto,"Features: Q006, Q001, Q002, TP_ESCOLA, TP_ST_CONCLUSAO, TP_FAIXA_ETARIA, Q005, IN_TREINEIRO, SG_UF_PROVA, TP_LINGUA, RENDA_PER_CAPITA_APROX, ESCOLARIDADE_MAX_RESP"
+boosting,325,12/19 Ablacao: boosting,linha_vazia,
+boosting,326,12/19 Ablacao: boosting,texto,Resumo de boosting_sem_acesso_digital:
+boosting,327,12/19 Ablacao: boosting,texto,                    rmse        mae        r2  tempo_treino_s  tempo_predicao_s
+boosting,328,12/19 Ablacao: boosting,texto,media          65.717795  50.628493  0.242002        7.909135          2.124314
+boosting,329,12/19 Ablacao: boosting,texto,desvio_padrao   0.085955   0.060779  0.000658        0.242558          0.142003
+boosting,330,12/19 Ablacao: boosting,texto,Hipotese: Retirar um bloco de informacao aumenta o RMSE em proporcao a sua contribuicao para a previsao.
+boosting,331,12/19 Ablacao: boosting,texto,Conclusao: (preencher)
+boosting,332,12/19 Ablacao: boosting,texto,boosting_sem_localizacao     dobra 1: RMSE 65.67 | MAE 50.63 | R2 0.2411 | treino 9.2s | predicao 2.2s
+boosting,333,12/19 Ablacao: boosting,texto,boosting_sem_localizacao     dobra 2: RMSE 65.80 | MAE 50.73 | R2 0.2408 | treino 9.0s | predicao 2.3s
+boosting,334,12/19 Ablacao: boosting,texto,boosting_sem_localizacao     dobra 3: RMSE 65.87 | MAE 50.71 | R2 0.2396 | treino 8.8s | predicao 2.3s
+boosting,335,12/19 Ablacao: boosting,texto,Modelo: boosting
+boosting,336,12/19 Ablacao: boosting,texto,"Features: Q006, Q001, Q002, TP_ESCOLA, TP_ST_CONCLUSAO, TP_FAIXA_ETARIA, Q005, Q024, Q025, IN_TREINEIRO, TP_LINGUA, RENDA_PER_CAPITA_APROX, ESCOLARIDADE_MAX_RESP, PERFIL_ACESSO_DIGITAL"
+boosting,337,12/19 Ablacao: boosting,linha_vazia,
+boosting,338,12/19 Ablacao: boosting,texto,Resumo de boosting_sem_localizacao:
+boosting,339,12/19 Ablacao: boosting,texto,                    rmse        mae        r2  tempo_treino_s  tempo_predicao_s
+boosting,340,12/19 Ablacao: boosting,texto,media          65.781798  50.689941  0.240525        9.000555          2.247010
+boosting,341,12/19 Ablacao: boosting,texto,desvio_padrao   0.082344   0.043450  0.000638        0.148331          0.032334
+boosting,342,12/19 Ablacao: boosting,texto,Hipotese: Retirar um bloco de informacao aumenta o RMSE em proporcao a sua contribuicao para a previsao.
+boosting,343,12/19 Ablacao: boosting,texto,Conclusao: (preencher)
+boosting,344,12/19 Ablacao: boosting,texto,boosting_sem_perfil_escolar  dobra 1: RMSE 66.61 | MAE 51.39 | R2 0.2193 | treino 7.1s | predicao 1.9s
+boosting,345,12/19 Ablacao: boosting,texto,boosting_sem_perfil_escolar  dobra 2: RMSE 66.72 | MAE 51.48 | R2 0.2195 | treino 7.2s | predicao 1.9s
+boosting,346,12/19 Ablacao: boosting,texto,boosting_sem_perfil_escolar  dobra 3: RMSE 66.79 | MAE 51.46 | R2 0.2184 | treino 5.7s | predicao 1.6s
+boosting,347,12/19 Ablacao: boosting,texto,Modelo: boosting
+boosting,348,12/19 Ablacao: boosting,texto,"Features: Q006, Q001, Q002, Q005, Q024, Q025, SG_UF_PROVA, TP_LINGUA, RENDA_PER_CAPITA_APROX, ESCOLARIDADE_MAX_RESP, PERFIL_ACESSO_DIGITAL"
+boosting,349,12/19 Ablacao: boosting,linha_vazia,
+boosting,350,12/19 Ablacao: boosting,texto,Resumo de boosting_sem_perfil_escolar:
+boosting,351,12/19 Ablacao: boosting,texto,                    rmse        mae        r2  tempo_treino_s  tempo_predicao_s
+boosting,352,12/19 Ablacao: boosting,texto,media          66.704812  51.443624  0.219062        6.671542           1.80692
+boosting,353,12/19 Ablacao: boosting,texto,desvio_padrao   0.073262   0.041020  0.000506        0.657872           0.12837
+boosting,354,12/19 Ablacao: boosting,texto,Hipotese: Retirar um bloco de informacao aumenta o RMSE em proporcao a sua contribuicao para a previsao.
+boosting,355,12/19 Ablacao: boosting,texto,Conclusao: (preencher)
+boosting,356,12/19 Ablacao: boosting,texto,boosting_sem_lingua          dobra 1: RMSE 65.93 | MAE 50.86 | R2 0.2351 | treino 9.0s | predicao 2.3s
+boosting,357,12/19 Ablacao: boosting,texto,boosting_sem_lingua          dobra 2: RMSE 66.04 | MAE 50.95 | R2 0.2352 | treino 8.4s | predicao 2.2s
+boosting,358,12/19 Ablacao: boosting,texto,boosting_sem_lingua          dobra 3: RMSE 66.12 | MAE 50.95 | R2 0.2338 | treino 9.1s | predicao 2.3s
+boosting,359,12/19 Ablacao: boosting,texto,Modelo: boosting
+boosting,360,12/19 Ablacao: boosting,texto,"Features: Q006, Q001, Q002, TP_ESCOLA, TP_ST_CONCLUSAO, TP_FAIXA_ETARIA, Q005, Q024, Q025, IN_TREINEIRO, SG_UF_PROVA, RENDA_PER_CAPITA_APROX, ESCOLARIDADE_MAX_RESP, PERFIL_ACESSO_DIGITAL"
+boosting,361,12/19 Ablacao: boosting,linha_vazia,
+boosting,362,12/19 Ablacao: boosting,texto,Resumo de boosting_sem_lingua:
+boosting,363,12/19 Ablacao: boosting,texto,                    rmse        mae        r2  tempo_treino_s  tempo_predicao_s
+boosting,364,12/19 Ablacao: boosting,texto,media          66.033948  50.919692  0.234692        8.834820          2.288296
+boosting,365,12/19 Ablacao: boosting,texto,desvio_padrao   0.078372   0.039513  0.000643        0.307681          0.046489
+boosting,366,12/19 Ablacao: boosting,texto,Hipotese: Retirar um bloco de informacao aumenta o RMSE em proporcao a sua contribuicao para a previsao.
+boosting,367,12/19 Ablacao: boosting,texto,Conclusao: (preencher)
+boosting,368,12/19 Ablacao: boosting,texto,Resultados da ablacao:
+boosting,369,12/19 Ablacao: boosting,texto,           bloco_removido                                                   colunas  rmse_media  rmse_dp  r2_media  delta_rmse
+boosting,370,12/19 Ablacao: boosting,texto,                 (nenhum)                                                     todas   65.332610 0.083575  0.250862    0.000000
+boosting,371,12/19 Ablacao: boosting,texto,"                    renda                        Q006, Q005, RENDA_PER_CAPITA_APROX   66.073625 0.081503  0.233772    0.741015"
+boosting,372,12/19 Ablacao: boosting,texto,"escolaridade_responsaveis                         Q001, Q002, ESCOLARIDADE_MAX_RESP   65.824711 0.081585  0.239534    0.492101"
+boosting,373,12/19 Ablacao: boosting,texto,"           acesso_digital                         Q024, Q025, PERFIL_ACESSO_DIGITAL   65.717795 0.085955  0.242002    0.385185"
+boosting,374,12/19 Ablacao: boosting,texto,              localizacao                                               SG_UF_PROVA   65.781798 0.082344  0.240525    0.449188
+boosting,375,12/19 Ablacao: boosting,texto,"           perfil_escolar TP_ESCOLA, TP_ST_CONCLUSAO, IN_TREINEIRO, TP_FAIXA_ETARIA   66.704812 0.073262  0.219062    1.372202"
+boosting,376,12/19 Ablacao: boosting,texto,                   lingua                                                 TP_LINGUA   66.033948 0.078372  0.234692    0.701338
+boosting,377,12/19 Ablacao: boosting,linha_vazia,
+boosting,441,14/19 Busca de hiperparametros: boosting,etapa,[14/19] Busca de hiperparametros: boosting
+boosting,442,14/19 Busca de hiperparametros: boosting,texto,"Fitting 3 folds for each of 12 candidates, totalling 36 fits"
+boosting,443,14/19 Busca de hiperparametros: boosting,texto,"[CV] END model__l2_regularization=1.0, model__learning_rate=0.18778644552862608, model__max_depth=10, model__max_iter=600, model__max_leaf_nodes=127, model__min_samples_leaf=20, model__n_iter_no_change=10; total time=   8.9s"
+boosting,444,14/19 Busca de hiperparametros: boosting,texto,"[CV] END model__l2_regularization=1.0, model__learning_rate=0.18778644552862608, model__max_depth=10, model__max_iter=600, model__max_leaf_nodes=127, model__min_samples_leaf=20, model__n_iter_no_change=10; total time=   9.0s"
+boosting,445,14/19 Busca de hiperparametros: boosting,texto,"[CV] END model__l2_regularization=1.0, model__learning_rate=0.18778644552862608, model__max_depth=10, model__max_iter=600, model__max_leaf_nodes=127, model__min_samples_leaf=20, model__n_iter_no_change=10; total time=   8.6s"
+boosting,446,14/19 Busca de hiperparametros: boosting,texto,"[CV] END model__l2_regularization=1.0, model__learning_rate=0.08374405912358615, model__max_depth=10, model__max_iter=600, model__max_leaf_nodes=63, model__min_samples_leaf=200, model__n_iter_no_change=10; total time=  12.3s"
+boosting,447,14/19 Busca de hiperparametros: boosting,texto,"[CV] END model__l2_regularization=1.0, model__learning_rate=0.08374405912358615, model__max_depth=10, model__max_iter=600, model__max_leaf_nodes=63, model__min_samples_leaf=200, model__n_iter_no_change=10; total time=  13.9s"
+boosting,448,14/19 Busca de hiperparametros: boosting,texto,"[CV] END model__l2_regularization=1.0, model__learning_rate=0.08374405912358615, model__max_depth=10, model__max_iter=600, model__max_leaf_nodes=63, model__min_samples_leaf=200, model__n_iter_no_change=10; total time=  12.9s"
+boosting,449,14/19 Busca de hiperparametros: boosting,texto,"[CV] END model__l2_regularization=10.0, model__learning_rate=0.0416857934827831, model__max_depth=10, model__max_iter=400, model__max_leaf_nodes=15, model__min_samples_leaf=50, model__n_iter_no_change=20; total time=  17.4s"
+boosting,450,14/19 Busca de hiperparametros: boosting,texto,"[CV] END model__l2_regularization=10.0, model__learning_rate=0.0416857934827831, model__max_depth=10, model__max_iter=400, model__max_leaf_nodes=15, model__min_samples_leaf=50, model__n_iter_no_change=20; total time=  17.2s"
+boosting,451,14/19 Busca de hiperparametros: boosting,texto,"[CV] END model__l2_regularization=10.0, model__learning_rate=0.0416857934827831, model__max_depth=10, model__max_iter=400, model__max_leaf_nodes=15, model__min_samples_leaf=50, model__n_iter_no_change=20; total time=  17.3s"
+boosting,452,14/19 Busca de hiperparametros: boosting,texto,"[CV] END model__l2_regularization=10.0, model__learning_rate=0.2604197776353783, model__max_depth=6, model__max_iter=200, model__max_leaf_nodes=15, model__min_samples_leaf=200, model__n_iter_no_change=20; total time=  10.8s"
+boosting,453,14/19 Busca de hiperparametros: boosting,texto,"[CV] END model__l2_regularization=10.0, model__learning_rate=0.2604197776353783, model__max_depth=6, model__max_iter=200, model__max_leaf_nodes=15, model__min_samples_leaf=200, model__n_iter_no_change=20; total time=  11.0s"
+boosting,454,14/19 Busca de hiperparametros: boosting,texto,"[CV] END model__l2_regularization=10.0, model__learning_rate=0.2604197776353783, model__max_depth=6, model__max_iter=200, model__max_leaf_nodes=15, model__min_samples_leaf=200, model__n_iter_no_change=20; total time=  11.0s"
+boosting,455,14/19 Busca de hiperparametros: boosting,texto,"[CV] END model__l2_regularization=0.1, model__learning_rate=0.030492115766073635, model__max_depth=None, model__max_iter=200, model__max_leaf_nodes=63, model__min_samples_leaf=100, model__n_iter_no_change=10; total time=  16.0s"
+boosting,456,14/19 Busca de hiperparametros: boosting,texto,"[CV] END model__l2_regularization=0.1, model__learning_rate=0.030492115766073635, model__max_depth=None, model__max_iter=200, model__max_leaf_nodes=63, model__min_samples_leaf=100, model__n_iter_no_change=10; total time=  16.0s"
+boosting,457,14/19 Busca de hiperparametros: boosting,texto,"[CV] END model__l2_regularization=0.1, model__learning_rate=0.030492115766073635, model__max_depth=None, model__max_iter=200, model__max_leaf_nodes=63, model__min_samples_leaf=100, model__n_iter_no_change=10; total time=  16.1s"
+boosting,458,14/19 Busca de hiperparametros: boosting,texto,"[CV] END model__l2_regularization=0.1, model__learning_rate=0.03340311109268974, model__max_depth=10, model__max_iter=400, model__max_leaf_nodes=31, model__min_samples_leaf=100, model__n_iter_no_change=20; total time=  19.7s"
+boosting,459,14/19 Busca de hiperparametros: boosting,texto,"[CV] END model__l2_regularization=0.1, model__learning_rate=0.03340311109268974, model__max_depth=10, model__max_iter=400, model__max_leaf_nodes=31, model__min_samples_leaf=100, model__n_iter_no_change=20; total time=  19.9s"
+boosting,460,14/19 Busca de hiperparametros: boosting,texto,"[CV] END model__l2_regularization=0.1, model__learning_rate=0.03340311109268974, model__max_depth=10, model__max_iter=400, model__max_leaf_nodes=31, model__min_samples_leaf=100, model__n_iter_no_change=20; total time=  19.9s"
+boosting,461,14/19 Busca de hiperparametros: boosting,texto,"[CV] END model__l2_regularization=1.0, model__learning_rate=0.07237411163833976, model__max_depth=None, model__max_iter=600, model__max_leaf_nodes=15, model__min_samples_leaf=100, model__n_iter_no_change=10; total time=  19.1s"
+boosting,462,14/19 Busca de hiperparametros: boosting,texto,"[CV] END model__l2_regularization=1.0, model__learning_rate=0.07237411163833976, model__max_depth=None, model__max_iter=600, model__max_leaf_nodes=15, model__min_samples_leaf=100, model__n_iter_no_change=10; total time=  21.2s"
+boosting,463,14/19 Busca de hiperparametros: boosting,texto,"[CV] END model__l2_regularization=1.0, model__learning_rate=0.07237411163833976, model__max_depth=None, model__max_iter=600, model__max_leaf_nodes=15, model__min_samples_leaf=100, model__n_iter_no_change=10; total time=  20.2s"
+boosting,464,14/19 Busca de hiperparametros: boosting,texto,"[CV] END model__l2_regularization=0.0, model__learning_rate=0.08464874169328597, model__max_depth=6, model__max_iter=200, model__max_leaf_nodes=127, model__min_samples_leaf=50, model__n_iter_no_change=20; total time=  13.5s"
+boosting,465,14/19 Busca de hiperparametros: boosting,texto,"[CV] END model__l2_regularization=0.0, model__learning_rate=0.08464874169328597, model__max_depth=6, model__max_iter=200, model__max_leaf_nodes=127, model__min_samples_leaf=50, model__n_iter_no_change=20; total time=  13.6s"
+boosting,466,14/19 Busca de hiperparametros: boosting,texto,"[CV] END model__l2_regularization=0.0, model__learning_rate=0.08464874169328597, model__max_depth=6, model__max_iter=200, model__max_leaf_nodes=127, model__min_samples_leaf=50, model__n_iter_no_change=20; total time=  13.6s"
+boosting,467,14/19 Busca de hiperparametros: boosting,texto,"[CV] END model__l2_regularization=0.1, model__learning_rate=0.06049716507542575, model__max_depth=None, model__max_iter=400, model__max_leaf_nodes=127, model__min_samples_leaf=200, model__n_iter_no_change=10; total time=  13.5s"
+boosting,468,14/19 Busca de hiperparametros: boosting,texto,"[CV] END model__l2_regularization=0.1, model__learning_rate=0.06049716507542575, model__max_depth=None, model__max_iter=400, model__max_leaf_nodes=127, model__min_samples_leaf=200, model__n_iter_no_change=10; total time=  15.1s"
+boosting,469,14/19 Busca de hiperparametros: boosting,texto,"[CV] END model__l2_regularization=0.1, model__learning_rate=0.06049716507542575, model__max_depth=None, model__max_iter=400, model__max_leaf_nodes=127, model__min_samples_leaf=200, model__n_iter_no_change=10; total time=  14.7s"
+boosting,470,14/19 Busca de hiperparametros: boosting,texto,"[CV] END model__l2_regularization=10.0, model__learning_rate=0.039733744020298056, model__max_depth=None, model__max_iter=600, model__max_leaf_nodes=63, model__min_samples_leaf=50, model__n_iter_no_change=10; total time=  18.6s"
+boosting,471,14/19 Busca de hiperparametros: boosting,texto,"[CV] END model__l2_regularization=10.0, model__learning_rate=0.039733744020298056, model__max_depth=None, model__max_iter=600, model__max_leaf_nodes=63, model__min_samples_leaf=50, model__n_iter_no_change=10; total time=  19.2s"
+boosting,472,14/19 Busca de hiperparametros: boosting,texto,"[CV] END model__l2_regularization=10.0, model__learning_rate=0.039733744020298056, model__max_depth=None, model__max_iter=600, model__max_leaf_nodes=63, model__min_samples_leaf=50, model__n_iter_no_change=10; total time=  20.1s"
+boosting,473,14/19 Busca de hiperparametros: boosting,texto,"[CV] END model__l2_regularization=10.0, model__learning_rate=0.04564123027996109, model__max_depth=6, model__max_iter=400, model__max_leaf_nodes=31, model__min_samples_leaf=50, model__n_iter_no_change=20; total time=  19.0s"
+boosting,474,14/19 Busca de hiperparametros: boosting,texto,"[CV] END model__l2_regularization=10.0, model__learning_rate=0.04564123027996109, model__max_depth=6, model__max_iter=400, model__max_leaf_nodes=31, model__min_samples_leaf=50, model__n_iter_no_change=20; total time=  18.9s"
+boosting,475,14/19 Busca de hiperparametros: boosting,texto,"[CV] END model__l2_regularization=10.0, model__learning_rate=0.04564123027996109, model__max_depth=6, model__max_iter=400, model__max_leaf_nodes=31, model__min_samples_leaf=50, model__n_iter_no_change=20; total time=  18.8s"
+boosting,476,14/19 Busca de hiperparametros: boosting,texto,"[CV] END model__l2_regularization=10.0, model__learning_rate=0.045917233096500525, model__max_depth=10, model__max_iter=400, model__max_leaf_nodes=31, model__min_samples_leaf=200, model__n_iter_no_change=20; total time=  18.7s"
+boosting,477,14/19 Busca de hiperparametros: boosting,texto,"[CV] END model__l2_regularization=10.0, model__learning_rate=0.045917233096500525, model__max_depth=10, model__max_iter=400, model__max_leaf_nodes=31, model__min_samples_leaf=200, model__n_iter_no_change=20; total time=  18.8s"
+boosting,478,14/19 Busca de hiperparametros: boosting,texto,"[CV] END model__l2_regularization=10.0, model__learning_rate=0.045917233096500525, model__max_depth=10, model__max_iter=400, model__max_leaf_nodes=31, model__min_samples_leaf=200, model__n_iter_no_change=20; total time=  18.9s"
+boosting,479,14/19 Busca de hiperparametros: boosting,texto,Melhores configuracoes:
+boosting,480,14/19 Busca de hiperparametros: boosting,texto,                                                                                                                                                                                                                       params  rmse_media  rmse_dp
+boosting,481,14/19 Busca de hiperparametros: boosting,texto,"{'model__l2_regularization': 0.1, 'model__learning_rate': 0.06049716507542575, 'model__max_depth': None, 'model__max_iter': 400, 'model__max_leaf_nodes': 127, 'model__min_samples_leaf': 200, 'model__n_iter_no_change': 10}   65.306862 0.079640"
+boosting,482,14/19 Busca de hiperparametros: boosting,texto,"{'model__l2_regularization': 10.0, 'model__learning_rate': 0.039733744020298056, 'model__max_depth': None, 'model__max_iter': 600, 'model__max_leaf_nodes': 63, 'model__min_samples_leaf': 50, 'model__n_iter_no_change': 10}   65.309752 0.080074"
+boosting,483,14/19 Busca de hiperparametros: boosting,texto,"   {'model__l2_regularization': 1.0, 'model__learning_rate': 0.08374405912358615, 'model__max_depth': 10, 'model__max_iter': 600, 'model__max_leaf_nodes': 63, 'model__min_samples_leaf': 200, 'model__n_iter_no_change': 10}   65.314190 0.080588"
+boosting,484,14/19 Busca de hiperparametros: boosting,texto,"    {'model__l2_regularization': 0.0, 'model__learning_rate': 0.08464874169328597, 'model__max_depth': 6, 'model__max_iter': 200, 'model__max_leaf_nodes': 127, 'model__min_samples_leaf': 50, 'model__n_iter_no_change': 20}   65.315298 0.079378"
+boosting,485,14/19 Busca de hiperparametros: boosting,texto," {'model__l2_regularization': 1.0, 'model__learning_rate': 0.07237411163833976, 'model__max_depth': None, 'model__max_iter': 600, 'model__max_leaf_nodes': 15, 'model__min_samples_leaf': 100, 'model__n_iter_no_change': 10}   65.318216 0.083617"
+boosting,486,14/19 Busca de hiperparametros: boosting,texto," {'model__l2_regularization': 10.0, 'model__learning_rate': 0.045917233096500525, 'model__max_depth': 10, 'model__max_iter': 400, 'model__max_leaf_nodes': 31, 'model__min_samples_leaf': 200, 'model__n_iter_no_change': 20}   65.321584 0.081633"
+boosting,487,14/19 Busca de hiperparametros: boosting,texto,"    {'model__l2_regularization': 10.0, 'model__learning_rate': 0.04564123027996109, 'model__max_depth': 6, 'model__max_iter': 400, 'model__max_leaf_nodes': 31, 'model__min_samples_leaf': 50, 'model__n_iter_no_change': 20}   65.324159 0.081855"
+boosting,488,14/19 Busca de hiperparametros: boosting,texto,"   {'model__l2_regularization': 0.1, 'model__learning_rate': 0.03340311109268974, 'model__max_depth': 10, 'model__max_iter': 400, 'model__max_leaf_nodes': 31, 'model__min_samples_leaf': 100, 'model__n_iter_no_change': 20}   65.333947 0.081088"
+boosting,489,14/19 Busca de hiperparametros: boosting,texto,"    {'model__l2_regularization': 10.0, 'model__learning_rate': 0.2604197776353783, 'model__max_depth': 6, 'model__max_iter': 200, 'model__max_leaf_nodes': 15, 'model__min_samples_leaf': 200, 'model__n_iter_no_change': 20}   65.341914 0.084353"
+boosting,490,14/19 Busca de hiperparametros: boosting,texto,"   {'model__l2_regularization': 1.0, 'model__learning_rate': 0.18778644552862608, 'model__max_depth': 10, 'model__max_iter': 600, 'model__max_leaf_nodes': 127, 'model__min_samples_leaf': 20, 'model__n_iter_no_change': 10}   65.344601 0.079317"
+boosting,491,14/19 Busca de hiperparametros: boosting,texto,"Melhor RMSE: 65.307 | {'model__l2_regularization': 0.1, 'model__learning_rate': 0.06049716507542575, 'model__max_depth': None, 'model__max_iter': 400, 'model__max_leaf_nodes': 127, 'model__min_samples_leaf': 200, 'model__n_iter_no_change': 10} | 12 configuracoes | 9.6 min"
+boosting,492,14/19 Busca de hiperparametros: boosting,texto,boosting_busca_melhor        dobra 1: RMSE 65.21 | MAE 50.21 | R2 0.2519 | treino 11.0s | predicao 2.5s
+boosting,493,14/19 Busca de hiperparametros: boosting,texto,boosting_busca_melhor        dobra 2: RMSE 65.32 | MAE 50.31 | R2 0.2520 | treino 12.3s | predicao 2.8s
+boosting,494,14/19 Busca de hiperparametros: boosting,texto,boosting_busca_melhor        dobra 3: RMSE 65.40 | MAE 50.29 | R2 0.2505 | treino 11.8s | predicao 2.8s
+boosting,495,14/19 Busca de hiperparametros: boosting,texto,Modelo: boosting
+boosting,496,14/19 Busca de hiperparametros: boosting,linha_vazia,
+boosting,497,14/19 Busca de hiperparametros: boosting,texto,Resumo de boosting_busca_melhor:
+boosting,498,14/19 Busca de hiperparametros: boosting,texto,                    rmse        mae        r2  tempo_treino_s  tempo_predicao_s
+boosting,499,14/19 Busca de hiperparametros: boosting,texto,media          65.306862  50.271519  0.251452       11.687634          2.696705
+boosting,500,14/19 Busca de hiperparametros: boosting,texto,desvio_padrao   0.079640   0.042972  0.000685        0.555163          0.117013
+boosting,501,14/19 Busca de hiperparametros: boosting,texto,Hipotese: Ajustar hiperparametros reduz o RMSE em relacao a configuracao inicial.
+boosting,502,14/19 Busca de hiperparametros: boosting,texto,Conclusao: (preencher)
+boosting,503,14/19 Busca de hiperparametros: boosting,linha_vazia,
+boosting,592,17/19 Curva de aprendizado: boosting,etapa,[17/19] Curva de aprendizado: boosting
+boosting,593,17/19 Curva de aprendizado: boosting,texto,"dobra 1 |  10% (n=150,541) | treino 63.78 | validacao 65.54"
+boosting,594,17/19 Curva de aprendizado: boosting,texto,"dobra 1 |  25% (n=376,352) | treino 64.48 | validacao 65.34"
+boosting,595,17/19 Curva de aprendizado: boosting,texto,"dobra 1 |  50% (n=752,704) | treino 64.84 | validacao 65.26"
+boosting,596,17/19 Curva de aprendizado: boosting,texto,"dobra 1 |  75% (n=1,129,057) | treino 64.93 | validacao 65.23"
+boosting,597,17/19 Curva de aprendizado: boosting,texto,"dobra 1 | 100% (n=1,505,409) | treino 65.02 | validacao 65.21"
+boosting,598,17/19 Curva de aprendizado: boosting,texto,"dobra 2 |  10% (n=150,541) | treino 64.11 | validacao 65.64"
+boosting,599,17/19 Curva de aprendizado: boosting,texto,"dobra 2 |  25% (n=376,352) | treino 64.50 | validacao 65.45"
+boosting,600,17/19 Curva de aprendizado: boosting,texto,"dobra 2 |  50% (n=752,704) | treino 64.77 | validacao 65.37"
+boosting,601,17/19 Curva de aprendizado: boosting,texto,"dobra 2 |  75% (n=1,129,057) | treino 64.84 | validacao 65.33"
+boosting,602,17/19 Curva de aprendizado: boosting,texto,"dobra 2 | 100% (n=1,505,409) | treino 64.89 | validacao 65.32"
+boosting,603,17/19 Curva de aprendizado: boosting,texto,"dobra 3 |  10% (n=150,541) | treino 63.62 | validacao 65.73"
+boosting,604,17/19 Curva de aprendizado: boosting,texto,"dobra 3 |  25% (n=376,352) | treino 64.31 | validacao 65.54"
+boosting,605,17/19 Curva de aprendizado: boosting,texto,"dobra 3 |  50% (n=752,705) | treino 64.68 | validacao 65.46"
+boosting,606,17/19 Curva de aprendizado: boosting,texto,"dobra 3 |  75% (n=1,129,058) | treino 64.76 | validacao 65.42"
+boosting,607,17/19 Curva de aprendizado: boosting,texto,"dobra 3 | 100% (n=1,505,410) | treino 64.84 | validacao 65.41"
+boosting,608,17/19 Curva de aprendizado: boosting,texto,Resumo da curva de aprendizado:
+boosting,609,17/19 Curva de aprendizado: boosting,texto,                   n       tr_m      tr_s       va_m      va_s
+boosting,610,17/19 Curva de aprendizado: boosting,texto,fracao                                                        
+boosting,611,17/19 Curva de aprendizado: boosting,texto,0.10    1.505410e+05  63.835470  0.201774  65.637785  0.080603
+boosting,612,17/19 Curva de aprendizado: boosting,texto,0.25    3.763520e+05  64.430594  0.085650  65.443087  0.084959
+boosting,613,17/19 Curva de aprendizado: boosting,texto,0.50    7.527043e+05  64.764478  0.068478  65.364965  0.080951
+boosting,614,17/19 Curva de aprendizado: boosting,texto,0.75    1.129057e+06  64.843119  0.067302  65.327173  0.080438
+boosting,615,17/19 Curva de aprendizado: boosting,texto,1.00    1.505409e+06  64.917865  0.072858  65.309600  0.082494
+boosting,616,17/19 Curva de aprendizado: boosting,linha_vazia,
+boosting,726,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_base  faixa_nota          zero    1736 515.346279 513.704628 -513.704628
+boosting,727,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_base  faixa_nota         0-400  147627 136.966783 130.214782 -130.214782
+boosting,728,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_base  faixa_nota       400-500  705371  55.496166  44.924345  -40.158333
+boosting,729,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_base  faixa_nota       500-600 1110460  43.865234  35.499055   23.540847
+boosting,730,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_base  faixa_nota       600-700  286878  83.083044  75.074891   74.841684
+boosting,731,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_base  faixa_nota          700+    6042 140.068642 135.935011  135.935011
+boosting,732,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_base SG_UF_PROVA            BA  184031  67.449930  52.467437    0.019712
+boosting,733,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_base SG_UF_PROVA            SP  346110  61.610641  46.741585   -0.039682
+boosting,734,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_base SG_UF_PROVA            SC   53219  61.849867  47.154923   -0.030920
+boosting,735,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_base SG_UF_PROVA            PI   58838  68.307037  53.338306    0.051346
+boosting,736,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_base SG_UF_PROVA            MG  210170  63.863285  48.907328    0.007739
+boosting,737,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_base SG_UF_PROVA            ES   41831  64.332585  49.122052    0.024927
+boosting,738,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_base SG_UF_PROVA            RJ  156611  65.437731  49.983593   -0.025710
+boosting,739,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_base SG_UF_PROVA            PB   72611  66.430260  51.704667   -0.067953
+boosting,740,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_base SG_UF_PROVA            MA   94822  67.996634  53.132486    0.032834
+boosting,741,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_base SG_UF_PROVA            PA  129614  66.263325  51.800346    0.017857
+boosting,742,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_base SG_UF_PROVA            RS   94578  62.403309  47.430477   -0.095452
+boosting,743,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_base SG_UF_PROVA            AC   12907  66.928375  50.937401    0.498752
+boosting,744,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_base SG_UF_PROVA            GO   81923  65.728080  50.506908    0.004052
+boosting,745,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_base SG_UF_PROVA            CE  144469  68.609975  53.715646    0.047609
+boosting,746,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_base SG_UF_PROVA            DF   42541  64.537765  49.047315   -0.146117
+boosting,747,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_base SG_UF_PROVA            RO   19650  65.505671  51.179169   -0.184579
+boosting,748,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_base SG_UF_PROVA            RN   60184  66.106452  51.167562    0.045169
+boosting,749,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_base SG_UF_PROVA            PR   97861  63.261550  48.187676    0.111205
+boosting,750,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_base SG_UF_PROVA            AL   46161  66.770429  52.122090   -0.029881
+boosting,751,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_base SG_UF_PROVA            TO   18531  66.281028  51.677409   -0.648401
+boosting,752,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_base SG_UF_PROVA            PE  127460  67.151339  51.808921    0.072038
+boosting,753,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_base SG_UF_PROVA            SE   39290  67.677011  53.058937    0.009320
+boosting,754,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_base SG_UF_PROVA            MS   26714  65.899086  50.580289    0.020283
+boosting,755,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_base SG_UF_PROVA            RR    5245  65.534535  50.288340   -0.113212
+boosting,756,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_base SG_UF_PROVA            AM   41783  68.502977  52.594006    0.033926
+boosting,757,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_base SG_UF_PROVA            AP   15629  67.010822  51.973047   -0.077896
+boosting,758,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_base SG_UF_PROVA            MT   35331  66.751440  51.727990   -0.104637
+boosting,759,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_base   TP_ESCOLA nao respondeu 1378087  65.824589  50.456763    0.009682
+boosting,760,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_base   TP_ESCOLA       publica  700259  65.169678  50.658445   -0.057327
+boosting,761,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_base   TP_ESCOLA       privada  179768  62.101602  47.697214    0.101177
+boosting,762,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_base        Q006             B  662677  66.914228  52.129616   -0.003201
+boosting,763,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_base        Q006             E  175920  64.753938  49.712308    0.003084
+boosting,764,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_base        Q006             G  168149  63.777353  48.736255    0.014533
+boosting,765,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_base        Q006             C  351498  65.744324  50.779705   -0.077279
+boosting,766,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_base        Q006             A  132951  66.956201  52.182539   -0.042694
+boosting,767,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_base        Q006             D  249365  65.377311  50.281580    0.014638
+boosting,768,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_base        Q006             L   27234  63.291195  47.574537   -0.270438
+boosting,769,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_base        Q006             O   28759  62.194139  46.547512   -0.074931
+boosting,770,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_base        Q006             F  106278  64.391657  49.310967    0.079475
+boosting,771,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_base        Q006             Q   35402  63.425188  47.037327    0.165484
+boosting,772,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_base        Q006             H   91898  63.870969  48.600561   -0.000069
+boosting,773,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_base        Q006             J   51064  63.187586  47.797937    0.085354
+boosting,774,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_base        Q006             K   40854  62.825387  47.446118    0.034469
+boosting,775,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_base        Q006             P   26731  59.984214  45.202132    0.295753
+boosting,776,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_base        Q006             I   57442  62.925108  47.890807   -0.003065
+boosting,777,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_base        Q006             N   28742  62.583896  46.816079   -0.062451
+boosting,778,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_base        Q006             M   23150  61.966492  46.706282    0.139626
+boosting,779,18/19 Relatorio de erros por faixa e grupo,texto,                          boosting_pca  faixa_nota          zero    1736 515.859770 514.327799 -514.327799
+boosting,780,18/19 Relatorio de erros por faixa e grupo,texto,                          boosting_pca  faixa_nota         0-400  147627 138.993204 132.734060 -132.734060
+boosting,781,18/19 Relatorio de erros por faixa e grupo,texto,                          boosting_pca  faixa_nota       400-500  705371  55.766976  45.160170  -41.160647
+boosting,782,18/19 Relatorio de erros por faixa e grupo,texto,                          boosting_pca  faixa_nota       500-600 1110460  44.015464  35.733750   24.052497
+boosting,783,18/19 Relatorio de erros por faixa e grupo,texto,                          boosting_pca  faixa_nota       600-700  286878  84.540267  76.678730   76.558779
+boosting,784,18/19 Relatorio de erros por faixa e grupo,texto,                          boosting_pca  faixa_nota          700+    6042 143.495426 139.644984  139.644984
+boosting,785,18/19 Relatorio de erros por faixa e grupo,texto,                          boosting_pca SG_UF_PROVA            BA  184031  67.827109  52.603935   -2.847959
+boosting,786,18/19 Relatorio de erros por faixa e grupo,texto,                          boosting_pca SG_UF_PROVA            SP  346110  61.902213  46.993464    0.034084
+boosting,787,18/19 Relatorio de erros por faixa e grupo,texto,                          boosting_pca SG_UF_PROVA            SC   53219  62.265695  47.671005    2.163456
+boosting,788,18/19 Relatorio de erros por faixa e grupo,texto,                          boosting_pca SG_UF_PROVA            PI   58838  69.069931  53.869028   -3.085516
+boosting,789,18/19 Relatorio de erros por faixa e grupo,texto,                          boosting_pca SG_UF_PROVA            MG  210170  64.396855  49.700970    4.322755
+boosting,790,18/19 Relatorio de erros por faixa e grupo,texto,                          boosting_pca SG_UF_PROVA            ES   41831  64.730524  49.714270    3.684720
+boosting,791,18/19 Relatorio de erros por faixa e grupo,texto,                          boosting_pca SG_UF_PROVA            RJ  156611  65.945939  50.657242    3.333295
+boosting,792,18/19 Relatorio de erros por faixa e grupo,texto,                          boosting_pca SG_UF_PROVA            PB   72611  66.806349  52.151980    1.885114
+boosting,793,18/19 Relatorio de erros por faixa e grupo,texto,                          boosting_pca SG_UF_PROVA            MA   94822  69.275777  53.573700  -10.754775
+boosting,794,18/19 Relatorio de erros por faixa e grupo,texto,                          boosting_pca SG_UF_PROVA            PA  129614  67.198941  52.051839   -8.322348
+boosting,795,18/19 Relatorio de erros por faixa e grupo,texto,                          boosting_pca SG_UF_PROVA            RS   94578  63.461168  49.003766    8.456743
+boosting,796,18/19 Relatorio de erros por faixa e grupo,texto,                          boosting_pca SG_UF_PROVA            AC   12907  67.483467  51.284995   -0.516149
+boosting,797,18/19 Relatorio de erros por faixa e grupo,texto,                          boosting_pca SG_UF_PROVA            GO   81923  66.213458  50.735258   -2.135282
+boosting,798,18/19 Relatorio de erros por faixa e grupo,texto,                          boosting_pca SG_UF_PROVA            CE  144469  70.158018  55.689178    9.217601
+boosting,799,18/19 Relatorio de erros por faixa e grupo,texto,                          boosting_pca SG_UF_PROVA            DF   42541  65.284561  50.137556    4.984026
+boosting,800,18/19 Relatorio de erros por faixa e grupo,texto,                          boosting_pca SG_UF_PROVA            RO   19650  66.702027  51.405185  -10.732057
+boosting,801,18/19 Relatorio de erros por faixa e grupo,texto,                          boosting_pca SG_UF_PROVA            RN   60184  66.778701  52.080205    4.777541
+boosting,802,18/19 Relatorio de erros por faixa e grupo,texto,                          boosting_pca SG_UF_PROVA            PR   97861  63.596046  48.532018    0.861222
+boosting,803,18/19 Relatorio de erros por faixa e grupo,texto,                          boosting_pca SG_UF_PROVA            AL   46161  67.180757  52.215525   -4.682680
+boosting,804,18/19 Relatorio de erros por faixa e grupo,texto,                          boosting_pca SG_UF_PROVA            TO   18531  68.285887  52.481946  -14.217419
+boosting,805,18/19 Relatorio de erros por faixa e grupo,texto,                          boosting_pca SG_UF_PROVA            PE  127460  67.509740  52.236152    2.253933
+boosting,806,18/19 Relatorio de erros por faixa e grupo,texto,                          boosting_pca SG_UF_PROVA            SE   39290  68.194887  53.593113    0.506948
+boosting,807,18/19 Relatorio de erros por faixa e grupo,texto,                          boosting_pca SG_UF_PROVA            MS   26714  66.713590  50.600433   -9.000784
+boosting,808,18/19 Relatorio de erros por faixa e grupo,texto,                          boosting_pca SG_UF_PROVA            RR    5245  65.904615  50.547449    0.052071
+boosting,809,18/19 Relatorio de erros por faixa e grupo,texto,                          boosting_pca SG_UF_PROVA            AM   41783  69.593427  52.684797  -10.126994
+boosting,810,18/19 Relatorio de erros por faixa e grupo,texto,                          boosting_pca SG_UF_PROVA            AP   15629  67.865762  52.094345   -6.879897
+boosting,811,18/19 Relatorio de erros por faixa e grupo,texto,                          boosting_pca SG_UF_PROVA            MT   35331  68.181686  51.974253  -12.152861
+boosting,812,18/19 Relatorio de erros por faixa e grupo,texto,                          boosting_pca   TP_ESCOLA nao respondeu 1378087  66.506838  51.036912   -0.066834
+boosting,813,18/19 Relatorio de erros por faixa e grupo,texto,                          boosting_pca   TP_ESCOLA       publica  700259  65.726169  51.103513   -0.658081
+boosting,814,18/19 Relatorio de erros por faixa e grupo,texto,                          boosting_pca   TP_ESCOLA       privada  179768  62.986878  48.650232    3.045589
+boosting,815,18/19 Relatorio de erros por faixa e grupo,texto,                          boosting_pca        Q006             B  662677  67.574209  52.699438   -0.129152
+boosting,816,18/19 Relatorio de erros por faixa e grupo,texto,                          boosting_pca        Q006             E  175920  65.381052  50.281356    0.799858
+boosting,817,18/19 Relatorio de erros por faixa e grupo,texto,                          boosting_pca        Q006             G  168149  64.330072  49.183703    0.026771
+boosting,818,18/19 Relatorio de erros por faixa e grupo,texto,                          boosting_pca        Q006             C  351498  66.317931  51.264187   -0.090196
+boosting,819,18/19 Relatorio de erros por faixa e grupo,texto,                          boosting_pca        Q006             A  132951  68.076695  52.943746   -3.699129
+boosting,820,18/19 Relatorio de erros por faixa e grupo,texto,                          boosting_pca        Q006             D  249365  65.907744  50.768990    0.260852
+boosting,821,18/19 Relatorio de erros por faixa e grupo,texto,                          boosting_pca        Q006             L   27234  63.809736  47.953027   -1.095057
+boosting,822,18/19 Relatorio de erros por faixa e grupo,texto,                          boosting_pca        Q006             O   28759  62.916272  47.042385   -0.501809
+boosting,823,18/19 Relatorio de erros por faixa e grupo,texto,                          boosting_pca        Q006             F  106278  64.955498  49.843139    0.837864
+boosting,824,18/19 Relatorio de erros por faixa e grupo,texto,                          boosting_pca        Q006             Q   35402  65.365758  49.535241    8.327363
+boosting,825,18/19 Relatorio de erros por faixa e grupo,texto,                          boosting_pca        Q006             H   91898  64.513967  49.121540    0.012468
+boosting,826,18/19 Relatorio de erros por faixa e grupo,texto,                          boosting_pca        Q006             J   51064  63.695101  48.275386    0.347812
+boosting,827,18/19 Relatorio de erros por faixa e grupo,texto,                          boosting_pca        Q006             K   40854  63.387255  47.884603   -0.216111
+boosting,828,18/19 Relatorio de erros por faixa e grupo,texto,                          boosting_pca        Q006             P   26731  60.852434  45.921266    0.806135
+boosting,829,18/19 Relatorio de erros por faixa e grupo,texto,                          boosting_pca        Q006             I   57442  63.554499  48.400404    0.152080
+boosting,830,18/19 Relatorio de erros por faixa e grupo,texto,                          boosting_pca        Q006             N   28742  63.145498  47.214601   -0.820885
+boosting,831,18/19 Relatorio de erros por faixa e grupo,texto,                          boosting_pca        Q006             M   23150  62.650485  47.433571    1.599845
+boosting,1097,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_peso  faixa_nota          zero    1736 486.905832 480.807974 -480.807974
+boosting,1098,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_peso  faixa_nota         0-400  147627  99.718214  79.756674  -77.855464
+boosting,1099,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_peso  faixa_nota       400-500  705371  61.013238  49.039915    5.636182
+boosting,1100,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_peso  faixa_nota       500-600 1110460  81.674027  68.463694   48.720307
+boosting,1101,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_peso  faixa_nota       600-700  286878  95.450998  75.791508   69.327253
+boosting,1102,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_peso  faixa_nota          700+    6042 121.924996 108.553057  108.553057
+boosting,1103,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_peso SG_UF_PROVA            BA  184031  85.292505  69.613006   40.795586
+boosting,1104,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_peso SG_UF_PROVA            SP  346110  71.639995  56.082619   10.148457
+boosting,1105,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_peso SG_UF_PROVA            SC   53219  70.306702  54.899941   12.972520
+boosting,1106,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_peso SG_UF_PROVA            PI   58838  87.943590  72.166364   46.176959
+boosting,1107,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_peso SG_UF_PROVA            MG  210170  73.725769  58.094259   14.018876
+boosting,1108,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_peso SG_UF_PROVA            ES   41831  76.450769  60.709107   22.743935
+boosting,1109,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_peso SG_UF_PROVA            RJ  156611  76.569315  60.369423   18.617609
+boosting,1110,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_peso SG_UF_PROVA            PB   72611  83.200670  67.584479   37.136432
+boosting,1111,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_peso SG_UF_PROVA            MA   94822  90.633991  75.147344   53.889994
+boosting,1112,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_peso SG_UF_PROVA            PA  129614  86.882602  71.845982   48.999096
+boosting,1113,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_peso SG_UF_PROVA            RS   94578  73.294556  57.587969   14.665022
+boosting,1114,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_peso SG_UF_PROVA            AC   12907  92.238308  76.564585   55.625938
+boosting,1115,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_peso SG_UF_PROVA            GO   81923  83.584869  67.967807   36.507021
+boosting,1116,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_peso SG_UF_PROVA            CE  144469  87.301902  71.040719   40.750123
+boosting,1117,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_peso SG_UF_PROVA            DF   42541  75.778160  59.192610   12.329585
+boosting,1118,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_peso SG_UF_PROVA            RO   19650  84.094916  69.322981   43.425304
+boosting,1119,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_peso SG_UF_PROVA            RN   60184  80.797938  64.957379   30.119453
+boosting,1120,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_peso SG_UF_PROVA            PR   97861  75.259323  59.807703   21.214923
+boosting,1121,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_peso SG_UF_PROVA            AL   46161  85.515631  69.795552   41.559422
+boosting,1122,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_peso SG_UF_PROVA            TO   18531  85.111263  69.883833   44.699978
+boosting,1123,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_peso SG_UF_PROVA            PE  127460  83.798557  67.949012   38.023731
+boosting,1124,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_peso SG_UF_PROVA            SE   39290  84.044110  68.211854   37.350351
+boosting,1125,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_peso SG_UF_PROVA            MS   26714  81.728304  66.016285   34.248161
+boosting,1126,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_peso SG_UF_PROVA            RR    5245  80.893694  64.870449   31.874201
+boosting,1127,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_peso SG_UF_PROVA            AM   41783  92.393736  76.536587   54.687811
+boosting,1128,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_peso SG_UF_PROVA            AP   15629  91.698655  76.055035   53.200910
+boosting,1129,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_peso SG_UF_PROVA            MT   35331  84.304823  68.779256   39.240855
+boosting,1130,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_peso   TP_ESCOLA nao respondeu 1378087  79.607048  63.382158   25.920907
+boosting,1131,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_peso   TP_ESCOLA       publica  700259  84.532710  69.520865   48.210296
+boosting,1132,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_peso   TP_ESCOLA       privada  179768  69.931911  53.382708  -17.730167
+boosting,1133,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_peso        Q006             B  662677  89.782838  74.784214   56.861538
+boosting,1134,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_peso        Q006             E  175920  73.358803  58.103371   19.284864
+boosting,1135,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_peso        Q006             G  168149  70.056236  54.211720    1.922152
+boosting,1136,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_peso        Q006             C  351498  81.325971  66.407459   40.546088
+boosting,1137,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_peso        Q006             A  132951  92.662717  77.638499   62.348522
+boosting,1138,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_peso        Q006             D  249365  77.144034  62.067358   29.939078
+boosting,1139,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_peso        Q006             L   27234  70.452728  52.756083  -17.962211
+boosting,1140,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_peso        Q006             O   28759  69.741592  51.804098  -21.866346
+boosting,1141,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_peso        Q006             F  106278  71.189345  55.687658    9.524464
+boosting,1142,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_peso        Q006             Q   35402  71.232599  52.295404  -24.981617
+boosting,1143,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_peso        Q006             H   91898  70.227784  53.681316   -4.488812
+boosting,1144,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_peso        Q006             J   51064  69.787488  52.587077  -13.643887
+boosting,1145,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_peso        Q006             K   40854  69.305073  52.167198  -14.838696
+boosting,1146,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_peso        Q006             P   26731  68.710804  51.344630  -26.567754
+boosting,1147,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_peso        Q006             I   57442  69.728057  53.174929  -10.399924
+boosting,1148,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_peso        Q006             N   28742  70.221973  52.255362  -21.715575
+boosting,1149,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_peso        Q006             M   23150  70.034453  52.426383  -20.412754
+boosting,1150,18/19 Relatorio de erros por faixa e grupo,texto,                        boosting_under  faixa_nota          zero    1736 497.495707 493.335132 -493.335132
+boosting,1151,18/19 Relatorio de erros por faixa e grupo,texto,                        boosting_under  faixa_nota         0-400  147627 111.203687  96.897275  -96.702780
+boosting,1152,18/19 Relatorio de erros por faixa e grupo,texto,                        boosting_under  faixa_nota       400-500  705371  53.401326  41.541877  -11.058591
+boosting,1153,18/19 Relatorio de erros por faixa e grupo,texto,                        boosting_under  faixa_nota       500-600 1110460  67.134058  55.630007   39.188454
+boosting,1154,18/19 Relatorio de erros por faixa e grupo,texto,                        boosting_under  faixa_nota       600-700  286878  89.372133  73.829755   70.620708
+boosting,1155,18/19 Relatorio de erros por faixa e grupo,texto,                        boosting_under  faixa_nota          700+    6042 126.567688 116.845083  116.845083
+boosting,1156,18/19 Relatorio de erros por faixa e grupo,texto,                        boosting_under SG_UF_PROVA            BA  184031  75.406888  60.551780   26.465704
+boosting,1157,18/19 Relatorio de erros por faixa e grupo,texto,                        boosting_under SG_UF_PROVA            SP  346110  65.427061  50.445786    4.842629
+boosting,1158,18/19 Relatorio de erros por faixa e grupo,texto,                        boosting_under SG_UF_PROVA            SC   53219  65.740283  50.902045    8.972098
+boosting,1159,18/19 Relatorio de erros por faixa e grupo,texto,                        boosting_under SG_UF_PROVA            PI   58838  77.190070  62.282042   30.304698
+boosting,1160,18/19 Relatorio de erros por faixa e grupo,texto,                        boosting_under SG_UF_PROVA            MG  210170  68.019342  52.953296    8.325225
+boosting,1161,18/19 Relatorio de erros por faixa e grupo,texto,                        boosting_under SG_UF_PROVA            ES   41831  69.130981  54.016799   13.942128
+boosting,1162,18/19 Relatorio de erros por faixa e grupo,texto,                        boosting_under SG_UF_PROVA            RJ  156611  70.099857  54.576480   11.581753
+boosting,1163,18/19 Relatorio de erros por faixa e grupo,texto,                        boosting_under SG_UF_PROVA            PB   72611  74.065415  59.209541   23.986408
+boosting,1164,18/19 Relatorio de erros por faixa e grupo,texto,                        boosting_under SG_UF_PROVA            MA   94822  78.350257  63.603445   34.997984
+boosting,1165,18/19 Relatorio de erros por faixa e grupo,texto,                        boosting_under SG_UF_PROVA            PA  129614  75.890522  61.612421   32.241755
+boosting,1166,18/19 Relatorio de erros por faixa e grupo,texto,                        boosting_under SG_UF_PROVA            RS   94578  66.722602  51.653707    8.096627
+boosting,1167,18/19 Relatorio de erros por faixa e grupo,texto,                        boosting_under SG_UF_PROVA            AC   12907  76.899711  61.769170   32.048303
+boosting,1168,18/19 Relatorio de erros por faixa e grupo,texto,                        boosting_under SG_UF_PROVA            GO   81923  73.303360  58.515985   22.974295
+boosting,1169,18/19 Relatorio de erros por faixa e grupo,texto,                        boosting_under SG_UF_PROVA            CE  144469  76.634056  61.477681   25.655563
+boosting,1170,18/19 Relatorio de erros por faixa e grupo,texto,                        boosting_under SG_UF_PROVA            DF   42541  69.487445  53.564071    7.525131
+boosting,1171,18/19 Relatorio de erros por faixa e grupo,texto,                        boosting_under SG_UF_PROVA            RO   19650  74.456079  60.427430   29.183551
+boosting,1172,18/19 Relatorio de erros por faixa e grupo,texto,                        boosting_under SG_UF_PROVA            RN   60184  72.926941  57.803320   20.007993
+boosting,1173,18/19 Relatorio de erros por faixa e grupo,texto,                        boosting_under SG_UF_PROVA            PR   97861  67.940024  53.023292   11.882185
+boosting,1174,18/19 Relatorio de erros por faixa e grupo,texto,                        boosting_under SG_UF_PROVA            AL   46161  75.690704  60.903274   28.403187
+boosting,1175,18/19 Relatorio de erros por faixa e grupo,texto,                        boosting_under SG_UF_PROVA            TO   18531  74.912183  60.572337   29.558471
+boosting,1176,18/19 Relatorio de erros por faixa e grupo,texto,                        boosting_under SG_UF_PROVA            PE  127460  74.277110  59.023028   23.608891
+boosting,1177,18/19 Relatorio de erros por faixa e grupo,texto,                        boosting_under SG_UF_PROVA            SE   39290  75.146964  60.190063   25.057799
+boosting,1178,18/19 Relatorio de erros por faixa e grupo,texto,                        boosting_under SG_UF_PROVA            MS   26714  72.200125  57.160256   20.115953
+boosting,1179,18/19 Relatorio de erros por faixa e grupo,texto,                        boosting_under SG_UF_PROVA            RR    5245  72.657044  57.234570   21.777897
+boosting,1180,18/19 Relatorio de erros por faixa e grupo,texto,                        boosting_under SG_UF_PROVA            AM   41783  78.655657  63.507633   33.814109
+boosting,1181,18/19 Relatorio de erros por faixa e grupo,texto,                        boosting_under SG_UF_PROVA            AP   15629  77.776854  63.105745   33.312565
+boosting,1182,18/19 Relatorio de erros por faixa e grupo,texto,                        boosting_under SG_UF_PROVA            MT   35331  74.617923  59.865778   25.207457
+boosting,1183,18/19 Relatorio de erros por faixa e grupo,texto,                        boosting_under   TP_ESCOLA nao respondeu 1378087  71.821099  56.363388   16.193444
+boosting,1184,18/19 Relatorio de erros por faixa e grupo,texto,                        boosting_under   TP_ESCOLA       publica  700259  73.478354  59.271368   30.101249
+boosting,1185,18/19 Relatorio de erros por faixa e grupo,texto,                        boosting_under   TP_ESCOLA       privada  179768  65.467670  49.761725  -10.261609
+boosting,1186,18/19 Relatorio de erros por faixa e grupo,texto,                        boosting_under        Q006             B  662677  77.105152  62.715160   36.284011
+boosting,1187,18/19 Relatorio de erros por faixa e grupo,texto,                        boosting_under        Q006             E  175920  68.208228  53.374973   11.545947
+boosting,1188,18/19 Relatorio de erros por faixa e grupo,texto,                        boosting_under        Q006             G  168149  66.440841  51.075101    1.241785
+boosting,1189,18/19 Relatorio de erros por faixa e grupo,texto,                        boosting_under        Q006             C  351498  72.315258  57.903630   25.145497
+boosting,1190,18/19 Relatorio de erros por faixa e grupo,texto,                        boosting_under        Q006             A  132951  78.449055  64.002285   39.619711
+boosting,1191,18/19 Relatorio de erros por faixa e grupo,texto,                        boosting_under        Q006             D  249365  70.170908  55.530349   18.152918
+boosting,1192,18/19 Relatorio de erros por faixa e grupo,texto,                        boosting_under        Q006             L   27234  66.550850  49.502605  -11.517693
+boosting,1193,18/19 Relatorio de erros por faixa e grupo,texto,                        boosting_under        Q006             O   28759  65.668636  48.452698  -14.663507
+boosting,1194,18/19 Relatorio de erros por faixa e grupo,texto,                        boosting_under        Q006             F  106278  67.198663  52.070542    5.797778
+boosting,1195,18/19 Relatorio de erros por faixa e grupo,texto,                        boosting_under        Q006             Q   35402  66.821222  48.672106  -16.055796
+boosting,1196,18/19 Relatorio de erros por faixa e grupo,texto,                        boosting_under        Q006             H   91898  66.563445  50.635594   -2.886389
+boosting,1197,18/19 Relatorio de erros por faixa e grupo,texto,                        boosting_under        Q006             J   51064  66.231742  49.626317   -8.952041
+boosting,1198,18/19 Relatorio de erros por faixa e grupo,texto,                        boosting_under        Q006             K   40854  65.735033  49.246747   -9.491548
+boosting,1199,18/19 Relatorio de erros por faixa e grupo,texto,                        boosting_under        Q006             P   26731  64.047161  47.490214  -18.028905
+boosting,1200,18/19 Relatorio de erros por faixa e grupo,texto,                        boosting_under        Q006             I   57442  65.937424  49.996809   -6.994282
+boosting,1201,18/19 Relatorio de erros por faixa e grupo,texto,                        boosting_under        Q006             N   28742  66.017305  48.894440  -13.242754
+boosting,1202,18/19 Relatorio de erros por faixa e grupo,texto,                        boosting_under        Q006             M   23150  65.751829  48.918961  -13.188195
+boosting,1203,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_over  faixa_nota          zero    1736 510.394750 508.071098 -508.071098
+boosting,1204,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_over  faixa_nota         0-400  147627 130.005589 121.394599 -121.362160
+boosting,1205,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_over  faixa_nota       400-500  705371  53.510466  42.386480  -33.033368
+boosting,1206,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_over  faixa_nota       500-600 1110460  49.208774  39.948896   27.152530
+boosting,1207,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_over  faixa_nota       600-700  286878  84.082783  74.195238   73.385276
+boosting,1208,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_over  faixa_nota          700+    6042 135.399089 129.596152  129.596152
+boosting,1209,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_over SG_UF_PROVA            BA  184031  67.995701  53.240996    6.028680
+boosting,1210,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_over SG_UF_PROVA            SP  346110  61.921904  47.124751    1.368917
+boosting,1211,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_over SG_UF_PROVA            SC   53219  62.102663  47.429932    1.406036
+boosting,1212,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_over SG_UF_PROVA            PI   58838  69.049079  54.330866    7.775832
+boosting,1213,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_over SG_UF_PROVA            MG  210170  64.169675  49.254008    1.482942
+boosting,1214,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_over SG_UF_PROVA            ES   41831  64.711525  49.618229    2.854723
+boosting,1215,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_over SG_UF_PROVA            RJ  156611  65.815507  50.433394    2.538553
+boosting,1216,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_over SG_UF_PROVA            PB   72611  67.011284  52.443016    5.445115
+boosting,1217,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_over SG_UF_PROVA            MA   94822  68.864527  54.336601    9.319227
+boosting,1218,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_over SG_UF_PROVA            PA  129614  67.010130  52.845178    7.733070
+boosting,1219,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_over SG_UF_PROVA            RS   94578  62.783078  47.851039    1.617118
+boosting,1220,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_over SG_UF_PROVA            AC   12907  67.983240  52.570368    9.245868
+boosting,1221,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_over SG_UF_PROVA            GO   81923  66.378825  51.510621    5.713868
+boosting,1222,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_over SG_UF_PROVA            CE  144469  69.364083  54.673518    6.910938
+boosting,1223,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_over SG_UF_PROVA            DF   42541  65.033672  49.455590    0.979407
+boosting,1224,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_over SG_UF_PROVA            RO   19650  66.126766  52.099095    6.062649
+boosting,1225,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_over SG_UF_PROVA            RN   60184  66.633306  51.754745    3.949014
+boosting,1226,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_over SG_UF_PROVA            PR   97861  63.593885  48.681034    2.730129
+boosting,1227,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_over SG_UF_PROVA            AL   46161  67.545043  53.040503    6.422831
+boosting,1228,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_over SG_UF_PROVA            TO   18531  66.897440  52.659440    6.721006
+boosting,1229,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_over SG_UF_PROVA            PE  127460  67.686081  52.552764    5.529071
+boosting,1230,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_over SG_UF_PROVA            SE   39290  68.244756  53.704705    5.417520
+boosting,1231,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_over SG_UF_PROVA            MS   26714  66.447063  51.363152    5.205629
+boosting,1232,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_over SG_UF_PROVA            RR    5245  66.277724  51.110085    4.892931
+boosting,1233,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_over SG_UF_PROVA            AM   41783  69.595053  54.229101    9.876003
+boosting,1234,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_over SG_UF_PROVA            AP   15629  68.167166  53.544516    9.526930
+boosting,1235,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_over SG_UF_PROVA            MT   35331  67.457699  52.690636    5.473452
+boosting,1236,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_over   TP_ESCOLA nao respondeu 1378087  66.319321  51.073823    3.719189
+boosting,1237,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_over   TP_ESCOLA       publica  700259  65.816777  51.658665    7.547390
+boosting,1238,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_over   TP_ESCOLA       privada  179768  62.421016  47.685691   -2.904730
+boosting,1239,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_over        Q006             B  662677  67.710837  53.301069    8.983730
+boosting,1240,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_over        Q006             E  175920  65.006933  50.110760    2.654376
+boosting,1241,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_over        Q006             G  168149  63.989288  48.915342    0.129435
+boosting,1242,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_over        Q006             C  351498  66.183947  51.543014    5.543089
+boosting,1243,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_over        Q006             A  132951  68.084943  53.708070   11.137868
+boosting,1244,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_over        Q006             D  249365  65.703073  50.852487    4.044382
+boosting,1245,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_over        Q006             L   27234  63.691269  47.601822   -3.169139
+boosting,1246,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_over        Q006             O   28759  62.651181  46.539699   -4.241223
+boosting,1247,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_over        Q006             F  106278  64.598285  49.592961    1.474548
+boosting,1248,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_over        Q006             Q   35402  63.948225  47.007559   -4.639526
+boosting,1249,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_over        Q006             H   91898  64.143614  48.729397   -0.810597
+boosting,1250,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_over        Q006             J   51064  63.539197  47.867820   -2.194602
+boosting,1251,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_over        Q006             K   40854  63.174811  47.504848   -2.720878
+boosting,1252,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_over        Q006             P   26731  60.661804  45.258931   -5.716273
+boosting,1253,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_over        Q006             I   57442  63.256179  47.978157   -2.091737
+boosting,1254,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_over        Q006             N   28742  63.144100  46.939517   -3.916466
+boosting,1255,18/19 Relatorio de erros por faixa e grupo,texto,                         boosting_over        Q006             M   23150  62.589367  46.766215   -3.989768
+boosting,1574,18/19 Relatorio de erros por faixa e grupo,texto,                    boosting_sem_renda  faixa_nota          zero    1736 515.762528 514.267316 -514.267316
+boosting,1575,18/19 Relatorio de erros por faixa e grupo,texto,                    boosting_sem_renda  faixa_nota         0-400  147627 138.442299 131.914634 -131.914267
+boosting,1576,18/19 Relatorio de erros por faixa e grupo,texto,                    boosting_sem_renda  faixa_nota       400-500  705371  56.098443  45.567880  -41.335606
+boosting,1577,18/19 Relatorio de erros por faixa e grupo,texto,                    boosting_sem_renda  faixa_nota       500-600 1110460  43.869472  35.514771   23.826466
+boosting,1578,18/19 Relatorio de erros por faixa e grupo,texto,                    boosting_sem_renda  faixa_nota       600-700  286878  85.206078  77.496411   77.368894
+boosting,1579,18/19 Relatorio de erros por faixa e grupo,texto,                    boosting_sem_renda  faixa_nota          700+    6042 145.189605 141.347733  141.347733
+boosting,1580,18/19 Relatorio de erros por faixa e grupo,texto,                    boosting_sem_renda SG_UF_PROVA            BA  184031  68.410099  53.333299   -0.005992
+boosting,1581,18/19 Relatorio de erros por faixa e grupo,texto,                    boosting_sem_renda SG_UF_PROVA            SP  346110  62.145177  47.193100   -0.031470
+boosting,1582,18/19 Relatorio de erros por faixa e grupo,texto,                    boosting_sem_renda SG_UF_PROVA            SC   53219  62.290843  47.512834   -0.016033
+boosting,1583,18/19 Relatorio de erros por faixa e grupo,texto,                    boosting_sem_renda SG_UF_PROVA            PI   58838  69.263155  54.131244   -0.071603
+boosting,1584,18/19 Relatorio de erros por faixa e grupo,texto,                    boosting_sem_renda SG_UF_PROVA            MG  210170  64.617297  49.572531   -0.033940
+boosting,1585,18/19 Relatorio de erros por faixa e grupo,texto,                    boosting_sem_renda SG_UF_PROVA            ES   41831  65.121515  49.774702    0.000628
+boosting,1586,18/19 Relatorio de erros por faixa e grupo,texto,                    boosting_sem_renda SG_UF_PROVA            RJ  156611  66.151942  50.603667    0.024048
+boosting,1587,18/19 Relatorio de erros por faixa e grupo,texto,                    boosting_sem_renda SG_UF_PROVA            PB   72611  67.088876  52.312496   -0.079800
+boosting,1588,18/19 Relatorio de erros por faixa e grupo,texto,                    boosting_sem_renda SG_UF_PROVA            MA   94822  68.872268  53.905900    0.054892
+boosting,1589,18/19 Relatorio de erros por faixa e grupo,texto,                    boosting_sem_renda SG_UF_PROVA            PA  129614  67.106527  52.530811   -0.028765
+boosting,1590,18/19 Relatorio de erros por faixa e grupo,texto,                    boosting_sem_renda SG_UF_PROVA            RS   94578  63.086276  48.010545   -0.041501
+boosting,1591,18/19 Relatorio de erros por faixa e grupo,texto,                    boosting_sem_renda SG_UF_PROVA            AC   12907  67.789209  51.663028    0.233366
+boosting,1592,18/19 Relatorio de erros por faixa e grupo,texto,                    boosting_sem_renda SG_UF_PROVA            GO   81923  66.491497  51.113019    0.027595
+boosting,1593,18/19 Relatorio de erros por faixa e grupo,texto,                    boosting_sem_renda SG_UF_PROVA            CE  144469  69.157394  54.197821    0.084599
+boosting,1594,18/19 Relatorio de erros por faixa e grupo,texto,                    boosting_sem_renda SG_UF_PROVA            DF   42541  65.762630  50.049188   -0.208349
+boosting,1595,18/19 Relatorio de erros por faixa e grupo,texto,                    boosting_sem_renda SG_UF_PROVA            RO   19650  66.181940  51.766843    0.015297
+boosting,1596,18/19 Relatorio de erros por faixa e grupo,texto,                    boosting_sem_renda SG_UF_PROVA            RN   60184  66.994117  51.909089   -0.124056
+boosting,1597,18/19 Relatorio de erros por faixa e grupo,texto,                    boosting_sem_renda SG_UF_PROVA            PR   97861  63.698701  48.566422    0.100067
+boosting,1598,18/19 Relatorio de erros por faixa e grupo,texto,                    boosting_sem_renda SG_UF_PROVA            AL   46161  67.674048  52.957680   -0.102416
+boosting,1599,18/19 Relatorio de erros por faixa e grupo,texto,                    boosting_sem_renda SG_UF_PROVA            TO   18531  67.254615  52.528052   -0.099117
+boosting,1600,18/19 Relatorio de erros por faixa e grupo,texto,                    boosting_sem_renda SG_UF_PROVA            PE  127460  67.918969  52.519755    0.043937
+boosting,1601,18/19 Relatorio de erros por faixa e grupo,texto,                    boosting_sem_renda SG_UF_PROVA            SE   39290  68.666896  53.941464   -0.061860
+boosting,1602,18/19 Relatorio de erros por faixa e grupo,texto,                    boosting_sem_renda SG_UF_PROVA            MS   26714  66.596363  51.251220    0.000464
+boosting,1603,18/19 Relatorio de erros por faixa e grupo,texto,                    boosting_sem_renda SG_UF_PROVA            RR    5245  66.428555  51.222581   -0.054904
+boosting,1604,18/19 Relatorio de erros por faixa e grupo,texto,                    boosting_sem_renda SG_UF_PROVA            AM   41783  69.426938  53.441568    0.039927
+boosting,1605,18/19 Relatorio de erros por faixa e grupo,texto,                    boosting_sem_renda SG_UF_PROVA            AP   15629  68.006861  52.803494   -0.094677
+boosting,1606,18/19 Relatorio de erros por faixa e grupo,texto,                    boosting_sem_renda SG_UF_PROVA            MT   35331  67.542045  52.372419    0.137218
+boosting,1607,18/19 Relatorio de erros por faixa e grupo,texto,                    boosting_sem_renda   TP_ESCOLA nao respondeu 1378087  66.774439  51.282793   -0.009754
+boosting,1608,18/19 Relatorio de erros por faixa e grupo,texto,                    boosting_sem_renda   TP_ESCOLA       publica  700259  65.620997  51.044767   -0.034494
+boosting,1609,18/19 Relatorio de erros por faixa e grupo,texto,                    boosting_sem_renda   TP_ESCOLA       privada  179768  62.324090  47.929852    0.120021
+boosting,1610,18/19 Relatorio de erros por faixa e grupo,texto,                    boosting_sem_renda        Q006             B  662677  67.489970  52.262621   -5.167545
+boosting,1611,18/19 Relatorio de erros por faixa e grupo,texto,                    boosting_sem_renda        Q006             E  175920  65.394112  50.413679    2.758177
+boosting,1612,18/19 Relatorio de erros por faixa e grupo,texto,                    boosting_sem_renda        Q006             G  168149  64.683313  49.873747    5.376392
+boosting,1613,18/19 Relatorio de erros por faixa e grupo,texto,                    boosting_sem_renda        Q006             C  351498  66.261330  51.144352   -0.349986
+boosting,1614,18/19 Relatorio de erros por faixa e grupo,texto,                    boosting_sem_renda        Q006             A  132951  68.438514  52.775713  -11.752631
+boosting,1615,18/19 Relatorio de erros por faixa e grupo,texto,                    boosting_sem_renda        Q006             D  249365  65.935523  50.834177    1.598267
+boosting,1616,18/19 Relatorio de erros por faixa e grupo,texto,                    boosting_sem_renda        Q006             L   27234  64.130447  48.765301    5.616721
+boosting,1617,18/19 Relatorio de erros por faixa e grupo,texto,                    boosting_sem_renda        Q006             O   28759  63.146775  48.079421    7.268462
+boosting,1618,18/19 Relatorio de erros por faixa e grupo,texto,                    boosting_sem_renda        Q006             F  106278  65.220210  50.326164    4.767942
+boosting,1619,18/19 Relatorio de erros por faixa e grupo,texto,                    boosting_sem_renda        Q006             Q   35402  64.115980  48.436611    7.271263
+boosting,1620,18/19 Relatorio de erros por faixa e grupo,texto,                    boosting_sem_renda        Q006             H   91898  64.865373  49.867538    5.864921
+boosting,1621,18/19 Relatorio de erros por faixa e grupo,texto,                    boosting_sem_renda        Q006             J   51064  64.352380  49.362498    6.978058
+boosting,1622,18/19 Relatorio de erros por faixa e grupo,texto,                    boosting_sem_renda        Q006             K   40854  63.931453  48.860665    6.337298
+boosting,1623,18/19 Relatorio de erros por faixa e grupo,texto,                    boosting_sem_renda        Q006             P   26731  61.336501  47.174141    9.774360
+boosting,1624,18/19 Relatorio de erros por faixa e grupo,texto,                    boosting_sem_renda        Q006             I   57442  64.007008  49.270835    6.448461
+boosting,1625,18/19 Relatorio de erros por faixa e grupo,texto,                    boosting_sem_renda        Q006             N   28742  63.599754  48.244240    6.551681
+boosting,1626,18/19 Relatorio de erros por faixa e grupo,texto,                    boosting_sem_renda        Q006             M   23150  63.177926  48.520353    8.889089
+boosting,1627,18/19 Relatorio de erros por faixa e grupo,texto,boosting_sem_escolaridade_responsaveis  faixa_nota          zero    1736 515.212125 513.639740 -513.639740
+boosting,1628,18/19 Relatorio de erros por faixa e grupo,texto,boosting_sem_escolaridade_responsaveis  faixa_nota         0-400  147627 138.023053 131.528020 -131.527703
+boosting,1629,18/19 Relatorio de erros por faixa e grupo,texto,boosting_sem_escolaridade_responsaveis  faixa_nota       400-500  705371  55.847413  45.282398  -40.940787
+boosting,1630,18/19 Relatorio de erros por faixa e grupo,texto,boosting_sem_escolaridade_responsaveis  faixa_nota       500-600 1110460  43.945472  35.587760   23.793179
+boosting,1631,18/19 Relatorio de erros por faixa e grupo,texto,boosting_sem_escolaridade_responsaveis  faixa_nota       600-700  286878  84.397398  76.534573   76.355296
+boosting,1632,18/19 Relatorio de erros por faixa e grupo,texto,boosting_sem_escolaridade_responsaveis  faixa_nota          700+    6042 142.727559 138.666304  138.666304
+boosting,1633,18/19 Relatorio de erros por faixa e grupo,texto,boosting_sem_escolaridade_responsaveis SG_UF_PROVA            BA  184031  67.991681  52.950765    0.009288
+boosting,1634,18/19 Relatorio de erros por faixa e grupo,texto,boosting_sem_escolaridade_responsaveis SG_UF_PROVA            SP  346110  61.979222  47.057614   -0.042380
+boosting,1635,18/19 Relatorio de erros por faixa e grupo,texto,boosting_sem_escolaridade_responsaveis SG_UF_PROVA            SC   53219  62.371252  47.640347    0.007396
+boosting,1636,18/19 Relatorio de erros por faixa e grupo,texto,boosting_sem_escolaridade_responsaveis SG_UF_PROVA            PI   58838  68.826597  53.775006   -0.057568
+boosting,1637,18/19 Relatorio de erros por faixa e grupo,texto,boosting_sem_escolaridade_responsaveis SG_UF_PROVA            MG  210170  64.366896  49.365200    0.012255
+boosting,1638,18/19 Relatorio de erros por faixa e grupo,texto,boosting_sem_escolaridade_responsaveis SG_UF_PROVA            ES   41831  64.807082  49.558307    0.003845
+boosting,1639,18/19 Relatorio de erros por faixa e grupo,texto,boosting_sem_escolaridade_responsaveis SG_UF_PROVA            RJ  156611  65.842528  50.351505   -0.000110
+boosting,1640,18/19 Relatorio de erros por faixa e grupo,texto,boosting_sem_escolaridade_responsaveis SG_UF_PROVA            PB   72611  66.965279  52.156012   -0.137822
+boosting,1641,18/19 Relatorio de erros por faixa e grupo,texto,boosting_sem_escolaridade_responsaveis SG_UF_PROVA            MA   94822  68.624736  53.691944   -0.005746
+boosting,1642,18/19 Relatorio de erros por faixa e grupo,texto,boosting_sem_escolaridade_responsaveis SG_UF_PROVA            PA  129614  66.845912  52.288323   -0.064642
+boosting,1643,18/19 Relatorio de erros por faixa e grupo,texto,boosting_sem_escolaridade_responsaveis SG_UF_PROVA            RS   94578  62.888402  47.897571   -0.023024
+boosting,1644,18/19 Relatorio de erros por faixa e grupo,texto,boosting_sem_escolaridade_responsaveis SG_UF_PROVA            AC   12907  67.196308  51.231712    0.316667
+boosting,1645,18/19 Relatorio de erros por faixa e grupo,texto,boosting_sem_escolaridade_responsaveis SG_UF_PROVA            GO   81923  66.246686  50.923119    0.018239
+boosting,1646,18/19 Relatorio de erros por faixa e grupo,texto,boosting_sem_escolaridade_responsaveis SG_UF_PROVA            CE  144469  69.264689  54.288721    0.062426
+boosting,1647,18/19 Relatorio de erros por faixa e grupo,texto,boosting_sem_escolaridade_responsaveis SG_UF_PROVA            DF   42541  64.887987  49.393785   -0.124690
+boosting,1648,18/19 Relatorio de erros por faixa e grupo,texto,boosting_sem_escolaridade_responsaveis SG_UF_PROVA            RO   19650  66.037136  51.639852   -0.017355
+boosting,1649,18/19 Relatorio de erros por faixa e grupo,texto,boosting_sem_escolaridade_responsaveis SG_UF_PROVA            RN   60184  66.634187  51.667104   -0.026206
+boosting,1650,18/19 Relatorio de erros por faixa e grupo,texto,boosting_sem_escolaridade_responsaveis SG_UF_PROVA            PR   97861  63.734297  48.607481    0.087927
+boosting,1651,18/19 Relatorio de erros por faixa e grupo,texto,boosting_sem_escolaridade_responsaveis SG_UF_PROVA            AL   46161  67.408086  52.708854   -0.083584
+boosting,1652,18/19 Relatorio de erros por faixa e grupo,texto,boosting_sem_escolaridade_responsaveis SG_UF_PROVA            TO   18531  66.899450  52.215915   -0.428510
+boosting,1653,18/19 Relatorio de erros por faixa e grupo,texto,boosting_sem_escolaridade_responsaveis SG_UF_PROVA            PE  127460  67.562031  52.182529    0.034078
+boosting,1654,18/19 Relatorio de erros por faixa e grupo,texto,boosting_sem_escolaridade_responsaveis SG_UF_PROVA            SE   39290  68.047990  53.334677    0.023834
+boosting,1655,18/19 Relatorio de erros por faixa e grupo,texto,boosting_sem_escolaridade_responsaveis SG_UF_PROVA            MS   26714  66.466247  51.076066    0.065641
+boosting,1656,18/19 Relatorio de erros por faixa e grupo,texto,boosting_sem_escolaridade_responsaveis SG_UF_PROVA            RR    5245  65.864305  50.470212    0.033412
+boosting,1657,18/19 Relatorio de erros por faixa e grupo,texto,boosting_sem_escolaridade_responsaveis SG_UF_PROVA            AM   41783  69.025476  53.052306    0.028414
+boosting,1658,18/19 Relatorio de erros por faixa e grupo,texto,boosting_sem_escolaridade_responsaveis SG_UF_PROVA            AP   15629  67.467574  52.426911    0.004186
+boosting,1659,18/19 Relatorio de erros por faixa e grupo,texto,boosting_sem_escolaridade_responsaveis SG_UF_PROVA            MT   35331  67.185094  52.104033   -0.045717
+boosting,1660,18/19 Relatorio de erros por faixa e grupo,texto,boosting_sem_escolaridade_responsaveis   TP_ESCOLA nao respondeu 1378087  66.367126  50.939805   -0.002581
+boosting,1661,18/19 Relatorio de erros por faixa e grupo,texto,boosting_sem_escolaridade_responsaveis   TP_ESCOLA       publica  700259  65.623509  51.051482   -0.039350
+boosting,1662,18/19 Relatorio de erros por faixa e grupo,texto,boosting_sem_escolaridade_responsaveis   TP_ESCOLA       privada  179768  62.340442  47.915116    0.043388
+boosting,1663,18/19 Relatorio de erros por faixa e grupo,texto,boosting_sem_escolaridade_responsaveis        Q006             B  662677  67.453843  52.598698   -0.022102
+boosting,1664,18/19 Relatorio de erros por faixa e grupo,texto,boosting_sem_escolaridade_responsaveis        Q006             E  175920  65.180772  50.092032   -0.003239
+boosting,1665,18/19 Relatorio de erros por faixa e grupo,texto,boosting_sem_escolaridade_responsaveis        Q006             G  168149  64.208805  49.143805    0.026444
+boosting,1666,18/19 Relatorio de erros por faixa e grupo,texto,boosting_sem_escolaridade_responsaveis        Q006             C  351498  66.219658  51.203682   -0.064927
+boosting,1667,18/19 Relatorio de erros por faixa e grupo,texto,boosting_sem_escolaridade_responsaveis        Q006             A  132951  67.635042  52.759222    0.026885
+boosting,1668,18/19 Relatorio de erros por faixa e grupo,texto,boosting_sem_escolaridade_responsaveis        Q006             D  249365  65.824185  50.676262   -0.019143
+boosting,1669,18/19 Relatorio de erros por faixa e grupo,texto,boosting_sem_escolaridade_responsaveis        Q006             L   27234  63.822649  48.017878   -0.229845
+boosting,1670,18/19 Relatorio de erros por faixa e grupo,texto,boosting_sem_escolaridade_responsaveis        Q006             O   28759  62.658049  46.922707   -0.070053
+boosting,1671,18/19 Relatorio de erros por faixa e grupo,texto,boosting_sem_escolaridade_responsaveis        Q006             F  106278  64.800241  49.693130    0.043718
+boosting,1672,18/19 Relatorio de erros por faixa e grupo,texto,boosting_sem_escolaridade_responsaveis        Q006             Q   35402  64.042316  47.603202    0.109154
+boosting,1673,18/19 Relatorio de erros por faixa e grupo,texto,boosting_sem_escolaridade_responsaveis        Q006             H   91898  64.282868  48.958643   -0.036733
+boosting,1674,18/19 Relatorio de erros por faixa e grupo,texto,boosting_sem_escolaridade_responsaveis        Q006             J   51064  63.597950  48.168840    0.078677
+boosting,1675,18/19 Relatorio de erros por faixa e grupo,texto,boosting_sem_escolaridade_responsaveis        Q006             K   40854  63.280956  47.891128    0.043064
+boosting,1676,18/19 Relatorio de erros por faixa e grupo,texto,boosting_sem_escolaridade_responsaveis        Q006             P   26731  60.487385  45.676956    0.365293
+boosting,1677,18/19 Relatorio de erros por faixa e grupo,texto,boosting_sem_escolaridade_responsaveis        Q006             I   57442  63.376311  48.283738   -0.008556
+boosting,1678,18/19 Relatorio de erros por faixa e grupo,texto,boosting_sem_escolaridade_responsaveis        Q006             N   28742  63.124233  47.253203   -0.066081
+boosting,1679,18/19 Relatorio de erros por faixa e grupo,texto,boosting_sem_escolaridade_responsaveis        Q006             M   23150  62.395846  47.069489    0.063364
+boosting,1680,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_acesso_digital  faixa_nota          zero    1736 515.122457 513.526053 -513.526053
+boosting,1681,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_acesso_digital  faixa_nota         0-400  147627 137.571178 130.903275 -130.902978
+boosting,1682,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_acesso_digital  faixa_nota       400-500  705371  55.836582  45.333096  -40.803961
+boosting,1683,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_acesso_digital  faixa_nota       500-600 1110460  43.807508  35.433830   23.647796
+boosting,1684,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_acesso_digital  faixa_nota       600-700  286878  84.421412  76.503427   76.308603
+boosting,1685,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_acesso_digital  faixa_nota          700+    6042 142.682812 138.516752  138.516752
+boosting,1686,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_acesso_digital SG_UF_PROVA            BA  184031  67.988518  52.917435    0.018374
+boosting,1687,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_acesso_digital SG_UF_PROVA            SP  346110  61.916483  46.998187   -0.062399
+boosting,1688,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_acesso_digital SG_UF_PROVA            SC   53219  62.181210  47.439526    0.048638
+boosting,1689,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_acesso_digital SG_UF_PROVA            PI   58838  68.672792  53.627382   -0.009005
+boosting,1690,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_acesso_digital SG_UF_PROVA            MG  210170  64.361126  49.345338   -0.005454
+boosting,1691,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_acesso_digital SG_UF_PROVA            ES   41831  64.715251  49.478688    0.006085
+boosting,1692,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_acesso_digital SG_UF_PROVA            RJ  156611  65.894552  50.399269   -0.006009
+boosting,1693,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_acesso_digital SG_UF_PROVA            PB   72611  67.003399  52.194467   -0.098404
+boosting,1694,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_acesso_digital SG_UF_PROVA            MA   94822  68.309792  53.374837    0.011108
+boosting,1695,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_acesso_digital SG_UF_PROVA            PA  129614  66.631387  52.110950   -0.069797
+boosting,1696,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_acesso_digital SG_UF_PROVA            RS   94578  62.722937  47.679398   -0.012136
+boosting,1697,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_acesso_digital SG_UF_PROVA            AC   12907  67.120510  51.065223    0.231317
+boosting,1698,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_acesso_digital SG_UF_PROVA            GO   81923  65.920948  50.697640    0.033792
+boosting,1699,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_acesso_digital SG_UF_PROVA            CE  144469  68.896828  53.973723    0.108978
+boosting,1700,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_acesso_digital SG_UF_PROVA            DF   42541  64.827753  49.287169   -0.236937
+boosting,1701,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_acesso_digital SG_UF_PROVA            RO   19650  65.737291  51.384878   -0.016582
+boosting,1702,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_acesso_digital SG_UF_PROVA            RN   60184  66.713631  51.709934    0.061939
+boosting,1703,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_acesso_digital SG_UF_PROVA            PR   97861  63.589658  48.451486    0.058222
+boosting,1704,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_acesso_digital SG_UF_PROVA            AL   46161  67.226611  52.493353   -0.016436
+boosting,1705,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_acesso_digital SG_UF_PROVA            TO   18531  66.549236  51.952743   -0.330464
+boosting,1706,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_acesso_digital SG_UF_PROVA            PE  127460  67.523104  52.117093    0.051779
+boosting,1707,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_acesso_digital SG_UF_PROVA            SE   39290  68.246077  53.566126    0.060997
+boosting,1708,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_acesso_digital SG_UF_PROVA            MS   26714  66.216792  50.882297    0.048838
+boosting,1709,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_acesso_digital SG_UF_PROVA            RR    5245  65.683621  50.411036   -0.111654
+boosting,1710,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_acesso_digital SG_UF_PROVA            AM   41783  68.892058  52.924971    0.070877
+boosting,1711,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_acesso_digital SG_UF_PROVA            AP   15629  67.283864  52.187149   -0.113072
+boosting,1712,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_acesso_digital SG_UF_PROVA            MT   35331  67.087157  52.006394   -0.010907
+boosting,1713,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_acesso_digital   TP_ESCOLA nao respondeu 1378087  66.328143  50.887237   -0.003611
+boosting,1714,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_acesso_digital   TP_ESCOLA       publica  700259  65.377472  50.839394   -0.030552
+boosting,1715,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_acesso_digital   TP_ESCOLA       privada  179768  62.248565  47.823452    0.090414
+boosting,1716,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_acesso_digital        Q006             B  662677  67.345889  52.492718   -0.016397
+boosting,1717,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_acesso_digital        Q006             E  175920  65.172995  50.082759    0.008889
+boosting,1718,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_acesso_digital        Q006             G  168149  64.085391  49.017043    0.031791
+boosting,1719,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_acesso_digital        Q006             C  351498  66.193233  51.165999   -0.044507
+boosting,1720,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_acesso_digital        Q006             A  132951  67.413366  52.534728   -0.045991
+boosting,1721,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_acesso_digital        Q006             D  249365  65.793673  50.643076    0.024396
+boosting,1722,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_acesso_digital        Q006             L   27234  63.527537  47.814277   -0.276936
+boosting,1723,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_acesso_digital        Q006             O   28759  62.348307  46.675851    0.025186
+boosting,1724,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_acesso_digital        Q006             F  106278  64.783826  49.633428   -0.016354
+boosting,1725,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_acesso_digital        Q006             Q   35402  63.521092  47.135390    0.203401
+boosting,1726,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_acesso_digital        Q006             H   91898  64.171625  48.866252    0.052270
+boosting,1727,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_acesso_digital        Q006             J   51064  63.405763  48.013719    0.077895
+boosting,1728,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_acesso_digital        Q006             K   40854  62.974423  47.599559   -0.125565
+boosting,1729,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_acesso_digital        Q006             P   26731  60.142830  45.309212    0.235022
+boosting,1730,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_acesso_digital        Q006             I   57442  63.218301  48.160509   -0.024587
+boosting,1731,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_acesso_digital        Q006             N   28742  62.717088  46.949736    0.022162
+boosting,1732,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_acesso_digital        Q006             M   23150  62.232774  46.923112    0.073937
+boosting,1733,18/19 Relatorio de erros por faixa e grupo,texto,              boosting_sem_localizacao  faixa_nota          zero    1736 515.368260 513.767231 -513.767231
+boosting,1734,18/19 Relatorio de erros por faixa e grupo,texto,              boosting_sem_localizacao  faixa_nota         0-400  147627 138.404993 131.972713 -131.972541
+boosting,1735,18/19 Relatorio de erros por faixa e grupo,texto,              boosting_sem_localizacao  faixa_nota       400-500  705371  55.699474  45.097724  -40.848845
+boosting,1736,18/19 Relatorio de erros por faixa e grupo,texto,              boosting_sem_localizacao  faixa_nota       500-600 1110460  44.080735  35.750036   23.998568
+boosting,1737,18/19 Relatorio de erros por faixa e grupo,texto,              boosting_sem_localizacao  faixa_nota       600-700  286878  83.824622  75.818771   75.608590
+boosting,1738,18/19 Relatorio de erros por faixa e grupo,texto,              boosting_sem_localizacao  faixa_nota          700+    6042 141.236369 137.153542  137.153542
+boosting,1739,18/19 Relatorio de erros por faixa e grupo,texto,              boosting_sem_localizacao SG_UF_PROVA            BA  184031  67.596888  52.363811   -3.301687
+boosting,1740,18/19 Relatorio de erros por faixa e grupo,texto,              boosting_sem_localizacao SG_UF_PROVA            SP  346110  61.991671  47.432042    4.350723
+boosting,1741,18/19 Relatorio de erros por faixa e grupo,texto,              boosting_sem_localizacao SG_UF_PROVA            SC   53219  61.985717  47.316446    0.697094
+boosting,1742,18/19 Relatorio de erros por faixa e grupo,texto,              boosting_sem_localizacao SG_UF_PROVA            PI   58838  68.699750  53.525488   -3.531451
+boosting,1743,18/19 Relatorio de erros por faixa e grupo,texto,              boosting_sem_localizacao SG_UF_PROVA            MG  210170  64.099201  49.455356    4.674445
+boosting,1744,18/19 Relatorio de erros por faixa e grupo,texto,              boosting_sem_localizacao SG_UF_PROVA            ES   41831  64.512164  49.439036    2.442200
+boosting,1745,18/19 Relatorio de erros por faixa e grupo,texto,              boosting_sem_localizacao SG_UF_PROVA            RJ  156611  65.604396  50.303071    2.706958
+boosting,1746,18/19 Relatorio de erros por faixa e grupo,texto,              boosting_sem_localizacao SG_UF_PROVA            PB   72611  66.524231  51.868892    1.282425
+boosting,1747,18/19 Relatorio de erros por faixa e grupo,texto,              boosting_sem_localizacao SG_UF_PROVA            MA   94822  69.189797  53.427040  -11.728166
+boosting,1748,18/19 Relatorio de erros por faixa e grupo,texto,              boosting_sem_localizacao SG_UF_PROVA            PA  129614  67.121527  51.881164   -9.823650
+boosting,1749,18/19 Relatorio de erros por faixa e grupo,texto,              boosting_sem_localizacao SG_UF_PROVA            RS   94578  62.997560  48.513014    7.065877
+boosting,1750,18/19 Relatorio de erros por faixa e grupo,texto,              boosting_sem_localizacao SG_UF_PROVA            AC   12907  67.213605  51.019355   -0.987102
+boosting,1751,18/19 Relatorio de erros por faixa e grupo,texto,              boosting_sem_localizacao SG_UF_PROVA            GO   81923  65.927211  50.382629   -3.309247
+boosting,1752,18/19 Relatorio de erros por faixa e grupo,texto,              boosting_sem_localizacao SG_UF_PROVA            CE  144469  69.714287  55.209577    7.716263
+boosting,1753,18/19 Relatorio de erros por faixa e grupo,texto,              boosting_sem_localizacao SG_UF_PROVA            DF   42541  64.811841  49.616844    3.962750
+boosting,1754,18/19 Relatorio de erros por faixa e grupo,texto,              boosting_sem_localizacao SG_UF_PROVA            RO   19650  66.542530  51.167407  -11.652727
+boosting,1755,18/19 Relatorio de erros por faixa e grupo,texto,              boosting_sem_localizacao SG_UF_PROVA            RN   60184  66.616796  51.883980    4.382746
+boosting,1756,18/19 Relatorio de erros por faixa e grupo,texto,              boosting_sem_localizacao SG_UF_PROVA            PR   97861  63.436268  48.298774   -0.192455
+boosting,1757,18/19 Relatorio de erros por faixa e grupo,texto,              boosting_sem_localizacao SG_UF_PROVA            AL   46161  67.075837  52.062365   -5.502415
+boosting,1758,18/19 Relatorio de erros por faixa e grupo,texto,              boosting_sem_localizacao SG_UF_PROVA            TO   18531  68.112665  52.278090  -14.835317
+boosting,1759,18/19 Relatorio de erros por faixa e grupo,texto,              boosting_sem_localizacao SG_UF_PROVA            PE  127460  67.234255  51.931374    1.526044
+boosting,1760,18/19 Relatorio de erros por faixa e grupo,texto,              boosting_sem_localizacao SG_UF_PROVA            SE   39290  67.815117  53.252067   -0.118160
+boosting,1761,18/19 Relatorio de erros por faixa e grupo,texto,              boosting_sem_localizacao SG_UF_PROVA            MS   26714  66.654015  50.452861   -9.751755
+boosting,1762,18/19 Relatorio de erros por faixa e grupo,texto,              boosting_sem_localizacao SG_UF_PROVA            RR    5245  65.700655  50.300766   -0.834444
+boosting,1763,18/19 Relatorio de erros por faixa e grupo,texto,              boosting_sem_localizacao SG_UF_PROVA            AM   41783  69.474599  52.482505  -11.116492
+boosting,1764,18/19 Relatorio de erros por faixa e grupo,texto,              boosting_sem_localizacao SG_UF_PROVA            AP   15629  67.555431  51.812155   -7.217986
+boosting,1765,18/19 Relatorio de erros por faixa e grupo,texto,              boosting_sem_localizacao SG_UF_PROVA            MT   35331  68.145010  51.867954  -13.188110
+boosting,1766,18/19 Relatorio de erros por faixa e grupo,texto,              boosting_sem_localizacao   TP_ESCOLA nao respondeu 1378087  66.272850  50.836624   -0.033465
+boosting,1767,18/19 Relatorio de erros por faixa e grupo,texto,              boosting_sem_localizacao   TP_ESCOLA       publica  700259  65.680420  51.121087    0.011452
+boosting,1768,18/19 Relatorio de erros por faixa e grupo,texto,              boosting_sem_localizacao   TP_ESCOLA       privada  179768  62.306849  47.886019    0.102745
+boosting,1769,18/19 Relatorio de erros por faixa e grupo,texto,              boosting_sem_localizacao        Q006             B  662677  67.526499  52.672819   -0.022489
+boosting,1770,18/19 Relatorio de erros por faixa e grupo,texto,              boosting_sem_localizacao        Q006             E  175920  65.118534  50.016995   -0.003548
+boosting,1771,18/19 Relatorio de erros por faixa e grupo,texto,              boosting_sem_localizacao        Q006             G  168149  64.080583  48.972988   -0.005577
+boosting,1772,18/19 Relatorio de erros por faixa e grupo,texto,              boosting_sem_localizacao        Q006             C  351498  66.198494  51.181389   -0.049873
+boosting,1773,18/19 Relatorio de erros por faixa e grupo,texto,              boosting_sem_localizacao        Q006             A  132951  67.644688  52.803997   -0.031772
+boosting,1774,18/19 Relatorio de erros por faixa e grupo,texto,              boosting_sem_localizacao        Q006             D  249365  65.761737  50.642328    0.019781
+boosting,1775,18/19 Relatorio de erros por faixa e grupo,texto,              boosting_sem_localizacao        Q006             L   27234  63.463304  47.732918   -0.243953
+boosting,1776,18/19 Relatorio de erros por faixa e grupo,texto,              boosting_sem_localizacao        Q006             O   28759  62.438207  46.736810    0.069571
+boosting,1777,18/19 Relatorio de erros por faixa e grupo,texto,              boosting_sem_localizacao        Q006             F  106278  64.721646  49.574789    0.088710
+boosting,1778,18/19 Relatorio de erros por faixa e grupo,texto,              boosting_sem_localizacao        Q006             Q   35402  63.649950  47.196795    0.121405
+boosting,1779,18/19 Relatorio de erros por faixa e grupo,texto,              boosting_sem_localizacao        Q006             H   91898  64.172404  48.852329   -0.038005
+boosting,1780,18/19 Relatorio de erros por faixa e grupo,texto,              boosting_sem_localizacao        Q006             J   51064  63.409955  47.997593    0.055923
+boosting,1781,18/19 Relatorio de erros por faixa e grupo,texto,              boosting_sem_localizacao        Q006             K   40854  63.048786  47.657448   -0.034851
+boosting,1782,18/19 Relatorio de erros por faixa e grupo,texto,              boosting_sem_localizacao        Q006             P   26731  60.245881  45.372765    0.187670
+boosting,1783,18/19 Relatorio de erros por faixa e grupo,texto,              boosting_sem_localizacao        Q006             I   57442  63.231935  48.157376    0.011540
+boosting,1784,18/19 Relatorio de erros por faixa e grupo,texto,              boosting_sem_localizacao        Q006             N   28742  62.766172  46.941312   -0.040628
+boosting,1785,18/19 Relatorio de erros por faixa e grupo,texto,              boosting_sem_localizacao        Q006             M   23150  62.236545  46.938006    0.091773
+boosting,1786,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_perfil_escolar  faixa_nota          zero    1736 514.586320 513.369010 -513.369010
+boosting,1787,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_perfil_escolar  faixa_nota         0-400  147627 139.743377 133.475388 -133.475388
+boosting,1788,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_perfil_escolar  faixa_nota       400-500  705371  56.523908  45.905345  -41.831257
+boosting,1789,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_perfil_escolar  faixa_nota       500-600 1110460  43.552903  35.220767   23.430098
+boosting,1790,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_perfil_escolar  faixa_nota       600-700  286878  87.573572  80.726179   80.710448
+boosting,1791,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_perfil_escolar  faixa_nota          700+    6042 154.843842 152.213063  152.213063
+boosting,1792,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_perfil_escolar SG_UF_PROVA            BA  184031  68.438679  53.292493    0.039016
+boosting,1793,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_perfil_escolar SG_UF_PROVA            SP  346110  63.040013  47.923006   -0.051127
+boosting,1794,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_perfil_escolar SG_UF_PROVA            SC   53219  63.056895  48.149821   -0.076573
+boosting,1795,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_perfil_escolar SG_UF_PROVA            PI   58838  69.948403  54.698444    0.001463
+boosting,1796,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_perfil_escolar SG_UF_PROVA            MG  210170  65.280573  50.060544   -0.011622
+boosting,1797,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_perfil_escolar SG_UF_PROVA            ES   41831  65.284533  49.954579   -0.029834
+boosting,1798,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_perfil_escolar SG_UF_PROVA            RJ  156611  66.776685  51.145109   -0.002262
+boosting,1799,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_perfil_escolar SG_UF_PROVA            PB   72611  67.833616  52.895099   -0.056685
+boosting,1800,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_perfil_escolar SG_UF_PROVA            MA   94822  69.165723  54.112373    0.060323
+boosting,1801,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_perfil_escolar SG_UF_PROVA            PA  129614  67.524801  52.814718   -0.031788
+boosting,1802,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_perfil_escolar SG_UF_PROVA            RS   94578  63.427893  48.291740   -0.067036
+boosting,1803,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_perfil_escolar SG_UF_PROVA            AC   12907  67.860886  51.709467    0.365873
+boosting,1804,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_perfil_escolar SG_UF_PROVA            GO   81923  67.631608  52.092247   -0.027132
+boosting,1805,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_perfil_escolar SG_UF_PROVA            CE  144469  70.780430  55.530023    0.176842
+boosting,1806,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_perfil_escolar SG_UF_PROVA            DF   42541  66.299476  50.613139   -0.190534
+boosting,1807,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_perfil_escolar SG_UF_PROVA            RO   19650  66.527907  51.964775   -0.023728
+boosting,1808,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_perfil_escolar SG_UF_PROVA            RN   60184  66.963704  51.885732   -0.075090
+boosting,1809,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_perfil_escolar SG_UF_PROVA            PR   97861  64.623188  49.288965    0.075397
+boosting,1810,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_perfil_escolar SG_UF_PROVA            AL   46161  68.003712  53.130068   -0.006197
+boosting,1811,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_perfil_escolar SG_UF_PROVA            TO   18531  67.707602  52.919316   -0.679740
+boosting,1812,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_perfil_escolar SG_UF_PROVA            PE  127460  68.459912  52.938775    0.070236
+boosting,1813,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_perfil_escolar SG_UF_PROVA            SE   39290  69.598424  54.676694    0.005406
+boosting,1814,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_perfil_escolar SG_UF_PROVA            MS   26714  67.342799  51.867825   -0.033192
+boosting,1815,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_perfil_escolar SG_UF_PROVA            RR    5245  66.696993  51.336307   -0.101376
+boosting,1816,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_perfil_escolar SG_UF_PROVA            AM   41783  69.772946  53.587760    0.047663
+boosting,1817,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_perfil_escolar SG_UF_PROVA            AP   15629  68.050545  52.871361   -0.025367
+boosting,1818,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_perfil_escolar SG_UF_PROVA            MT   35331  67.778833  52.594528   -0.051343
+boosting,1819,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_perfil_escolar   TP_ESCOLA nao respondeu 1378087  67.464445  52.051308    2.948736
+boosting,1820,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_perfil_escolar   TP_ESCOLA       publica  700259  66.068451  50.849911   -7.414648
+boosting,1821,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_perfil_escolar   TP_ESCOLA       privada  179768  63.225141  49.097889    6.219868
+boosting,1822,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_perfil_escolar        Q006             B  662677  67.773000  52.823608   -0.012722
+boosting,1823,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_perfil_escolar        Q006             E  175920  66.106460  50.833424   -0.027887
+boosting,1824,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_perfil_escolar        Q006             G  168149  65.659896  50.313931    0.080220
+boosting,1825,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_perfil_escolar        Q006             C  351498  66.625203  51.466047   -0.047426
+boosting,1826,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_perfil_escolar        Q006             A  132951  67.675596  52.751065   -0.042875
+boosting,1827,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_perfil_escolar        Q006             D  249365  66.426806  51.096616    0.027998
+boosting,1828,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_perfil_escolar        Q006             L   27234  66.352038  50.233590   -0.349310
+boosting,1829,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_perfil_escolar        Q006             O   28759  65.578349  49.450352   -0.114963
+boosting,1830,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_perfil_escolar        Q006             F  106278  65.981410  50.603431   -0.020266
+boosting,1831,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_perfil_escolar        Q006             Q   35402  66.465278  49.631595    0.133591
+boosting,1832,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_perfil_escolar        Q006             H   91898  66.194750  50.561044   -0.042573
+boosting,1833,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_perfil_escolar        Q006             J   51064  65.912394  50.208012    0.124719
+boosting,1834,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_perfil_escolar        Q006             K   40854  65.855313  50.024035    0.005526
+boosting,1835,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_perfil_escolar        Q006             P   26731  63.444089  48.166420    0.115906
+boosting,1836,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_perfil_escolar        Q006             I   57442  65.618369  50.183745    0.102701
+boosting,1837,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_perfil_escolar        Q006             N   28742  65.607458  49.537375   -0.014531
+boosting,1838,18/19 Relatorio de erros por faixa e grupo,texto,           boosting_sem_perfil_escolar        Q006             M   23150  64.912429  49.211552    0.163843
+boosting,1839,18/19 Relatorio de erros por faixa e grupo,texto,                   boosting_sem_lingua  faixa_nota          zero    1736 514.947844 513.394761 -513.394761
+boosting,1840,18/19 Relatorio de erros por faixa e grupo,texto,                   boosting_sem_lingua  faixa_nota         0-400  147627 138.261354 131.599138 -131.598971
+boosting,1841,18/19 Relatorio de erros por faixa e grupo,texto,                   boosting_sem_lingua  faixa_nota       400-500  705371  56.303657  45.845285  -41.417084
+boosting,1842,18/19 Relatorio de erros por faixa e grupo,texto,                   boosting_sem_lingua  faixa_nota       500-600 1110460  43.724141  35.360315   23.864668
+boosting,1843,18/19 Relatorio de erros por faixa e grupo,texto,                   boosting_sem_lingua  faixa_nota       600-700  286878  85.144685  77.433360   77.269517
+boosting,1844,18/19 Relatorio de erros por faixa e grupo,texto,                   boosting_sem_lingua  faixa_nota          700+    6042 143.975070 139.945889  139.945889
+boosting,1845,18/19 Relatorio de erros por faixa e grupo,texto,                   boosting_sem_lingua SG_UF_PROVA            BA  184031  67.878296  52.850873   -0.024167
+boosting,1846,18/19 Relatorio de erros por faixa e grupo,texto,                   boosting_sem_lingua SG_UF_PROVA            SP  346110  62.449018  47.457933   -0.007730
+boosting,1847,18/19 Relatorio de erros por faixa e grupo,texto,                   boosting_sem_lingua SG_UF_PROVA            SC   53219  62.604996  47.839814    0.072620
+boosting,1848,18/19 Relatorio de erros por faixa e grupo,texto,                   boosting_sem_lingua SG_UF_PROVA            PI   58838  69.014466  54.015018    0.094838
+boosting,1849,18/19 Relatorio de erros por faixa e grupo,texto,                   boosting_sem_lingua SG_UF_PROVA            MG  210170  64.418995  49.388104   -0.045225
+boosting,1850,18/19 Relatorio de erros por faixa e grupo,texto,                   boosting_sem_lingua SG_UF_PROVA            ES   41831  65.136857  49.827890   -0.018402
+boosting,1851,18/19 Relatorio de erros por faixa e grupo,texto,                   boosting_sem_lingua SG_UF_PROVA            RJ  156611  66.098992  50.583088   -0.044472
+boosting,1852,18/19 Relatorio de erros por faixa e grupo,texto,                   boosting_sem_lingua SG_UF_PROVA            PB   72611  67.243861  52.420736   -0.072755
+boosting,1853,18/19 Relatorio de erros por faixa e grupo,texto,                   boosting_sem_lingua SG_UF_PROVA            MA   94822  68.413629  53.496742    0.027471
+boosting,1854,18/19 Relatorio de erros por faixa e grupo,texto,                   boosting_sem_lingua SG_UF_PROVA            PA  129614  66.609278  52.083941   -0.016795
+boosting,1855,18/19 Relatorio de erros por faixa e grupo,texto,                   boosting_sem_lingua SG_UF_PROVA            RS   94578  63.624385  48.536356   -0.123333
+boosting,1856,18/19 Relatorio de erros por faixa e grupo,texto,                   boosting_sem_lingua SG_UF_PROVA            AC   12907  67.765414  51.598743    0.382761
+boosting,1857,18/19 Relatorio de erros por faixa e grupo,texto,                   boosting_sem_lingua SG_UF_PROVA            GO   81923  66.678417  51.346935   -0.029120
+boosting,1858,18/19 Relatorio de erros por faixa e grupo,texto,                   boosting_sem_lingua SG_UF_PROVA            CE  144469  69.576213  54.564738    0.036013
+boosting,1859,18/19 Relatorio de erros por faixa e grupo,texto,                   boosting_sem_lingua SG_UF_PROVA            DF   42541  65.238567  49.654359   -0.159907
+boosting,1860,18/19 Relatorio de erros por faixa e grupo,texto,                   boosting_sem_lingua SG_UF_PROVA            RO   19650  66.320061  51.922673   -0.105761
+boosting,1861,18/19 Relatorio de erros por faixa e grupo,texto,                   boosting_sem_lingua SG_UF_PROVA            RN   60184  67.016327  51.988656    0.022166
+boosting,1862,18/19 Relatorio de erros por faixa e grupo,texto,                   boosting_sem_lingua SG_UF_PROVA            PR   97861  64.044339  48.885167    0.112759
+boosting,1863,18/19 Relatorio de erros por faixa e grupo,texto,                   boosting_sem_lingua SG_UF_PROVA            AL   46161  67.234214  52.524778   -0.046492
+boosting,1864,18/19 Relatorio de erros por faixa e grupo,texto,                   boosting_sem_lingua SG_UF_PROVA            TO   18531  66.745600  52.063643   -0.443831
+boosting,1865,18/19 Relatorio de erros por faixa e grupo,texto,                   boosting_sem_lingua SG_UF_PROVA            PE  127460  67.694224  52.318278    0.077148
+boosting,1866,18/19 Relatorio de erros por faixa e grupo,texto,                   boosting_sem_lingua SG_UF_PROVA            SE   39290  68.393623  53.704796    0.011037
+boosting,1867,18/19 Relatorio de erros por faixa e grupo,texto,                   boosting_sem_lingua SG_UF_PROVA            MS   26714  66.624370  51.263456    0.040151
+boosting,1868,18/19 Relatorio de erros por faixa e grupo,texto,                   boosting_sem_lingua SG_UF_PROVA            RR    5245  66.718271  51.330152   -0.067346
+boosting,1869,18/19 Relatorio de erros por faixa e grupo,texto,                   boosting_sem_lingua SG_UF_PROVA            AM   41783  69.218631  53.185516    0.187960
+boosting,1870,18/19 Relatorio de erros por faixa e grupo,texto,                   boosting_sem_lingua SG_UF_PROVA            AP   15629  67.595955  52.454808   -0.030065
+boosting,1871,18/19 Relatorio de erros por faixa e grupo,texto,                   boosting_sem_lingua SG_UF_PROVA            MT   35331  67.574896  52.377766   -0.220633
+boosting,1872,18/19 Relatorio de erros por faixa e grupo,texto,                   boosting_sem_lingua   TP_ESCOLA nao respondeu 1378087  66.473195  51.034626    0.000973
+boosting,1873,18/19 Relatorio de erros por faixa e grupo,texto,                   boosting_sem_lingua   TP_ESCOLA       publica  700259  65.914308  51.308189   -0.047397
+boosting,1874,18/19 Relatorio de erros por faixa e grupo,texto,                   boosting_sem_lingua   TP_ESCOLA       privada  179768  63.054506  48.525285    0.065985
+boosting,1875,18/19 Relatorio de erros por faixa e grupo,texto,                   boosting_sem_lingua        Q006             B  662677  67.384661  52.540085   -0.002120
+boosting,1876,18/19 Relatorio de erros por faixa e grupo,texto,                   boosting_sem_lingua        Q006             E  175920  65.613599  50.474616   -0.022944
+boosting,1877,18/19 Relatorio de erros por faixa e grupo,texto,                   boosting_sem_lingua        Q006             G  168149  64.752189  49.616162    0.043181
+boosting,1878,18/19 Relatorio de erros por faixa e grupo,texto,                   boosting_sem_lingua        Q006             C  351498  66.369860  51.356018   -0.065819
+boosting,1879,18/19 Relatorio de erros por faixa e grupo,texto,                   boosting_sem_lingua        Q006             A  132951  67.303531  52.441897   -0.094527
+boosting,1880,18/19 Relatorio de erros por faixa e grupo,texto,                   boosting_sem_lingua        Q006             D  249365  66.180330  51.005608   -0.027126
+boosting,1881,18/19 Relatorio de erros por faixa e grupo,texto,                   boosting_sem_lingua        Q006             L   27234  64.348026  48.431567   -0.313437
+boosting,1882,18/19 Relatorio de erros por faixa e grupo,texto,                   boosting_sem_lingua        Q006             O   28759  63.096377  47.289512   -0.035411
+boosting,1883,18/19 Relatorio de erros por faixa e grupo,texto,                   boosting_sem_lingua        Q006             F  106278  65.343695  50.148797    0.081304
+boosting,1884,18/19 Relatorio de erros por faixa e grupo,texto,                   boosting_sem_lingua        Q006             Q   35402  64.249502  47.752929    0.196199
+boosting,1885,18/19 Relatorio de erros por faixa e grupo,texto,                   boosting_sem_lingua        Q006             H   91898  64.890204  49.486679   -0.015167
+boosting,1886,18/19 Relatorio de erros por faixa e grupo,texto,                   boosting_sem_lingua        Q006             J   51064  64.188830  48.714669    0.202116
+boosting,1887,18/19 Relatorio de erros por faixa e grupo,texto,                   boosting_sem_lingua        Q006             K   40854  63.824938  48.216955   -0.024096
+boosting,1888,18/19 Relatorio de erros por faixa e grupo,texto,                   boosting_sem_lingua        Q006             P   26731  60.863318  45.909675    0.225058
+boosting,1889,18/19 Relatorio de erros por faixa e grupo,texto,                   boosting_sem_lingua        Q006             I   57442  63.933912  48.766889    0.000215
+boosting,1890,18/19 Relatorio de erros por faixa e grupo,texto,                   boosting_sem_lingua        Q006             N   28742  63.448243  47.496395   -0.058973
+boosting,1891,18/19 Relatorio de erros por faixa e grupo,texto,                   boosting_sem_lingua        Q006             M   23150  62.988533  47.610888    0.101593
+boosting,1945,18/19 Relatorio de erros por faixa e grupo,texto,                 boosting_busca_melhor  faixa_nota          zero    1736 515.336933 513.665935 -513.665935
+boosting,1946,18/19 Relatorio de erros por faixa e grupo,texto,                 boosting_busca_melhor  faixa_nota         0-400  147627 136.868275 130.090221 -130.089781
+boosting,1947,18/19 Relatorio de erros por faixa e grupo,texto,                 boosting_busca_melhor  faixa_nota       400-500  705371  55.483030  44.893341  -40.106281
+boosting,1948,18/19 Relatorio de erros por faixa e grupo,texto,                 boosting_busca_melhor  faixa_nota       500-600 1110460  43.887832  35.512553   23.521802
+boosting,1949,18/19 Relatorio de erros por faixa e grupo,texto,                 boosting_busca_melhor  faixa_nota       600-700  286878  82.990292  74.947006   74.716872
+boosting,1950,18/19 Relatorio de erros por faixa e grupo,texto,                 boosting_busca_melhor  faixa_nota          700+    6042 139.860036 135.698347  135.698347
+boosting,1951,18/19 Relatorio de erros por faixa e grupo,texto,                 boosting_busca_melhor SG_UF_PROVA            BA  184031  67.421714  52.438516    0.026348
+boosting,1952,18/19 Relatorio de erros por faixa e grupo,texto,                 boosting_busca_melhor SG_UF_PROVA            SP  346110  61.577617  46.708225   -0.030278
+boosting,1953,18/19 Relatorio de erros por faixa e grupo,texto,                 boosting_busca_melhor SG_UF_PROVA            SC   53219  61.835383  47.146487    0.020595
+boosting,1954,18/19 Relatorio de erros por faixa e grupo,texto,                 boosting_busca_melhor SG_UF_PROVA            PI   58838  68.257154  53.278971    0.020325
+boosting,1955,18/19 Relatorio de erros por faixa e grupo,texto,                 boosting_busca_melhor SG_UF_PROVA            MG  210170  63.845080  48.880923   -0.014075
+boosting,1956,18/19 Relatorio de erros por faixa e grupo,texto,                 boosting_busca_melhor SG_UF_PROVA            ES   41831  64.307177  49.102343   -0.034497
+boosting,1957,18/19 Relatorio de erros por faixa e grupo,texto,                 boosting_busca_melhor SG_UF_PROVA            RJ  156611  65.415526  49.965012   -0.002263
+boosting,1958,18/19 Relatorio de erros por faixa e grupo,texto,                 boosting_busca_melhor SG_UF_PROVA            PB   72611  66.432196  51.694737   -0.112352
+boosting,1959,18/19 Relatorio de erros por faixa e grupo,texto,                 boosting_busca_melhor SG_UF_PROVA            MA   94822  67.989120  53.112847   -0.040391
+boosting,1960,18/19 Relatorio de erros por faixa e grupo,texto,                 boosting_busca_melhor SG_UF_PROVA            PA  129614  66.224105  51.756986   -0.031432
+boosting,1961,18/19 Relatorio de erros por faixa e grupo,texto,                 boosting_busca_melhor SG_UF_PROVA            RS   94578  62.359986  47.392619   -0.022469
+boosting,1962,18/19 Relatorio de erros por faixa e grupo,texto,                 boosting_busca_melhor SG_UF_PROVA            AC   12907  66.959942  50.938880    0.308098
+boosting,1963,18/19 Relatorio de erros por faixa e grupo,texto,                 boosting_busca_melhor SG_UF_PROVA            GO   81923  65.703024  50.485743   -0.014812
+boosting,1964,18/19 Relatorio de erros por faixa e grupo,texto,                 boosting_busca_melhor SG_UF_PROVA            CE  144469  68.570217  53.675238    0.115404
+boosting,1965,18/19 Relatorio de erros por faixa e grupo,texto,                 boosting_busca_melhor SG_UF_PROVA            DF   42541  64.544135  49.042866   -0.005492
+boosting,1966,18/19 Relatorio de erros por faixa e grupo,texto,                 boosting_busca_melhor SG_UF_PROVA            RO   19650  65.533352  51.183968   -0.194627
+boosting,1967,18/19 Relatorio de erros por faixa e grupo,texto,                 boosting_busca_melhor SG_UF_PROVA            RN   60184  66.060469  51.129331    0.051873
+boosting,1968,18/19 Relatorio de erros por faixa e grupo,texto,                 boosting_busca_melhor SG_UF_PROVA            PR   97861  63.234483  48.155962    0.085849
+boosting,1969,18/19 Relatorio de erros por faixa e grupo,texto,                 boosting_busca_melhor SG_UF_PROVA            AL   46161  66.760150  52.112400   -0.052963
+boosting,1970,18/19 Relatorio de erros por faixa e grupo,texto,                 boosting_busca_melhor SG_UF_PROVA            TO   18531  66.263296  51.647980   -0.615545
+boosting,1971,18/19 Relatorio de erros por faixa e grupo,texto,                 boosting_busca_melhor SG_UF_PROVA            PE  127460  67.126618  51.784861    0.068656
+boosting,1972,18/19 Relatorio de erros por faixa e grupo,texto,                 boosting_busca_melhor SG_UF_PROVA            SE   39290  67.639661  53.007224    0.065525
+boosting,1973,18/19 Relatorio de erros por faixa e grupo,texto,                 boosting_busca_melhor SG_UF_PROVA            MS   26714  65.894408  50.580489    0.019903
+boosting,1974,18/19 Relatorio de erros por faixa e grupo,texto,                 boosting_busca_melhor SG_UF_PROVA            RR    5245  65.458201  50.219884   -0.106536
+boosting,1975,18/19 Relatorio de erros por faixa e grupo,texto,                 boosting_busca_melhor SG_UF_PROVA            AM   41783  68.458611  52.536777   -0.062590
+boosting,1976,18/19 Relatorio de erros por faixa e grupo,texto,                 boosting_busca_melhor SG_UF_PROVA            AP   15629  67.017752  51.995994   -0.081283
+boosting,1977,18/19 Relatorio de erros por faixa e grupo,texto,                 boosting_busca_melhor SG_UF_PROVA            MT   35331  66.748372  51.726632   -0.168111
+boosting,1978,18/19 Relatorio de erros por faixa e grupo,texto,                 boosting_busca_melhor   TP_ESCOLA nao respondeu 1378087  65.809556  50.433336   -0.000195
+boosting,1979,18/19 Relatorio de erros por faixa e grupo,texto,                 boosting_busca_melhor   TP_ESCOLA       publica  700259  65.133550  50.626367   -0.047779
+boosting,1980,18/19 Relatorio de erros por faixa e grupo,texto,                 boosting_busca_melhor   TP_ESCOLA       privada  179768  62.031088  47.648782    0.122199
+boosting,1981,18/19 Relatorio de erros por faixa e grupo,texto,                 boosting_busca_melhor        Q006             B  662677  66.888870  52.099093   -0.010631
+boosting,1982,18/19 Relatorio de erros por faixa e grupo,texto,                 boosting_busca_melhor        Q006             E  175920  64.740745  49.698965   -0.000758
+boosting,1983,18/19 Relatorio de erros por faixa e grupo,texto,                 boosting_busca_melhor        Q006             G  168149  63.757546  48.714328    0.013617
+boosting,1984,18/19 Relatorio de erros por faixa e grupo,texto,                 boosting_busca_melhor        Q006             C  351498  65.737997  50.769678   -0.060026
+boosting,1985,18/19 Relatorio de erros por faixa e grupo,texto,                 boosting_busca_melhor        Q006             A  132951  66.918670  52.147354   -0.053067
+boosting,1986,18/19 Relatorio de erros por faixa e grupo,texto,                 boosting_busca_melhor        Q006             D  249365  65.350956  50.259711    0.007951
+boosting,1987,18/19 Relatorio de erros por faixa e grupo,texto,                 boosting_busca_melhor        Q006             L   27234  63.231716  47.516461   -0.266990
+boosting,1988,18/19 Relatorio de erros por faixa e grupo,texto,                 boosting_busca_melhor        Q006             O   28759  62.160279  46.496304   -0.081112
+boosting,1989,18/19 Relatorio de erros por faixa e grupo,texto,                 boosting_busca_melhor        Q006             F  106278  64.374114  49.289633    0.134215
+boosting,1990,18/19 Relatorio de erros por faixa e grupo,texto,                 boosting_busca_melhor        Q006             Q   35402  63.316196  46.922702    0.221150
+boosting,1991,18/19 Relatorio de erros por faixa e grupo,texto,                 boosting_busca_melhor        Q006             H   91898  63.821746  48.541294   -0.022432
+boosting,1992,18/19 Relatorio de erros por faixa e grupo,texto,                 boosting_busca_melhor        Q006             J   51064  63.155550  47.768509    0.053486
+boosting,1993,18/19 Relatorio de erros por faixa e grupo,texto,                 boosting_busca_melhor        Q006             K   40854  62.752188  47.382290   -0.012406
+boosting,1994,18/19 Relatorio de erros por faixa e grupo,texto,                 boosting_busca_melhor        Q006             P   26731  59.934756  45.150626    0.241642
+boosting,1995,18/19 Relatorio de erros por faixa e grupo,texto,                 boosting_busca_melhor        Q006             I   57442  62.892187  47.868388   -0.029271
+boosting,1996,18/19 Relatorio de erros por faixa e grupo,texto,                 boosting_busca_melhor        Q006             N   28742  62.531482  46.757984   -0.012108
+boosting,1997,18/19 Relatorio de erros por faixa e grupo,texto,                 boosting_busca_melhor        Q006             M   23150  61.965199  46.694766    0.095834
+boosting,2053,19/19 Avaliacao final no teste reservado,texto,Solucao selecionada somente pela validacao cruzada: boosting_busca_melhor (RMSE medio 65.307).
+boosting,2054,19/19 Avaliacao final no teste reservado,texto,Metricas no teste:
+boosting,2055,19/19 Avaliacao final no teste reservado,texto,                  modelo      rmse       mae        r2  n_teste  tempo_treino_s  tempo_predicao_s
+boosting,2056,19/19 Avaliacao final no teste reservado,texto,          baseline_media 75.329946 59.189393 -0.000008   564529             NaN               NaN
+boosting,2058,19/19 Avaliacao final no teste reservado,texto,          boosting_final 65.180855 50.145328  0.251299   564529       17.878558          2.011090
+boosting,2059,19/19 Avaliacao final no teste reservado,texto,Erros por faixa e grupo no teste:
+boosting,2060,19/19 Avaliacao final no teste reservado,texto,agrupamento         grupo      n       rmse        mae        vies
+boosting,2061,19/19 Avaliacao final no teste reservado,texto, faixa_nota          zero    433 514.012110 512.100648 -512.100648
+boosting,2062,19/19 Avaliacao final no teste reservado,texto, faixa_nota         0-400  36217 137.340854 130.449715 -130.449715
+boosting,2063,19/19 Avaliacao final no teste reservado,texto, faixa_nota       400-500 176481  55.526532  44.885681  -40.062246
+boosting,2064,19/19 Avaliacao final no teste reservado,texto, faixa_nota       500-600 278114  43.850130  35.493547   23.514679
+boosting,2065,19/19 Avaliacao final no teste reservado,texto, faixa_nota       600-700  71758  82.856945  74.754646   74.527834
+boosting,2066,19/19 Avaliacao final no teste reservado,texto, faixa_nota          700+   1526 138.683261 134.527206  134.527206
+boosting,2067,19/19 Avaliacao final no teste reservado,texto,SG_UF_PROVA            MG  52312  64.029297  49.018521    0.530224
+boosting,2068,19/19 Avaliacao final no teste reservado,texto,SG_UF_PROVA            RS  23684  61.892439  47.020557    0.124476
+boosting,2069,19/19 Avaliacao final no teste reservado,texto,SG_UF_PROVA            PR  24191  62.676947  48.018867   -0.117812
+boosting,2070,19/19 Avaliacao final no teste reservado,texto,SG_UF_PROVA            CE  36240  68.532720  53.579567    0.307632
+boosting,2071,19/19 Avaliacao final no teste reservado,texto,SG_UF_PROVA            DF  10628  63.696610  48.275602    1.095130
+boosting,2072,19/19 Avaliacao final no teste reservado,texto,SG_UF_PROVA            MA  23510  66.970990  52.491222    0.659419
+boosting,2073,19/19 Avaliacao final no teste reservado,texto,SG_UF_PROVA            RO   4706  65.990706  50.804623    0.622800
+boosting,2074,19/19 Avaliacao final no teste reservado,texto,SG_UF_PROVA            PE  31811  66.630656  51.668792    0.122738
+boosting,2075,19/19 Avaliacao final no teste reservado,texto,SG_UF_PROVA            SP  86525  61.998428  46.624844   -0.367450
+boosting,2076,19/19 Avaliacao final no teste reservado,texto,SG_UF_PROVA            AL  11600  67.593200  52.402907   -0.231571
+boosting,2077,19/19 Avaliacao final no teste reservado,texto,SG_UF_PROVA            AC   3255  65.524731  50.236568    2.386210
+boosting,2078,19/19 Avaliacao final no teste reservado,texto,SG_UF_PROVA            TO   4605  67.782434  52.234393   -0.211367
+boosting,2079,19/19 Avaliacao final no teste reservado,texto,SG_UF_PROVA            AM  10400  67.206949  51.886181    0.794489
+boosting,2080,19/19 Avaliacao final no teste reservado,texto,SG_UF_PROVA            RN  15275  65.951862  51.176666   -0.123981
+boosting,2081,19/19 Avaliacao final no teste reservado,texto,SG_UF_PROVA            RJ  39413  64.583267  49.741836    0.058484
+boosting,2082,19/19 Avaliacao final no teste reservado,texto,SG_UF_PROVA            MT   8905  65.376829  50.993623   -1.075671
+boosting,2083,19/19 Avaliacao final no teste reservado,texto,SG_UF_PROVA            PI  14599  68.511002  53.528831    0.012956
+boosting,2084,19/19 Avaliacao final no teste reservado,texto,SG_UF_PROVA            PB  18256  65.932494  51.328659    0.012076
+boosting,2085,19/19 Avaliacao final no teste reservado,texto,SG_UF_PROVA            SC  13483  61.315854  46.815586    0.271111
+boosting,2086,19/19 Avaliacao final no teste reservado,texto,SG_UF_PROVA            BA  46321  67.435949  52.342479    0.019937
+boosting,2087,19/19 Avaliacao final no teste reservado,texto,SG_UF_PROVA            PA  32226  66.884739  52.115835    0.036377
+boosting,2088,19/19 Avaliacao final no teste reservado,texto,SG_UF_PROVA            MS   6691  67.132663  50.922068    0.920995
+boosting,2089,19/19 Avaliacao final no teste reservado,texto,SG_UF_PROVA            AP   3895  64.201152  50.294069    0.322280
+boosting,2090,19/19 Avaliacao final no teste reservado,texto,SG_UF_PROVA            GO  20641  65.375641  50.253211    0.478277
+boosting,2091,19/19 Avaliacao final no teste reservado,texto,SG_UF_PROVA            SE   9653  67.533399  52.834020    0.172565
+boosting,2092,19/19 Avaliacao final no teste reservado,texto,SG_UF_PROVA            ES  10377  64.523340  49.240048    0.893271
+boosting,2093,19/19 Avaliacao final no teste reservado,texto,SG_UF_PROVA            RR   1327  67.650682  50.253140   -1.657706
+boosting,2094,19/19 Avaliacao final no teste reservado,texto,  TP_ESCOLA nao respondeu 344944  65.708683  50.374739    0.065455
+boosting,2095,19/19 Avaliacao final no teste reservado,texto,  TP_ESCOLA       publica 174578  64.955409  50.386394    0.266395
+boosting,2096,19/19 Avaliacao final no teste reservado,texto,  TP_ESCOLA       privada  45007  61.909981  47.451987    0.165994
+boosting,2097,19/19 Avaliacao final no teste reservado,texto,       Q006             D  62515  64.923473  49.866614    0.209537
+boosting,2098,19/19 Avaliacao final no teste reservado,texto,       Q006             B 165415  66.672378  51.899575    0.044207
+boosting,2099,19/19 Avaliacao final no teste reservado,texto,       Q006             G  41873  63.394081  48.508040    0.434108
+boosting,2100,19/19 Avaliacao final no teste reservado,texto,       Q006             A  33316  66.353221  51.975409    0.497772
+boosting,2101,19/19 Avaliacao final no teste reservado,texto,       Q006             C  87671  65.568124  50.607734    0.322095
+boosting,2102,19/19 Avaliacao final no teste reservado,texto,       Q006             I  14502  63.293407  47.933710   -0.262127
+boosting,2103,19/19 Avaliacao final no teste reservado,texto,       Q006             O   7087  62.007315  46.154825   -0.291169
+boosting,2104,19/19 Avaliacao final no teste reservado,texto,       Q006             E  44170  64.893763  49.894499    0.301483
+boosting,2105,19/19 Avaliacao final no teste reservado,texto,       Q006             Q   8730  64.439948  47.300758    0.817815
+boosting,2106,19/19 Avaliacao final no teste reservado,texto,       Q006             K  10263  64.639841  48.303045   -1.136941
+boosting,2107,19/19 Avaliacao final no teste reservado,texto,       Q006             H  22976  63.516710  48.280756   -0.118440
+boosting,2108,19/19 Avaliacao final no teste reservado,texto,       Q006             M   5882  62.897836  47.223247   -0.757593
+boosting,2109,19/19 Avaliacao final no teste reservado,texto,       Q006             J  12783  62.264003  47.256335    0.254505
+boosting,2110,19/19 Avaliacao final no teste reservado,texto,       Q006             F  26667  64.527959  49.368470   -0.413016
+boosting,2111,19/19 Avaliacao final no teste reservado,texto,       Q006             P   6535  61.074360  45.432142   -1.630427
+boosting,2112,19/19 Avaliacao final no teste reservado,texto,       Q006             N   7272  60.530767  45.892422    1.420964
+boosting,2113,19/19 Avaliacao final no teste reservado,texto,       Q006             L   6872  65.716047  48.525395    0.797685
+boosting,2114,19/19 Avaliacao final no teste reservado,linha_vazia,
+boosting,2115,19/19 Avaliacao final no teste reservado,texto,Execucao completa concluida. Resultados: terminal | Figuras: C:\Users\joaog\Downloads\Ciencia de dados\projeto 2\resultados\figuras

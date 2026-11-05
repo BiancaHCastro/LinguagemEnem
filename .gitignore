@@ -179,3 +179,10 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+
+# Microdados e bases processadas do ENEM são grandes e não devem ser versionados.
+microdados_enem_2023/
+dados/processed/*.parquet
+dados/processed/**/*.parquet
+dados/splits/*.parquet
+dados/splits/**/*.parquet
