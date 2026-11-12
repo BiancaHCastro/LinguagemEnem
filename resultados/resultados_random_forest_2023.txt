@@ -1,0 +1,5 @@
+RESULTADOS FINAIS — TESTE RESERVADO
+MAE:  50.24
+RMSE: 65.26
+R²:   0.2495
+Tempo de ajuste em desenvolvimento: 7.81 minutos
