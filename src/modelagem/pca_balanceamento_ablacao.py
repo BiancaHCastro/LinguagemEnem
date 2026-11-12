@@ -37,8 +37,9 @@ DATA_PATH = ROOT / "dados" / "processed" / "enem_2023_lc_c07.parquet"
 SPLITS_PATH = ROOT / "dados" / "splits" / "particoes_lc.parquet"
 OUT = ROOT / "resultados" / "knn_boosting"
 FIG = ROOT / "resultados" / "figuras"
-RESUMO_EXECUCAO = ROOT / "resultados" / "resultados_execucao.txt"
-CSV_EXECUCAO = ROOT / "resultados" / "resultados_execucao.csv"
+SAIDA = ROOT / "resultados" / "pca_balanceamento_ablacao"
+RESUMO_EXECUCAO = SAIDA / "resultados_execucao.txt"
+CSV_EXECUCAO = SAIDA / "resultados_execucao.csv"
 SEED = 42
 ID_COL = "NU_INSCRICAO"
 TARGET = "NU_NOTA_LC"
@@ -87,8 +88,8 @@ MODELOS = ["knn", "boosting", "linear", "ridge"]
 MODELOS_COM_PESO = {"boosting", "linear", "ridge"}  # aceitam sample_weight
 ARQUIVOS_RESULTADO_MODELO = {
     modelo: {
-        "txt": ROOT / "resultados" / f"resultados_{modelo}.txt",
-        "csv": ROOT / "resultados" / f"resultados_{modelo}.csv",
+        "txt": SAIDA / f"resultados_{modelo}.txt",
+        "csv": SAIDA / f"resultados_{modelo}.csv",
     }
     for modelo in MODELOS
 }
@@ -546,6 +547,10 @@ def preparar(com_teste=False):
 
     if SPLITS_PATH.is_file():
         salvo = pd.read_parquet(SPLITS_PATH)
+        if {"CONJUNTO", "DOBRA"}.issubset(salvo.columns):  # formato oficial (src/conjuntos/base_ampliada.py)
+            dobra = salvo["DOBRA"].astype("Int8")
+            salvo = pd.DataFrame({ID_COL: salvo[ID_COL], "conjunto": salvo["CONJUNTO"].to_numpy(dtype=object),
+                                  "dobra_validacao": dobra.where(dobra > 0)})
         required = {ID_COL, "conjunto", "dobra_validacao"}
         if not required.issubset(salvo.columns) or salvo[ID_COL].duplicated().any():
             raise RuntimeError(f"Arquivo de particoes invalido: {SPLITS_PATH}.")
@@ -1205,7 +1210,7 @@ def cmd_completo(_args=None):
         ("Variancia do PCA", cmd_pca_variancia, argparse.Namespace(variancia=0.8)),
         ("Boosting com PCA", cmd_pca, argparse.Namespace(variante="boosting_pca", dobras=None)),
         # PCA em dois regressores (boosting e regressao linear). O KNN sem PCA (forca
-        # bruta) segue disponivel em `python -m src.modelagem.KNN_Boosting pca --variante knn_sem_pca`.
+        # bruta) segue disponivel em `python -m src.modelagem.pca_balanceamento_ablacao pca --variante knn_sem_pca`.
         ("Regressao linear com PCA", cmd_pca, argparse.Namespace(variante="linear_pca", dobras=None)),
     ]
     for modelo, estrategias in [
@@ -1526,6 +1531,10 @@ def main():
 
 
 def executar_com_registro():
+    # Ajuda ou chamada sem subcomando não executam nada: não podem sobrescrever o log da última execução.
+    if len(sys.argv) == 1 or {"-h", "--help"} & set(sys.argv[1:]):
+        main()
+        return
     with registrar_saida():
         try:
             main()

@@ -186,3 +186,8 @@ dados/processed/*.parquet
 dados/processed/**/*.parquet
 dados/splits/*.parquet
 dados/splits/**/*.parquet
+# A divisão desenvolvimento/teste e as dobras são entrega obrigatória (enunciado, Seção 5): versionar só este arquivo.
+!dados/splits/particoes_lc.parquet
+
+# Previsões fora da dobra de cada experimento (~35 MB cada): ficam só na máquina local.
+resultados/previsoes_cv/

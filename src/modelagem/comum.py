@@ -1,4 +1,4 @@
-"""Partes comuns dos scripts de modelagem do conjunto C07 (regressao_linear.py, bagging.py, pasting.py).
+"""Partes comuns dos scripts de modelagem do conjunto C07 (um arquivo por modelo em src/modelagem/).
 
 Protocolo (Seção 4 do enunciado), com TODOS os 2.822.643 participantes elegíveis (nota de LC observada):
 - Validação cruzada: os 2.258.114 do desenvolvimento (80%), nas 3 dobras fixas da coluna DOBRA
@@ -23,6 +23,7 @@ from sklearn.base import clone
 from sklearn.dummy import DummyRegressor
 from sklearn.metrics import mean_absolute_error, r2_score, root_mean_squared_error
 from sklearn.model_selection import GridSearchCV, RandomizedSearchCV
+from sklearn.pipeline import Pipeline
 
 from ..conjuntos import configuracao as cfg
 from ..conjuntos.preprocessamento import colunas_para_familia, dobras_da_coluna, montar_pipeline
@@ -153,8 +154,15 @@ def _imprimir(registro, tempo_total):
 
 
 # --- Validação cruzada da configuração inicial --------------------------------------------------------
+def _pipeline(familia, regressor, preparar=True):
+    """Preparação da família + regressor. preparar=False: o regressor já traz a sua preparação (ex.: stacking)."""
+    if preparar:
+        return montar_pipeline(CONJUNTO, familia, regressor)
+    return Pipeline([("modelo", regressor)])
+
+
 def avaliar(id_experimento, hipotese, familia, regressor, controle, X, y, dobras, conjunto_avaliado,
-            preparacao, pasta=PASTA_RESULTADOS):
+            preparacao, pasta=PASTA_RESULTADOS, preparar=True):
     """Treina e valida nas 3 dobras; grava métricas, tempos e as previsões fora da dobra."""
     inicio = time.perf_counter()
     validacao = {m: [] for m in METRICAS}
@@ -162,7 +170,7 @@ def avaliar(id_experimento, hipotese, familia, regressor, controle, X, y, dobras
     tempos_ajuste, tempos_previsao, n_saida = [], [], []
     previsto = np.full(len(y), np.nan)
     for k, (idx_treino, idx_validacao) in enumerate(dobras, start=1):
-        pipeline = montar_pipeline(CONJUNTO, familia, clone(regressor))
+        pipeline = _pipeline(familia, clone(regressor), preparar)
         t0 = time.perf_counter()
         pipeline.fit(X.iloc[idx_treino], y[idx_treino])
         tempos_ajuste.append(time.perf_counter() - t0)
@@ -173,7 +181,7 @@ def avaliar(id_experimento, hipotese, familia, regressor, controle, X, y, dobras
         for metrica, funcao in _FUNCOES_METRICAS.items():
             validacao[metrica].append(funcao(y[idx_validacao], previsto[idx_validacao]))
             treino[metrica].append(funcao(y[idx_treino], previsto_treino))
-        n_saida.append(pipeline.named_steps["modelo"].n_features_in_)
+        n_saida.append(getattr(pipeline.named_steps["modelo"], "n_features_in_", X.shape[1]))
         log(f"  dobra {k}: RMSE validação {validacao['rmse'][-1]:.2f} | treino {treino['rmse'][-1]:.2f} | "
             f"ajuste {tempos_ajuste[-1]:.0f} s")
         del pipeline, previsto_treino
@@ -216,10 +224,10 @@ def melhor_da_busca(regressor, id_busca, pasta=PASTA_RESULTADOS):
 
 
 def avaliar_teste(id_experimento, hipotese, familia, regressor, controle_dev, X_dev, y_dev, preparacao,
-                  arquivo=ARQUIVO_C07, pasta=PASTA_RESULTADOS):
+                  arquivo=ARQUIVO_C07, pasta=PASTA_RESULTADOS, preparar=True):
     """Reajusta o pipeline nos 80% completos (desenvolvimento) e avalia UMA vez nos 20% do teste."""
     controle_teste, X_teste, y_teste = carregar_teste(arquivo)
-    pipeline = montar_pipeline(CONJUNTO, familia, clone(regressor))
+    pipeline = _pipeline(familia, clone(regressor), preparar)
     inicio = time.perf_counter()
     pipeline.fit(X_dev, y_dev)
     tempo_ajuste = time.perf_counter() - inicio
@@ -229,7 +237,7 @@ def avaliar_teste(id_experimento, hipotese, familia, regressor, controle_dev, X_
     registro = _registro(id_experimento, hipotese, familia, regressor, regressor.get_params(),
                          "teste_final_ajuste_em_100pct_do_desenvolvimento", len(y_teste), preparacao)
     registro["linhas_treino"] = len(y_dev)
-    registro["n_features_saida"] = int(pipeline.named_steps["modelo"].n_features_in_)
+    registro["n_features_saida"] = int(getattr(pipeline.named_steps["modelo"], "n_features_in_", X_dev.shape[1]))
     for metrica, funcao in _FUNCOES_METRICAS.items():
         registro[f"{metrica}_teste"] = float(funcao(y_teste, previsto))
         registro[f"{metrica}_treino_media"] = float(funcao(y_dev, previsto_treino))
@@ -244,7 +252,7 @@ def avaliar_teste(id_experimento, hipotese, familia, regressor, controle_dev, X_
                  else controle_teste[[cfg.COLUNA_ID, cfg.COLUNA_ALVO]].astype({cfg.COLUNA_ID: str}))
     if list(previsoes[cfg.COLUNA_ID]) != list(controle_teste[cfg.COLUNA_ID].astype(str)):
         raise RuntimeError(f"{arquivo_previsoes} não corresponde aos participantes do teste atual.")
-    previsoes[f"PREVISTO_{id_experimento}"] = previsto
+    previsoes[f"PREVISTO_{id_experimento}"] = np.round(previsto, 2)  # 2 casas: arquivo menor; métricas já calculadas
     previsoes.to_csv(arquivo_previsoes, index=False)
     log(f"{id_experimento}: TESTE RMSE = {registro['rmse_teste']:.2f} | MAE = {registro['mae_teste']:.2f} | "
         f"R² = {registro['r2_teste']:.4f} | treino em {_milhar(len(y_dev))}, teste em {_milhar(len(y_teste))} | "
