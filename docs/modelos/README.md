@@ -37,7 +37,8 @@ cruzada de 3 dobras** do desenvolvimento.
 
 1. **Boosting venceu e generaliza bem:** menor erro e treino quase igual à validação (64,3 × 64,5).
 2. **Mostramos sub e sobreajuste com números:**
-   - a árvore sem limite decora o treino (23 × 92) e fica pior que prever a média;
+   - a árvore sem limite decora o treino (23 × 92) e fica pior que prever a média. Com 500 participantes por folha
+     (estudo de complexidade, `LC-C07-ARV-BUSCA`), cai para 65,59, com treino em 65,25;
    - Bagging e Pasting decoram parte do treino (61 × 65).
 3. **Todos os bons modelos param em R² ~0,25–0,27:** o limite está na informação do perfil socioeconômico, não no
    algoritmo.

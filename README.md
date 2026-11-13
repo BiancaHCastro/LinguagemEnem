@@ -133,6 +133,7 @@ python -m src.modelagem.boosting --teste
 # Experimentos complementares (seções 11 e 12)
 python -m src.modelagem.pca_balanceamento_ablacao completo
 python -m src.modelagem.aprofundamento_notas_extremas
+python -m src.modelagem.arvore_decisao --so-busca     # estudo de complexidade da árvore (seção 8)
 ```
 
 Para encadear vários comandos numa linha: no Prompt de Comando (cmd) use `&&`; no PowerShell use `;`.
@@ -287,6 +288,12 @@ Leitura dos resultados:
 
 - **A árvore única decora o treino:** RMSE de treino 23,3 contra 92,3 na validação. Fica pior que o baseline e é o
   exemplo claro de sobreajuste.
+  - **Estudo de complexidade** (`python -m src.modelagem.arvore_decisao --so-busca`, `LC-C07-ARV-BUSCA`): 15
+    estratégias com `GridSearchCV` nas mesmas dobras. Exigir **500 participantes por folha** (ARV-F500) leva a árvore
+    a **65,59 (R² 0,245)**, com treino em 65,25.
+  - **Isso não muda a comparação inicial:** a configuração inicial continua registrada, como pede o enunciado. Mesmo
+    controlada, a árvore fica fora do top 3.
+  - Detalhes e figura `arvore_complexidade.png`: [`docs/modelos/arvore_decisao.md`](docs/modelos/arvore_decisao.md).
 - **Bagging e Pasting também decoram parte do treino:** 61,2 no treino contra 65,3 na validação.
 - **O Boosting tem treino e validação próximos:** 64,3 contra 64,5.
 - **Ridge empata com a regressão linear:** com 2,26 milhões de linhas, a regularização não muda nada.
@@ -466,6 +473,7 @@ falta de informação nas features, e não da forma de treinar.
 | `comparacao_inicial.csv` | ranking das configurações iniciais |
 | `antes_depois_busca.csv` | os 3 melhores antes e depois da busca |
 | `busca_LC-C07-{HGB,BAG,PAST}-BUSCA.csv` | todas as configurações de cada busca |
+| `busca_LC-C07-ARV-BUSCA.csv` | estudo de complexidade da árvore: 15 estratégias (seção 8) |
 | `metricas_teste_final.csv` | teste: baseline × linear × modelo final |
 | `curva_aprendizado_LC-C07-HGB.csv` | curva de aprendizado por dobra |
 | `erros_teste_LC-C07-HGB.csv` | erros no teste por faixa de nota, UF, tipo de escola e renda |
@@ -484,6 +492,7 @@ falta de informação nas features, e não da forma de treinar.
 | Erros no teste por faixa e por grupo | `teste_hgb_final_erro_por_faixa.png`, `teste_hgb_final_erro_por_TP_ESCOLA.png`, `teste_hgb_final_erro_por_Q006.png` |
 | Triagem e ablação de features | `lc_triagem_conjuntos.png`, `lc_triagem_ablacao.png`, `ablacao_boosting.png`, `ablacao_knn.png` |
 | Aprofundamento | `variacoes_hgb_erro_por_faixa.png` |
+| Sobreajuste × complexidade da árvore (complementar) | `arvore_complexidade.png` |
 
 ---
 
