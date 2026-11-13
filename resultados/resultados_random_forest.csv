@@ -1,0 +1,72 @@
+etapa,modelo,dobra_ou_grupo,n_amostras,rmse,mae,r2,vies,tempo_treino_s,tempo_predicao_s,observacao
+cv_dobra,bagging_oficial,dobra_1,752704,64.91449847275672,49.995441263726214,0.25852997700709723,,31.179867426554363,2.5464555422465005,"BaggingRegressor(n_estimators=40, max_samples=0.75, max_features=0.8, estimator__min_samples_leaf=20, bootstrap=True) [posicao_rmse=1]"
+cv_dobra,bagging_oficial,dobra_2,752704,65.02130855818453,50.07932797442907,0.25872948329331424,,31.179867426554363,2.5464555422465005,"BaggingRegressor(n_estimators=40, max_samples=0.75, max_features=0.8, estimator__min_samples_leaf=20, bootstrap=True) [posicao_rmse=1]"
+cv_dobra,bagging_oficial,dobra_3,752704,65.08911658582379,50.04496889600326,0.25758182239929395,,31.179867426554363,2.5464555422465005,"BaggingRegressor(n_estimators=40, max_samples=0.75, max_features=0.8, estimator__min_samples_leaf=20, bootstrap=True) [posicao_rmse=1]"
+cv_resumo,bagging_oficial,media,752704,65.008307872255,50.03991271138619,0.2582804275665685,,31.179867426554363,2.5464555422465005,"BaggingRegressor(n_estimators=40, max_samples=0.75, max_features=0.8, estimator__min_samples_leaf=20, bootstrap=True) [posicao_rmse=1]"
+cv_resumo,bagging_oficial,desvio_padrao,752704,0.07187783491802553,0.0344327248442299,0.000500657950013133,,0.22344181421509512,0.02061724780125189,"BaggingRegressor(n_estimators=40, max_samples=0.75, max_features=0.8, estimator__min_samples_leaf=20, bootstrap=True) [posicao_rmse=1]"
+cv_dobra,baseline_media,dobra_1,752705,75.38677077586784,59.26033234372976,-1.0728836059570312e-06,0.07816088262759398,0.003705064999962815,0.0013287339999124015,DummyRegressor(strategy='mean')
+cv_dobra,baseline_media,dobra_2,752705,75.52100580888849,59.421938820034,-2.0265579223632812e-06,-0.10544888877150266,0.0023258830000258968,0.00106855900003211,DummyRegressor(strategy='mean')
+cv_dobra,baseline_media,dobra_3,752704,75.54123961928019,59.35563135033572,-2.384185791015625e-07,0.027287695543892317,0.002473108999993201,0.0010758329999589478,DummyRegressor(strategy='mean')
+cv_resumo,baseline_media,media,752704,75.48300540134551,59.34596750469982,-1.1126200358072917e-06,-1.0353333878762583e-07,0.0028346856666606377,0.0011577086666344865,DummyRegressor(strategy='mean')
+cv_resumo,baseline_media,desvio_padrao,752704,0.06854769204167968,0.06632850433121626,7.305453741888299e-07,0.07740200265353446,0.0006183790701752717,0.00012096962769183114,DummyRegressor(strategy='mean')
+cv_dobra,random_forest,dobra_1,752705,65.14281255066565,50.18000400528135,0.2533050802958797,0.07081345353421378,80.24717663699994,10.572041202000037,"RandomForestRegressor(n_estimators=40, max_features='sqrt', max_samples=0.75, min_samples_leaf=20, max_depth=24, bootstrap=True, random_state=42)"
+cv_dobra,random_forest,dobra_2,752705,65.25068519867109,50.26636801952051,0.25349027618703335,-0.1262637446508811,83.87997813499999,10.389309569000034,"RandomForestRegressor(n_estimators=40, max_features='sqrt', max_samples=0.75, min_samples_leaf=20, max_depth=24, bootstrap=True, random_state=42)"
+cv_dobra,random_forest,dobra_3,752704,65.31307877293386,50.22718370414754,0.252463926928032,-0.03393584966819996,71.45712578300004,8.681747091000034,"RandomForestRegressor(n_estimators=40, max_features='sqrt', max_samples=0.75, min_samples_leaf=20, max_depth=24, bootstrap=True, random_state=42)"
+cv_resumo,random_forest,media,752704,65.23552550742353,50.22451857631646,0.2530864278036484,-0.02979538026162243,78.52809351833332,9.881032620666701,"RandomForestRegressor(n_estimators=40, max_features='sqrt', max_samples=0.75, min_samples_leaf=20, max_depth=24, bootstrap=True, random_state=42)"
+cv_resumo,random_forest,desvio_padrao,752704,0.07033258510066234,0.03530828909895136,0.00044662055829111544,0.0805096811002747,5.215250087743385,0.8512978517830315,"RandomForestRegressor(n_estimators=40, max_features='sqrt', max_samples=0.75, min_samples_leaf=20, max_depth=24, bootstrap=True, random_state=42)"
+teste_final,baseline_media,geral_20pct,564529,75.3299459848402,59.189392762006854,-8.344650268554688e-06,0.21652278814092146,,,DummyRegressor(strategy='mean') ajustado nos 80% dev
+teste_final,random_forest,geral_20pct,564529,65.07367167284953,50.0795556085043,0.25375935543768136,0.11281091371993443,145.87537772299993,6.866905613999961,"RandomForestRegressor(n_estimators=40, max_features='sqrt', max_samples=0.75, min_samples_leaf=20, max_depth=24, bootstrap=True, random_state=42)"
+comparacao_rf_vs_bagging,delta (RF - Bagging Oficial),cv_3_dobras,2258114,0.2272176351685289,0.1846058649302762,-0.005193999762920121,,,,RMSE_RF=65.2355 vs RMSE_Bagging_Oficial=65.0083
+teste_grupo,random_forest,faixa_nota: zero,433,513.8806716561639,512.1529791344377,,-512.1529791344377,,,agrupamento=faixa_nota
+teste_grupo,random_forest,faixa_nota: 0-400,36300,137.52164298438962,130.8714435035661,,-130.8714435035661,,,agrupamento=faixa_nota
+teste_grupo,random_forest,faixa_nota: 400-500,176666,55.227677598095184,44.667735952288005,,-40.19821219048046,,,agrupamento=faixa_nota
+teste_grupo,random_forest,faixa_nota: 500-600,278008,43.63421881744773,35.366878474466375,,23.651610515984615,,,agrupamento=faixa_nota
+teste_grupo,random_forest,faixa_nota: 600-700,71606,82.9141520779316,75.00126997997369,,74.81945102177647,,,agrupamento=faixa_nota
+teste_grupo,random_forest,faixa_nota: 700+,1516,138.91294221162198,135.14477579571692,,135.14477579571692,,,agrupamento=faixa_nota
+teste_grupo,random_forest,SG_UF_PROVA: AC,3255,65.78664845002558,50.6121966833319,,3.5438556152326477,,,agrupamento=SG_UF_PROVA
+teste_grupo,random_forest,SG_UF_PROVA: AL,11600,67.41963297328441,52.09237845018584,,-2.577885024205035,,,agrupamento=SG_UF_PROVA
+teste_grupo,random_forest,SG_UF_PROVA: AM,10400,67.15962178032783,51.1679654587859,,-7.160973119210117,,,agrupamento=SG_UF_PROVA
+teste_grupo,random_forest,SG_UF_PROVA: AP,3895,64.09717954359765,49.666957340955214,,-5.779206244944951,,,agrupamento=SG_UF_PROVA
+teste_grupo,random_forest,SG_UF_PROVA: BA,46321,67.07877567757505,51.946848767283804,,-1.4333222028900359,,,agrupamento=SG_UF_PROVA
+teste_grupo,random_forest,SG_UF_PROVA: CE,36240,68.96182996206399,54.44412528490563,,7.401261899350577,,,agrupamento=SG_UF_PROVA
+teste_grupo,random_forest,SG_UF_PROVA: DF,10628,63.51783054843013,48.51420241360176,,4.8199264754099405,,,agrupamento=SG_UF_PROVA
+teste_grupo,random_forest,SG_UF_PROVA: ES,10377,64.13913539126851,49.16369055009862,,3.897220135658408,,,agrupamento=SG_UF_PROVA
+teste_grupo,random_forest,SG_UF_PROVA: GO,20641,65.09561846949266,49.90338513429768,,-1.460480190285037,,,agrupamento=SG_UF_PROVA
+teste_grupo,random_forest,SG_UF_PROVA: MA,23510,66.89308522556486,51.92997381933975,,-8.106241826211292,,,agrupamento=SG_UF_PROVA
+teste_grupo,random_forest,SG_UF_PROVA: MG,52312,63.95235416298966,49.389875771070194,,5.860178096728892,,,agrupamento=SG_UF_PROVA
+teste_grupo,random_forest,SG_UF_PROVA: MS,6691,66.76115640486434,50.008549095902275,,-6.676686455697697,,,agrupamento=SG_UF_PROVA
+teste_grupo,random_forest,SG_UF_PROVA: MT,8905,66.09860525138158,50.6487399230568,,-11.067440620704973,,,agrupamento=SG_UF_PROVA
+teste_grupo,random_forest,SG_UF_PROVA: PA,32226,66.92052469159064,51.66829829065311,,-7.358356920855624,,,agrupamento=SG_UF_PROVA
+teste_grupo,random_forest,SG_UF_PROVA: PB,18256,65.69306161514852,51.26546389391696,,2.15722321585533,,,agrupamento=SG_UF_PROVA
+teste_grupo,random_forest,SG_UF_PROVA: PE,31811,66.27493237221672,51.45256889920964,,1.6909609465630706,,,agrupamento=SG_UF_PROVA
+teste_grupo,random_forest,SG_UF_PROVA: PI,14599,68.33469892660881,53.26498848786142,,-2.934697279301622,,,agrupamento=SG_UF_PROVA
+teste_grupo,random_forest,SG_UF_PROVA: PR,24191,62.442368579915474,47.90028409796222,,0.241421428813016,,,agrupamento=SG_UF_PROVA
+teste_grupo,random_forest,SG_UF_PROVA: RJ,39413,64.28917584516688,49.53799854308133,,0.7599026331802076,,,agrupamento=SG_UF_PROVA
+teste_grupo,random_forest,SG_UF_PROVA: RN,15275,65.59519873916595,51.040990284941756,,1.7963696920853653,,,agrupamento=SG_UF_PROVA
+teste_grupo,random_forest,SG_UF_PROVA: RO,4706,66.73532301425607,50.67678284540954,,-11.912136322674042,,,agrupamento=SG_UF_PROVA
+teste_grupo,random_forest,SG_UF_PROVA: RR,1327,68.06763363616697,50.115996514721985,,-4.712103871059564,,,agrupamento=SG_UF_PROVA
+teste_grupo,random_forest,SG_UF_PROVA: RS,23684,61.82797066935137,47.399901082250686,,5.173662051170788,,,agrupamento=SG_UF_PROVA
+teste_grupo,random_forest,SG_UF_PROVA: SC,13483,60.974477501919644,46.509252735806385,,-0.8929830743342374,,,agrupamento=SG_UF_PROVA
+teste_grupo,random_forest,SG_UF_PROVA: SE,9653,67.59828530471313,52.759698073177546,,-2.65148692952934,,,agrupamento=SG_UF_PROVA
+teste_grupo,random_forest,SG_UF_PROVA: SP,86525,61.88197556710105,46.698190798419056,,1.2568352447932813,,,agrupamento=SG_UF_PROVA
+teste_grupo,random_forest,SG_UF_PROVA: TO,4605,69.07339796953241,52.270606192151405,,-14.07761505030295,,,agrupamento=SG_UF_PROVA
+teste_grupo,random_forest,TP_ESCOLA: 1,344944,65.61484327231555,50.32502065768194,,-0.061745044887252944,,,agrupamento=TP_ESCOLA
+teste_grupo,random_forest,TP_ESCOLA: 2,174578,64.74291511299933,50.20975175005841,,0.22750376868310238,,,agrupamento=TP_ESCOLA
+teste_grupo,random_forest,TP_ESCOLA: 3,45007,62.121510568773004,47.69323619321856,,1.0057649286962231,,,agrupamento=TP_ESCOLA
+teste_grupo,random_forest,Q006: A,33316,66.36203495776314,51.975279866567774,,0.04752041272784346,,,agrupamento=Q006
+teste_grupo,random_forest,Q006: B,165415,66.516912927278,51.792529100552755,,0.0177407212477203,,,agrupamento=Q006
+teste_grupo,random_forest,Q006: C,87671,65.47600830626304,50.53697093927798,,0.13946596535715075,,,agrupamento=Q006
+teste_grupo,random_forest,Q006: D,62515,64.78145360209409,49.772209745478555,,0.19114240630729207,,,agrupamento=Q006
+teste_grupo,random_forest,Q006: E,44170,64.75550329033814,49.774650773580895,,0.12913160239703084,,,agrupamento=Q006
+teste_grupo,random_forest,Q006: F,26667,64.27381369404532,49.17130119989797,,-0.19862268224990984,,,agrupamento=Q006
+teste_grupo,random_forest,Q006: G,41873,63.31106914607587,48.464533972660895,,0.4801801736937681,,,agrupamento=Q006
+teste_grupo,random_forest,Q006: H,22976,63.37156619766668,48.195028189329506,,0.17222456182780801,,,agrupamento=Q006
+teste_grupo,random_forest,Q006: I,14502,63.18890851387605,47.89979627784236,,-0.20058002809836237,,,agrupamento=Q006
+teste_grupo,random_forest,Q006: J,12783,62.20673798869127,47.32633681977346,,0.5625374707589801,,,agrupamento=Q006
+teste_grupo,random_forest,Q006: K,10263,64.49588469769456,48.14797631372528,,-0.9614238609380243,,,agrupamento=Q006
+teste_grupo,random_forest,Q006: L,6872,65.88560213096443,48.681819722732484,,0.27424124368202973,,,agrupamento=Q006
+teste_grupo,random_forest,Q006: M,5882,62.8915434704317,47.46012904147061,,0.3304928195001263,,,agrupamento=Q006
+teste_grupo,random_forest,Q006: N,7272,60.575463508546925,45.92759186157138,,1.2372564606020944,,,agrupamento=Q006
+teste_grupo,random_forest,Q006: O,7087,62.17198145366415,46.3135303966953,,-0.2614990624691956,,,agrupamento=Q006
+teste_grupo,random_forest,Q006: P,6535,61.26628942070729,45.76732944342578,,-0.875922145850232,,,agrupamento=Q006
+teste_grupo,random_forest,Q006: Q,8730,64.64406008033303,47.55035153133064,,1.2436076255137014,,,agrupamento=Q006
