@@ -28,8 +28,18 @@ cruzada de 3 dobras** do desenvolvimento.
 | — | Baseline (média) | 75,48 ± 0,08 | 59,35 | 0,000 | 75,48 | 30 s | [baseline.md](baseline.md) |
 | 8 | Árvore de decisão | 92,34 ± 0,03 | 71,16 | −0,497 | 23,32 | 75 s | [arvore_decisao.md](arvore_decisao.md) |
 
-- **Random Forest e SVM** são do outro integrante. O RF fez **65,36** na validação, entre o Stacking e o Ridge, e
-  ficou fora do top 3.
+**Random Forest e SVM** (outro integrante): mesmas dobras e mesmo conjunto, mas em scripts próprios. Por isso
+ainda não estão no `experimentos.csv` nem no ranking acima, e não há RMSE de treino registrado.
+
+| Modelo | RMSE | MAE | R² | Ajuste/dobra | Detalhes |
+|---|---:|---:|---:|---:|---|
+| SVM (`LinearSVR`) | 65,40 ± 0,11 | 50,42 | 0,249 | 25 s | [svm.md](svm.md) |
+| Random Forest: versão usada na escolha do top 3 (50 árvores, profundidade 12) | 65,36 | 50,33 | 0,250 | — | [random_forest.md](random_forest.md) |
+| Random Forest: script atual (config. do Bagging otimizado + sorteio por divisão) | 65,24 ± 0,09 | 50,22 | 0,253 | 79 s | [random_forest.md](random_forest.md) |
+
+- **O RF e o SVM ficaram fora do top 3:** na escolha, o RF fez 65,36 e o SVM 65,40, os dois atrás do Pasting (65,27).
+- **A versão atual do RF** parte da configuração do Bagging otimizado. Ela serve para comparar RF × Bagging (65,24 ×
+  65,01), e não para entrar no ranking das configurações iniciais.
 - **Os 3 melhores** (Boosting, Bagging e Pasting) seguiram para a busca de hiperparâmetros: estratégias, todas as
   configurações testadas e resultados em [`docs/top3/`](../top3/README.md).
 

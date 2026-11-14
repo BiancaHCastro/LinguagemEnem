@@ -70,7 +70,8 @@ LinguagemEnem/
 │       ├── bagging.py / pasting.py     bagging e pasting de árvores
 │       ├── boosting.py                 HistGradientBoosting: inicial, busca, curva, teste e gráficos finais
 │       ├── stacking.py                 stacking (árvore + Ridge)
-│       ├── random_forest.ipynb / svm.ipynb   Random Forest e SVM (outro integrante; ver seção 14)
+│       ├── random_forest.py            Random Forest + comparação com o Bagging otimizado (outro integrante)
+│       ├── svm_svrlinear.py            SVM: LinearSVR na base completa (outro integrante)
 │       ├── comparacao_inicial.py       ranking, 3 melhores, antes × depois da busca e figura
 │       ├── triagem_conjuntos.py        triagem dos 24 conjuntos de features
 │       ├── pca_balanceamento_ablacao.py   PCA, balanceamento e ablação por blocos
@@ -269,6 +270,11 @@ python -m src.modelagem.pasting              # LC-C07-PAST
 python -m src.modelagem.boosting             # LC-C07-HGB
 python -m src.modelagem.stacking             # LC-C07-STACK
 python -m src.modelagem.comparacao_inicial   # ranking -> resultados/comparacao_inicial.csv e figuras/comparacao_modelos.png
+
+# Random Forest e SVM (outro integrante): scripts próprios, escritos para o Google Colab.
+# Antes de rodar localmente, ajuste CAMINHO_PARQUET e PASTA_SAIDA no início de cada arquivo (ver seção 14).
+python src/modelagem/random_forest.py        # -> resultados_random_forest.csv e desempenho_random_forest_vs_bagging.png
+python src/modelagem/svm_svrlinear.py        # -> resultados_svm.csv e desempenho_svm.png
 ```
 
 | # | Modelo | Configuração inicial | Por quê | RMSE validação | R² |
@@ -282,7 +288,16 @@ python -m src.modelagem.comparacao_inicial   # ranking -> resultados/comparacao_
 | 7 | KNN | PCA incremental (12 componentes) + 50 vizinhos ponderados pela distância | perfis parecidos têm notas parecidas; o PCA mantém a busca de vizinhos viável em 2,26 mi de linhas | 70,86 ± 0,05 | 0,119 |
 | — | Baseline (`DummyRegressor(mean)`) | média do treino de cada dobra | referência obrigatória | 75,48 ± 0,08 | 0,000 |
 | 8 | Árvore de decisão | sem limite de crescimento | captar interações sem supor forma funcional | 92,34 ± 0,03 | −0,497 |
-| — | Random Forest (outro integrante) | 50 árvores, profundidade 12 | comparação com o bagging | 65,36 | 0,250 |
+
+**Random Forest e SVM** (outro integrante). Os dois usam o C07 completo, as mesmas 3 dobras (coluna `DOBRA`) e o
+Pipeline ajustado no treino de cada dobra. Ficam em scripts próprios, com resultados em CSV próprio, e **ainda não
+estão no `experimentos.csv` nem em `comparacao_inicial.csv`**:
+
+| Modelo | Configuração | Por quê | RMSE validação | MAE | R² | Detalhes |
+|---|---|---|---:|---:|---:|---|
+| SVM (`LinearSVR`) | `C=1`, perda `squared_epsilon_insensitive`, `dual=False`; one-hot + padronização | SVM linear: o único que escala para 2,26 mi de linhas (kernels densos não cabem) | 65,40 ± 0,11 | 50,42 | 0,249 | [svm.md](docs/modelos/svm.md) |
+| Random Forest: versão usada na escolha do top 3 | 50 árvores, profundidade 12 | comparação com o bagging | 65,36 | 50,33 | 0,250 | notebook no commit `3c76778` |
+| Random Forest: script atual | config. do Bagging otimizado (40 árvores, 75% das linhas, folha 20) + `max_features='sqrt'` + profundidade 24 | isolar o efeito de sortear features **em cada divisão**, contra o Bagging otimizado | 65,24 ± 0,09 | 50,22 | 0,253 | [random_forest.md](docs/modelos/random_forest.md) |
 
 Leitura dos resultados:
 
@@ -297,8 +312,13 @@ Leitura dos resultados:
 - **Bagging e Pasting também decoram parte do treino:** 61,2 no treino contra 65,3 na validação.
 - **O Boosting tem treino e validação próximos:** 64,3 contra 64,5.
 - **Ridge empata com a regressão linear:** com 2,26 milhões de linhas, a regularização não muda nada.
-- **Os 3 melhores para a busca são Boosting, Bagging e Pasting.** O Random Forest (65,36) ficou atrás do Pasting e
-  fora do top 3.
+- **Os 3 melhores para a busca são Boosting, Bagging e Pasting.** A escolha foi feita com a versão do Random Forest
+  de 50 árvores (65,36), que ficou atrás do Pasting e fora do top 3. O SVM (65,40) também fica fora.
+- **Random Forest × Bagging** (o enunciado pede essa comparação): a versão atual do RF parte da mesma configuração
+  do Bagging otimizado e muda o sorteio de features, de 80% **por árvore** para √23 ≈ 4 features **em cada
+  divisão** (e limita a profundidade a 24). O resultado foi **65,24 contra 65,01 do Bagging otimizado: o RF erra
+  0,23 a mais**. Como ele parte de uma configuração já otimizada, a comparação certa é com o Bagging otimizado, e não
+  com as configurações iniciais.
 
 ---
 
@@ -480,6 +500,7 @@ falta de informação nas features, e não da forma de treinar.
 | `variacoes_hgb*.csv` | aprofundamento (seção 12) |
 | `triagem_conjuntos_lc.csv`, `experimentos_triagem.csv` | triagem de features (seção 6) |
 | `pca_balanceamento_ablacao/` | log completo de PCA, balanceamento e ablação (seção 11) |
+| `resultados_random_forest.csv`, `resultados_svm.csv` | RF e SVM (outro integrante): métricas por dobra, média e desvio, comparação RF × Bagging e erros por faixa e grupo |
 | `previsoes_cv/` | previsões fora da dobra (~35 MB cada; locais, fora do Git) |
 
 | Figura obrigatória do artigo | Arquivo em `resultados/figuras/` |
@@ -493,14 +514,27 @@ falta de informação nas features, e não da forma de treinar.
 | Triagem e ablação de features | `lc_triagem_conjuntos.png`, `lc_triagem_ablacao.png`, `ablacao_boosting.png`, `ablacao_knn.png` |
 | Aprofundamento | `variacoes_hgb_erro_por_faixa.png` |
 | Sobreajuste × complexidade da árvore (complementar) | `arvore_complexidade.png` |
+| Random Forest × Bagging e SVM (complementar) | `desempenho_random_forest_vs_bagging.png`, `desempenho_svm.png` |
+
+`random_forest_enem2023.png` e `svm_enem2023.png` são das versões preliminares (notebooks antigos; o SVM usava SVR com
+kernel RBF numa amostra de 20 mil linhas) e foram substituídas pelas duas figuras acima.
 
 ---
 
 ## 14. Limitações e observações
 
-- **Random Forest e SVM** estão em notebooks (`src/modelagem/random_forest.ipynb` e `svm.ipynb`) e ainda serão
-  registrados no `experimentos.csv` por outro integrante. O RF ficou fora do top 3 (65,36). O SVR com kernel RBF não
-  escala para 1,5 milhão de linhas por dobra; a versão final deve rodar na base completa.
+- **Random Forest e SVM** (`random_forest.py` e `svm_svrlinear.py`, outro integrante) foram escritos para o Google
+  Colab e seguem um formato próprio:
+  - **caminhos fixos do Colab** (`CAMINHO_PARQUET = "/content/..."` e `PASTA_SAIDA`): para rodar no repositório,
+    troque por `dados/processed/enem_2023_lc_c07.parquet` e `resultados/`;
+  - os resultados ficam em `resultados_random_forest.csv` e `resultados_svm.csv`, **ainda fora do
+    `experimentos.csv` e do ranking de `comparacao_inicial.csv`**;
+  - **os dois scripts também avaliam RF e SVM no teste** (RF 65,07; SVM 65,32). Pelo protocolo, o teste é só para o
+    baseline, a regressão linear e a solução final. Esses números não participaram de nenhuma escolha e não devem
+    ser usados para comparar modelos;
+  - não registram o RMSE de treino, então não dá para comparar treino × validação desses dois modelos;
+  - a versão do RF usada na escolha do top 3 (50 árvores, profundidade 12, 65,36) estava no notebook removido; ele
+    continua no histórico do Git (commit `3c76778`, `src/modelagem/random_forest.ipynb`).
 - **PCA, balanceamento e ablação** usam 15 features (C02), não o C07. Cada comparação é válida dentro do próprio
   conjunto.
 - **Bagging e Pasting** usam a mesma classe (`BaggingRegressor`), mas são famílias distintas no enunciado: amostragem
